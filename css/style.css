@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+.header {
+  padding: 4rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  background-color: #232323;
+  padding: 1.2rem 1.6rem;
+  border-radius: 10rem;
+}
+.header__middle a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #FDF9F0;
+  padding: 0.8rem 1.6rem;
+  height: 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10rem;
+}
+.header__middle a.active {
+  background-color: #1065EC;
+}
+.header__end .input-group {
+  height: 4.8rem;
+  background-color: #FDFBFC;
+  border-radius: 10rem;
+  padding: 0 1rem;
+  width: 15rem;
+}
+.header__end .input-group-text {
+  background-color: transparent;
+  border: none;
+}
+.header__end input {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+.header__end input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.footer {
+  position: relative;
+  background-color: #141414;
+  padding: 6rem 0;
+}
+.footer__info {
+  color: #676767;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.4rem 0;
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+}
+.footer__social a {
+  display: block;
+}
+.footer__social a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.footer__list a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+}
+.footer__left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.footer__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../assets/font/font.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #141414 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.banner {
+  min-height: 100vh;
+  padding: 20rem 0 2rem;
+  position: relative;
+}
+.banner__title {
+  text-align: center;
+}
+.banner__title h1 {
+  color: #fff;
+  font-size: 11rem;
+  font-weight: 400;
+  margin: 0;
+  font-family: "MyCustomFont", sans-serif !important;
+}
+.banner__title h1 span {
+  color: #F7C41F;
+}
+.banner__download {
+  margin: 2rem 0;
+}
+.banner__download ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 2.4rem;
+}
+.banner__download ul li {
+  list-style-type: none;
+}
+.banner__line {
+  color: #232323;
+  font-size: 2rem;
+}
+.banner__join {
+  background-color: #000;
+  border-radius: 10rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+.banner__join a {
+  background-color: #1065EC;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  display: block;
+  padding: 0.8rem 2.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+.banner__join span {
+  color: #FDF9F0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.banner__left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.banner__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.banner__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+.workflow {
+  background-color: #fff;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.workflow__content {
+  text-align: center;
+}
+.workflow__content span {
+  color: #444342;
+  font-size: 2.4rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+.workflow__content h2 {
+  color: #181927;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 2.4rem 0;
+}
+.workflow__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+.workflow__img img {
+  width: 8.6rem;
+  height: 8.6rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+.header {
+    padding: 4rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__middle {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        background-color: #232323;
+        padding: 1.2rem 1.6rem;
+        border-radius: 10rem;
+
+        a {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #FDF9F0;
+            padding: 0.8rem 1.6rem;
+            height: 3.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10rem;
+        }
+
+        a.active {
+            background-color: #1065EC;
+        }
+    }
+
+    &__end {
+        .input-group {
+            height: 4.8rem;
+            background-color: #FDFBFC;
+            border-radius: 10rem;
+            padding: 0 1rem;
+            width: 15rem;
+        }
+
+        .input-group-text {
+            background-color: transparent;
+            border: none;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #000;
+
+            &:focus {
+                box-shadow: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
