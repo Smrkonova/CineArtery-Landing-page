@@ -164,3 +164,37 @@ a {
         }
     }
 }
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+}
+
+.load-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+        color: #F6BD40;
+        font-size: 4.8rem;
+        font-family: 'MyCustomFont', sans-serif !important;
+    }
+}
+
+// #welcome-text {
+//     display: inline-block;
+//     width: 550px;
+//     /* Adjust based on the longest text */
+//     text-align: right;
+//     /* Align text to the right for consistency */
+// }
