@@ -44,10 +44,13 @@ a {
 
         h1 {
             color: #fff;
-            font-size: 11rem;
+            font-size: 8rem;
             font-weight: 400;
             margin: 0;
             font-family: 'MyCustomFont', sans-serif !important;
+            position: relative;
+            opacity: 1;
+            transform: translateY(0);
 
 
             span {
@@ -190,11 +193,3 @@ a {
         font-family: 'MyCustomFont', sans-serif !important;
     }
 }
-
-// #welcome-text {
-//     display: inline-block;
-//     width: 550px;
-//     /* Adjust based on the longest text */
-//     text-align: right;
-//     /* Align text to the right for consistency */
-// }

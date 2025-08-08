@@ -169,10 +169,14 @@ a {
 }
 .banner__title h1 {
   color: #fff;
-  font-size: 11rem;
+  font-size: 8rem;
   font-weight: 400;
   margin: 0;
   font-family: "MyCustomFont", sans-serif !important;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .banner__title h1 span {
   color: #F7C41F;

@@ -24,8 +24,9 @@
     <section class="banner">
       <div class="container">
         <div class="banner__title">
-          <h1>Creative Talent.
-            Right <span>Budget.</span></h1>
+          <h1 class="rotating-title">And a film ready to
+            <span>meet its audience.</span> 
+          </h1>
         </div>
         <div class="banner__download">
           <ul>
@@ -123,8 +124,6 @@
     });
   </script>
 
-
-
   <script>
     const languages = [
       "Welcome to",        // English
@@ -159,6 +158,43 @@
     // Change language every 2 seconds
     setInterval(changeLanguage, 1500);
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const titles = [
+        'Creative Talent. Right <span>Budget.</span>',
+        'Clutter-free Scripting and <span>Scheduling.</span>',
+        'And a film ready to <span>meet its audience.</span>'
+      ];
+
+      const titleElement = document.querySelector('.rotating-title');
+      let currentIndex = 0;
+
+      function rotateTitle() {
+        // Animate current title out (move up and fade out)
+        gsap.to(titleElement, {
+          y: -30,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.in",
+          onComplete: function () {
+            // Change text
+            currentIndex = (currentIndex + 1) % titles.length;
+            titleElement.innerHTML = titles[currentIndex];
+
+            // Animate new title in (from bottom to original position)
+            gsap.fromTo(titleElement,
+              { y: 30, opacity: 0 },
+              { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
+            );
+          }
+        });
+      }
+
+      // Rotate every 5 seconds
+      setInterval(rotateTitle, 3000);
+    });
+  </script>
+
 
 </body>
 
