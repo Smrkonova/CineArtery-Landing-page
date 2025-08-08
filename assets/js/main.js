@@ -7,3 +7,14 @@ fetch('/./shared/header.html')
 fetch('/./shared/footer.html')
     .then(res => res.text())
     .then(data => document.getElementById('footer').innerHTML = data);
+
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
