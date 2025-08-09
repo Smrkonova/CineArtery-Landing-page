@@ -147,8 +147,9 @@ a {
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 1rem;
         margin: 2rem 0 0;
     }
@@ -248,4 +249,11 @@ a {
             font-family: 'MyCustomFont', sans-serif !important;
         }
     }
+}
+
+.banner__img {
+    flex: 0 0 auto;
+    opacity: 1 !important;
+    transform: translateY(0);
+
 }

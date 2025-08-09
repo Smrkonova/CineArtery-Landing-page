@@ -12,12 +12,15 @@
 
 <body>
 
-  <!-- <div id="loader">
+  <div id="loader">
     <div class="load-content">
       <span id="welcome-text">Welcome to</span>
       <img src="./assets/img/logo.png" alt="">
     </div>
-  </div> -->
+    <!-- <div class="loade-center">
+      From imagination to <span>‘Action!’</span> Your story starts here...
+    </div> -->
+  </div>
 
   <div id="content">
     <div id="header"></div>
@@ -72,12 +75,6 @@
             <img src="./assets/img/banner/gallery.png" alt="">
           </div>
         </div>
-      </div>
-      <div class="banner__left">
-        <img src="./assets/img/icons/left-effect.svg" alt="">
-      </div>
-      <div class="banner__right">
-        <img src="./assets/img/icons/right-effect.svg" alt="">
       </div>
     </section>
     <section class="workflow">
@@ -213,6 +210,61 @@
       setInterval(rotateTitle, 3000);
     });
   </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    let banner = document.querySelector(".banner");
+    let imgs = gsap.utils.toArray(".banner__list");
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: banner,
+        start: "top top",
+        end: "+=2500", // extended to allow outward + scale animations
+        pin: true,
+        scrub: true
+      }
+    });
+
+    // Step 1: Title & download move up and fade out
+    tl.to(".banner__title, .banner__download", {
+      y: -100,
+      opacity: 0,
+      duration: 0.5
+    });
+
+    // Step 2: Each image slides in with gap intact
+    imgs.forEach((img, i) => {
+      tl.to(img, {
+        opacity: 1,
+        y: -150,
+        ease: "power2.out",
+        duration: 0.5
+      }, "+=0.3");
+    });
+
+    // Step 3: Spread images outward from center
+    tl.to(imgs, {
+      x: (i) => {
+        let mid = (imgs.length - 1) / 2; // middle index
+        let offset = (i - mid) * 10; // 100px gap per step away from center
+        return offset;
+      },
+      ease: "power1.out",
+      duration: 1
+    });
+
+    // Step 4: Slowly scale all images down
+    tl.to(imgs, {
+      scale: 0.3,
+      ease: "none",
+      duration: 1
+    });
+  </script>
+
+
+
 
 
 </body>
