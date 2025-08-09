@@ -254,6 +254,11 @@ a {
 .banner__img {
     flex: 0 0 auto;
     opacity: 1 !important;
-    transform: translateY(0);
+    transform: translateY(-200px);
 
+}
+
+.workflow__content {
+    opacity: 0;
+    transform: translateY(50px);
 }
