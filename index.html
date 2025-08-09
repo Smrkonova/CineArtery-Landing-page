@@ -12,12 +12,12 @@
 
 <body>
 
-  <!-- <div id="loader">
+  <div id="loader">
     <div class="load-content">
       <span id="welcome-text">Welcome to</span>
       <img src="./assets/img/logo.png" alt="">
     </div>
-  </div> -->
+  </div>
 
   <div id="content">
     <div id="header"></div>
@@ -131,14 +131,20 @@
   <script src="./assets/js/main.js"></script>
 
   <script>
-    // Hide loader and show content after 2 seconds
+    // Hide loader and show content after delay
     window.addEventListener('load', function () {
+      // Disable scroll
+      document.body.style.overflow = 'hidden';
+
       setTimeout(function () {
         var loader = document.getElementById('loader');
         loader.style.opacity = '0';
         setTimeout(function () {
           loader.style.display = 'none';
           document.getElementById('content').style.display = 'block';
+
+          // Enable scroll after loader disappears
+          document.body.style.overflow = '';
         }, 500); // matches the CSS transition time
       }, 8700);
     });

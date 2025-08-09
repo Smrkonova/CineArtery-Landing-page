@@ -262,3 +262,9 @@ a {
     opacity: 0;
     transform: translateY(50px);
 }
+
+#loader {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+}

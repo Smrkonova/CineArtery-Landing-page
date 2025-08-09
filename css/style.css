@@ -410,4 +410,10 @@ a {
   opacity: 0;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
