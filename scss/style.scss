@@ -391,3 +391,28 @@ a {
         }
     }
 }
+
+.service__grid {
+    position: relative;
+    height: 45rem;
+}
+
+.service__card {
+    position: absolute;
+    /* Stack them */
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: top center;
+    // opacity: 0;
+    /* Hide initially */
+}
+
+// .service__card:first-child {
+//     z-index: 1;
+// }
+
+// .service__card:last-child {
+//     z-index: 2;
+//     /* Second one comes above */
+// }

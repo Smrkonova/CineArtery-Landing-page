@@ -669,4 +669,20 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
+}
+
+.service__grid {
+  position: relative;
+  height: 45rem;
+}
+
+.service__card {
+  position: absolute;
+  /* Stack them */
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  /* Hide initially */
 }/*# sourceMappingURL=style.css.map */

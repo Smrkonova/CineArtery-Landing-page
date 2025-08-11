@@ -165,7 +165,69 @@
               <div class="row g-4">
                 <div class="col-md-5">
                   <div class="service__content">
-                    <h3>Brand Identities</h3>
+                    <h3>2</h3>
+                    <div class="service__tag">
+                      <ul>
+                        <li>Logo</li>
+                        <li>Typography</li>
+                        <li>Color Palette</li>
+                        <li>Voice & Tone</li>
+                        <li>Guidelines</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="service__img">
+                    <img src="./assets/img/card.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="service__end">
+                <img src="./assets/img/icons/load.svg" alt="">
+                <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align with
+                  the brand's tone, values, objectives and goals.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="service__card">
+            <div class="service__row">
+              <div class="row g-4">
+                <div class="col-md-5">
+                  <div class="service__content">
+                    <h3>3</h3>
+                    <div class="service__tag">
+                      <ul>
+                        <li>Logo</li>
+                        <li>Typography</li>
+                        <li>Color Palette</li>
+                        <li>Voice & Tone</li>
+                        <li>Guidelines</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="service__img">
+                    <img src="./assets/img/card.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="service__end">
+                <img src="./assets/img/icons/load.svg" alt="">
+                <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align with
+                  the brand's tone, values, objectives and goals.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="service__card">
+            <div class="service__row">
+              <div class="row g-4">
+                <div class="col-md-5">
+                  <div class="service__content">
+                    <h3>4</h3>
                     <div class="service__tag">
                       <ul>
                         <li>Logo</li>
@@ -203,8 +265,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
   <script src="./assets/js/main.js"></script>
 
@@ -419,6 +481,101 @@
       }
     );
   </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const cards = gsap.utils.toArray(".service__card");
+
+    // Make sure cards are absolutely stacked off-screen except first
+    gsap.set(cards, { y: 1000, scale: 1, zIndex: 0 });
+    let topZ = cards.length;               // starting highest z for the first card
+    gsap.set(cards[0], { y: 0, zIndex: topZ });
+
+    const sliderTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service__grid",
+        start: "top 20%",
+        end: "+=" + (cards.length * 500),
+        pin: true,
+        scrub: 1,
+        onLeaveBack: () => {
+          // Reset positions and z-index when fully scrolling back
+          topZ = cards.length;
+          gsap.set(cards, { y: 1000, scale: 1, zIndex: 0 });
+          gsap.set(cards[0], { y: 0, zIndex: topZ });
+        }
+      }
+    });
+
+    // For each card (except the first) animate it in and bump its z-index
+    cards.forEach((card, i) => {
+      if (i === 0) return;
+
+      // Add a label/marker so calls are aligned nicely
+      sliderTl.addLabel(`card-${i}-start`);
+
+      // bump z-index just before the card animates in
+      sliderTl.call(() => {
+        topZ += 1;
+        // set a higher z-index so this card sits above previous ones
+        gsap.set(card, { zIndex: topZ });
+      }, null, `card-${i}-start`);
+
+      // Slightly lift+shrink the previous card so it remains visible behind
+      sliderTl.to(cards[i - 1], {
+        y: -40,
+        scale: 0.92,
+        duration: 0.6,
+        ease: "power2.out"
+      }, `card-${i}-start`);
+
+      // Bring the current card up into view (it already has increased zIndex)
+      sliderTl.to(card, {
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        ease: "power2.out"
+      }, `card-${i}-start+=0.0`);
+    });
+  </script>
+
+  <!-- <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const cards = gsap.utils.toArray(".service__card");
+
+    // Stack cards, all visible
+    gsap.set(cards, { y: 1000, zIndex: 0 });
+    gsap.set(cards[0], { y: 0, zIndex: 1 }); // First card in view
+
+    // Create timeline
+    const sliderTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service__grid",
+        start: "top 20%",
+        end: "+=" + (cards.length * 500), // 500px scroll per card
+        pin: true,
+        scrub: 1,
+        onLeaveBack: () => {
+          // Reset to first card
+          gsap.set(cards, { y: 1000, zIndex: 0 });
+          gsap.set(cards[0], { y: 0, zIndex: 1 });
+        }
+      }
+    });
+
+    // Animate each card sliding in above the previous
+    cards.forEach((card, i) => {
+      if (i !== 0) {
+        sliderTl.to(card, { y: 0, zIndex: i + 1, duration: 0.8 }, "+=0.2");
+      }
+    });
+  </script> -->
+
+
+
+
 
 
 
