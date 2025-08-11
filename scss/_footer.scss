@@ -161,7 +161,6 @@
 
 .footer__social ul:hover>li:not(:hover) {
     filter: blur(3px);
-    /* you can change the blur size */
     transition: filter 0.3s ease;
 }
 
