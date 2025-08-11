@@ -196,7 +196,7 @@ a {
 }
 
 .about {
-    padding: 6rem 0;
+    padding: 0 0 6rem;
     background-color: #fff;
 
     &__title {
@@ -222,6 +222,14 @@ a {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         height: 77rem;
+        z-index: 3;
+        position: relative;
+    }
+
+    &__bg-content {
+        height: 77rem;
+        position: relative;
+
     }
 
     &__content {
@@ -233,6 +241,10 @@ a {
         align-items: center;
         justify-content: center;
         height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         span {
             color: #181927;
@@ -247,6 +259,29 @@ a {
             font-size: 4rem;
             margin: 0 0 1.6rem;
             font-family: 'MyCustomFont', sans-serif !important;
+        }
+    }
+}
+
+.service {
+    padding: 6rem 0;
+    background-color: #fff;
+
+    &__title {
+        span {
+            color: #6F6F6F;
+            font-size: 2.4rem;
+            font-weight: 700;
+            display: block;
+            margin: 0 0 2.4rem;
+        }
+
+        h2 {
+            color: #181927;
+            font-size: 4rem;
+            margin: 0;
+            font-family: 'MyCustomFont', sans-serif !important;
+            text-align: center;
         }
     }
 }
@@ -266,5 +301,35 @@ a {
 #loader {
     position: fixed;
     inset: 0;
-    overflow: hidden;
+    // overflow: hidden;
+}
+
+.load-para {
+    text-align: center;
+    transform: translateY(50px);
+
+    h4 {
+        font-size: 8rem;
+        color: #fff;
+        margin: 0;
+
+        span {
+            color: #1065EC;
+        }
+    }
+}
+
+.load-para.show {
+    transform: translateY(-50px);
+}
+
+.load-content,
+.load-para {
+    display: none;
+    transition: opacity 0.8s ease;
+}
+
+.load-content.show,
+.load-para.show {
+    display: block;
 }

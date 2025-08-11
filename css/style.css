@@ -17,6 +17,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: rgba(35, 35, 35, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10rem;
+  padding: 1rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .header__middle {
   display: -webkit-box;
@@ -26,7 +32,6 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1.2rem;
-  background-color: #232323;
   padding: 1.2rem 1.6rem;
   border-radius: 10rem;
 }
@@ -341,7 +346,7 @@ a {
 }
 
 .about {
-  padding: 6rem 0;
+  padding: 0 0 6rem;
   background-color: #fff;
 }
 .about__title span {
@@ -363,6 +368,12 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 77rem;
+  z-index: 3;
+  position: relative;
+}
+.about__bg-content {
+  height: 77rem;
+  position: relative;
 }
 .about__content {
   text-align: center;
@@ -382,6 +393,11 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .about__content span {
   color: #181927;
@@ -395,6 +411,25 @@ a {
   font-size: 4rem;
   margin: 0 0 1.6rem;
   font-family: "MyCustomFont", sans-serif !important;
+}
+
+.service {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+.service__title span {
+  color: #6F6F6F;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 2.4rem;
+}
+.service__title h2 {
+  color: #181927;
+  font-size: 4rem;
+  margin: 0;
+  font-family: "MyCustomFont", sans-serif !important;
+  text-align: center;
 }
 
 .banner__img {
@@ -415,5 +450,35 @@ a {
 #loader {
   position: fixed;
   inset: 0;
-  overflow: hidden;
+}
+
+.load-para {
+  text-align: center;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+.load-para h4 {
+  font-size: 8rem;
+  color: #fff;
+  margin: 0;
+}
+.load-para h4 span {
+  color: #1065EC;
+}
+
+.load-para.show {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.load-content,
+.load-para {
+  display: none;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+.load-content.show,
+.load-para.show {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

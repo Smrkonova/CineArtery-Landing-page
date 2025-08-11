@@ -17,6 +17,9 @@
       <span id="welcome-text">Welcome to</span>
       <img src="./assets/img/logo.png" alt="">
     </div>
+    <div class="load-para">
+      <h4>From imagination to <span>‘Action!’</span> Your story starts here...</h4>
+    </div>
   </div>
 
   <div id="content">
@@ -106,13 +109,24 @@
           <h2>We deliver innovative solutions to help your startup thrive by strategically
             building its presence in the market.</h2>
         </div>
-        <div class="about__bg">
+        <div class="about__bg-content">
+          <div class="about__bg"></div>
           <div class="about__content">
             <span>15+ years of work experience</span>
             <h3>Your Trusted 
               Partner in Design Excellence</h3>
             <img src="./assets/img/icons/down-arrow.svg" alt="">
           </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <div class="about__title">
+          <span>Services</span>
+          <h2>We are an unusual digital agency focusing on transforming your vision into
+            a captivating digital experience.</h2>
         </div>
       </div>
     </section>
@@ -131,24 +145,40 @@
   <script src="./assets/js/main.js"></script>
 
   <script>
-    // Hide loader and show content after delay
     window.addEventListener('load', function () {
-      // Disable scroll
+      // Disable scroll while loader is active
       document.body.style.overflow = 'hidden';
 
+      const loadContent = document.querySelector('.load-content');
+      const loadPara = document.querySelector('.load-para');
+
+      // Step 1: Show load-content
+      loadContent.classList.add('show');
+
+      // Step 2: Wait, then hide load-content
+      setTimeout(function () {
+        loadContent.classList.remove('show');
+
+        // Step 3: After it's hidden, show load-para
+        setTimeout(function () {
+          loadPara.classList.add('show');
+        }, 800); // matches transition duration
+      }, 5000); // how long load-content stays visible
+
+      // Step 4: Hide loader completely after 8.7s
       setTimeout(function () {
         var loader = document.getElementById('loader');
         loader.style.opacity = '0';
         setTimeout(function () {
           loader.style.display = 'none';
           document.getElementById('content').style.display = 'block';
-
-          // Enable scroll after loader disappears
-          document.body.style.overflow = '';
-        }, 500); // matches the CSS transition time
-      }, 8700);
+          document.body.style.overflow = ''; // Re-enable scroll
+        }, 500);
+      }, 8000);
     });
   </script>
+
+
 
   <script>
     const languages = [
@@ -182,7 +212,7 @@
     }
 
     // Change language every 2 seconds
-    setInterval(changeLanguage, 1500);
+    setInterval(changeLanguage, 700);
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -285,8 +315,26 @@
       ease: "power2.out"
     });
   </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
 
-
+    gsap.fromTo(
+      ".about__bg",
+      { scale: 0.4, opacity: 1 },
+      {
+        scale: 1,
+        opacity: 1,
+        ease: "power2.out",
+        duration: 1.5, // longer duration for smoothness
+        scrollTrigger: {
+          trigger: ".about",
+          start: "top 10%",
+          end: "bottom 90%",
+          scrub: 1.6 // smoothness factor
+        }
+      }
+    );
+  </script>
 
 
 
