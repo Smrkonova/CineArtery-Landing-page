@@ -12,7 +12,7 @@
 
 <body>
 
-  <div id="loader">
+  <!-- <div id="loader">
     <div class="load-content">
       <span id="welcome-text">Welcome to</span>
       <img src="./assets/img/logo.png" alt="">
@@ -20,7 +20,7 @@
     <div class="load-para">
       <h4>From imagination to <span>‘Action!’</span> Your story starts here...</h4>
     </div>
-  </div>
+  </div> -->
 
   <div id="content">
     <div id="header"></div>
@@ -320,6 +320,26 @@
 
     gsap.fromTo(
       ".about__bg",
+      { scale: 0.4, opacity: 1 },
+      {
+        scale: 1,
+        opacity: 1,
+        ease: "power2.out",
+        duration: 1.5, // longer duration for smoothness
+        scrollTrigger: {
+          trigger: ".about",
+          start: "top 10%",
+          end: "bottom 90%",
+          scrub: 1.6 // smoothness factor
+        }
+      }
+    );
+  </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".about__content",
       { scale: 0.4, opacity: 1 },
       {
         scale: 1,

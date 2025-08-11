@@ -81,58 +81,185 @@
 
 .footer {
   position: relative;
-  background-color: #141414;
+  background-color: #fff;
   padding: 6rem 0;
 }
-.footer__info {
-  color: #676767;
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 2.4rem 0;
+.footer__row {
+  border-bottom: 1px solid #3D3D3D;
+  padding: 0 0 4rem;
 }
-.footer__social {
+.footer__row h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 0 2.4rem;
+  color: #000;
+  font-family: "MyCustomFont", sans-serif !important;
+}
+.footer__list {
+  margin: 0 0 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2.4rem;
-}
-.footer__social a {
-  display: block;
-}
-.footer__social a img {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.6rem;
 }
 .footer__list a {
   font-size: 1.6rem;
   font-weight: 600;
+  color: #000;
   display: block;
+}
+.footer__copy {
+  margin: 4rem 0 0;
+}
+.footer__copy p {
+  color: #676767;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.footer__social ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.6rem;
+}
+.footer__social ul li {
+  min-width: 21.1rem;
+  border-radius: 0.6rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  list-style-type: none;
+}
+.footer__social ul li:nth-child(1) {
+  background-color: #000;
+}
+.footer__social ul li:nth-child(2) {
+  background-color: #1065EC;
+}
+.footer__social ul li:nth-child(3) {
+  background-color: #6F6F6F;
+}
+.footer__social ul li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.footer__social ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem 1.6rem;
+}
+.footer__social ul li a p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+}
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+.footer__flex span {
+  font-size: 1.6rem;
+  font-weight: 500;
   color: #fff;
 }
-.footer__left {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+.footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.6rem;
+  margin: 4rem 0 0;
 }
-.footer__right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+.footer__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  background-color: #000;
+  border-radius: 8rem;
+  padding: 1.6rem 2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid #000;
+  height: 6rem;
+}
+.footer__link a:hover {
+  background-color: #fff;
+}
+.footer__link a:hover .footer__para p,
+.footer__link a:hover .footer__para h4 {
+  color: #000;
+}
+.footer__link a:hover:nth-child(2) .footer__icon img {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+.footer__para p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0.3rem;
+}
+.footer__para h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0;
+  color: #fff;
+}
+
+.footer__social ul:hover > li:not(:hover) {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  /* you can change the blur size */
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.footer__link:hover > a:not(:hover) {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 @font-face {

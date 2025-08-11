@@ -1,54 +1,171 @@
 .footer {
     position: relative;
-    background-color: #141414;
+    background-color: #fff;
     padding: 6rem 0;
 
-    &__info {
-        color: #676767;
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 2.4rem 0;
-    }
+    &__row {
+        border-bottom: 1px solid #3D3D3D;
+        padding: 0 0 4rem;
 
-    &__social {
-        display: flex;
-        align-items: center;
-        gap: 2.4rem;
-
-        a {
-            display: block;
-
-            img {
-                width: 2.4rem;
-                height: 2.4rem;
-            }
+        h3 {
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 0 0 2.4rem;
+            color: #000;
+            font-family: 'MyCustomFont', sans-serif !important;
         }
     }
 
     &__list {
+        margin: 0 0 2.4rem;
         display: flex;
-        flex-direction: column;
-        gap: 1.6rem;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
 
         a {
             font-size: 1.6rem;
             font-weight: 600;
+            color: #000;
             display: block;
+        }
+    }
+
+    &__copy {
+        margin: 4rem 0 0;
+
+        p {
+            color: #676767;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    &__social {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.6rem;
+
+            li {
+                min-width: 21.1rem;
+                border-radius: 0.6rem;
+                transition: all 200ms ease-in-out;
+                list-style-type: none;
+
+                &:nth-child(1) {
+                    background-color: #000;
+                }
+
+                &:nth-child(2) {
+                    background-color: #1065EC;
+                }
+
+                &:nth-child(3) {
+                    background-color: #6F6F6F;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1.2rem 1.6rem;
+
+
+
+                    p {
+                        color: #fff;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        span {
+            font-size: 1.6rem;
+            font-weight: 500;
             color: #fff;
         }
     }
 
-    &__left {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        margin: 4rem 0 0;
+
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            background-color: #000;
+            border-radius: 8rem;
+            padding: 1.6rem 2rem;
+            transition: all .2s ease;
+            border: 2px solid #000;
+            height: 6rem;
+
+            &:hover {
+                background-color: #fff;
+
+                .footer__para p,
+                .footer__para h4 {
+                    color: #000;
+                }
+
+                &:nth-child(2) {
+                    .footer__icon img {
+                        filter: brightness(0%);
+                    }
+                }
+            }
+        }
     }
 
-    &__right {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
+    &__para {
+        p {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #fff;
+            margin: 0 0 0.3rem;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: 'MyCustomFont', sans-serif !important;
+            margin: 0;
+            color: #fff;
+
+        }
     }
+}
+
+.footer__social ul:hover>li:not(:hover) {
+    filter: blur(3px);
+    /* you can change the blur size */
+    transition: filter 0.3s ease;
+}
+
+.footer__link:hover>a:not(:hover) {
+    filter: blur(3px);
+    transition: filter 0.3s ease;
 }
