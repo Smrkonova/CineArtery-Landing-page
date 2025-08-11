@@ -408,9 +408,9 @@ a {
     /* Hide initially */
 }
 
-// .service__card:first-child {
-//     z-index: 1;
-// }
+.service__card:first-child {
+    z-index: 0 !important;
+}
 
 // .service__card:last-child {
 //     z-index: 2;

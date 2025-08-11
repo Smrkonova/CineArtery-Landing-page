@@ -685,4 +685,8 @@ a {
   -webkit-transform-origin: top center;
           transform-origin: top center;
   /* Hide initially */
+}
+
+.service__card:first-child {
+  z-index: 0 !important;
 }/*# sourceMappingURL=style.css.map */
