@@ -790,7 +790,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
 }
 .movie__grid {
   border: 1px solid #181927;
@@ -815,6 +814,11 @@ a {
   cursor: pointer;
 }
 .movie__grid:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  background-color: #F7C41F;
+}
+.movie__grid.active {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
   background-color: #F7C41F;
@@ -867,6 +871,14 @@ a {
   font-weight: 500;
   margin: 0;
 }
+.movie__left.active {
+  width: 550px;
+  /* adjust as per design */
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  padding: 0 2rem;
+}
 .movie__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,4 +887,14 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  -webkit-transition: width 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: width 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: width 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+  transition: width 0.4s ease, transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

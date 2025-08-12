@@ -500,8 +500,6 @@ a {
                 list-style-type: none;
                 display: flex;
                 align-items: center;
-                gap: 2rem;
-
             }
         }
     }
@@ -523,6 +521,11 @@ a {
             transform: translateY(-20px);
             background-color: #F7C41F;
         }
+    }
+
+    &__grid.active {
+        transform: translateY(-20px);
+        background-color: #F7C41F;
     }
 
     &__details {
@@ -564,9 +567,27 @@ a {
         }
     }
 
+    &__left.active {
+        width: 550px;
+        /* adjust as per design */
+        opacity: 1;
+        transform: translateX(0);
+        padding: 0 2rem;
+
+    }
+
     &__left {
         display: flex;
         align-items: center;
         gap: 2rem;
+        width: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition:
+            width 0.4s ease,
+            transform 0.4s ease,
+            opacity 0.4s ease;
+        display: flex;
     }
 }

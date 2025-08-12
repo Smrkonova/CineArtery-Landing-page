@@ -314,6 +314,84 @@
                 </div>
               </div>
             </li>
+            <li>
+              <div class="movie__grid">
+                <div class="movie__details">
+                  <img src="./assets/img/movie/poster.png" alt="">
+                  <span>2024</span>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="movie__state">
+                  <img src="./assets/img/movie/state.png" alt="">
+                </div>
+              </div>
+              <div class="movie__left">
+                <div class="movie__img">
+                  <img src="./assets/img/movie/1.png" alt="">
+                </div>
+                <div class="movie__cast">
+                  <p>Producer</p>
+                  <p>Director</p>
+                  <p>Cast</p>
+                  <p>Crew</p>
+                  <p>Music</p>
+                  <p>Editor</p>
+                  <p>Dubbing Artist</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="movie__grid">
+                <div class="movie__details">
+                  <img src="./assets/img/movie/poster.png" alt="">
+                  <span>2024</span>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="movie__state">
+                  <img src="./assets/img/movie/state.png" alt="">
+                </div>
+              </div>
+              <div class="movie__left">
+                <div class="movie__img">
+                  <img src="./assets/img/movie/1.png" alt="">
+                </div>
+                <div class="movie__cast">
+                  <p>Producer</p>
+                  <p>Director</p>
+                  <p>Cast</p>
+                  <p>Crew</p>
+                  <p>Music</p>
+                  <p>Editor</p>
+                  <p>Dubbing Artist</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="movie__grid">
+                <div class="movie__details">
+                  <img src="./assets/img/movie/poster.png" alt="">
+                  <span>2024</span>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="movie__state">
+                  <img src="./assets/img/movie/state.png" alt="">
+                </div>
+              </div>
+              <div class="movie__left">
+                <div class="movie__img">
+                  <img src="./assets/img/movie/1.png" alt="">
+                </div>
+                <div class="movie__cast">
+                  <p>Producer</p>
+                  <p>Director</p>
+                  <p>Cast</p>
+                  <p>Crew</p>
+                  <p>Music</p>
+                  <p>Editor</p>
+                  <p>Dubbing Artist</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -365,8 +443,6 @@
       }, 8000);
     });
   </script>
-
-
 
   <script>
     const languages = [
@@ -634,6 +710,25 @@
       }
     });
   </script> -->
+
+  <script>
+    document.querySelectorAll(".movie__grid").forEach(grid => {
+      grid.addEventListener("click", () => {
+        const movieLeft = grid.nextElementSibling;
+        const isActive = grid.classList.contains("active");
+
+        // Remove active from all
+        document.querySelectorAll(".movie__grid").forEach(g => g.classList.remove("active"));
+        document.querySelectorAll(".movie__left").forEach(left => left.classList.remove("active"));
+
+        // If it wasn't active before, activate it
+        if (!isActive) {
+          grid.classList.add("active");
+          movieLeft.classList.add("active");
+        }
+      });
+    });
+  </script>
 
 
 
