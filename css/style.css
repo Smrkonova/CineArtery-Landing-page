@@ -746,16 +746,40 @@ a {
 .future__sec {
   position: relative;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 .future__left {
   position: absolute;
+  /* or fixed */
   left: 0;
-  top: -5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.future__left img {
+  max-width: 100%;
+  height: auto;
 }
 .future__right {
   position: absolute;
+  /* or fixed */
   right: 0;
-  bottom: -5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.future__right img {
+  max-width: 100%;
+  height: auto;
 }
 
 .movie {

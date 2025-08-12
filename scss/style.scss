@@ -462,18 +462,36 @@ a {
     &__sec {
         position: relative;
         min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     &__left {
         position: absolute;
+        /* or fixed */
         left: 0;
-        top: -5rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 
     &__right {
         position: absolute;
+        /* or fixed */
         right: 0;
-        bottom: -5rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 
 }
