@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 .header {
   padding: 4rem 2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -680,6 +680,82 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
+}
+
+.future {
+  min-height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  padding: 6rem 0;
+}
+.future__review {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+.future__review img {
+  margin: 0 0 2.4rem;
+}
+.future__review p {
+  font-size: 2.4rem;
+  color: #181927;
+  font-weight: 600;
+  margin: 0;
+}
+.future__content {
+  text-align: center;
+}
+.future__content h2 {
+  color: #181927;
+  font-size: 6rem;
+  margin: 0 0 1rem;
+  font-family: "MyCustomFont", sans-serif !important;
+}
+.future__content p {
+  color: #181927;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 4rem;
+}
+.future__content a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #524EF4;
+  height: 6rem;
+  border-radius: 10rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.6rem 2.4rem;
+}
+.future__sec {
+  position: relative;
+  min-height: 100vh;
+}
+.future__left {
+  position: absolute;
+  left: 0;
+  top: -5rem;
+}
+.future__right {
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
 }
 
 .movie {
