@@ -757,6 +757,29 @@
       });
     });
   </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".future",
+        start: "top -10%",       // starts when section hits top
+        end: "+=1200",          // adjust distance for smoothness
+        pin: true,              // stop scrolling while animating
+        scrub: true,            // smooth scroll scrub
+      }
+    })
+      .to(".future__left", {
+        yPercent: 10,             // adjust to fine-tune movement
+        xPercent: 120,             // move toward center
+        ease: "power2.out"
+      }, 0)
+      .to(".future__right", {
+        yPercent: -10,            // adjust to fine-tune movement
+        xPercent: -120,            // move toward center
+        ease: "power2.out"
+      }, 0);
+  </script>
 
 
 

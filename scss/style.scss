@@ -470,10 +470,9 @@ a {
 
     &__left {
         position: absolute;
-        /* or fixed */
         left: 0;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-60%);
 
         img {
             max-width: 100%;
@@ -483,10 +482,9 @@ a {
 
     &__right {
         position: absolute;
-        /* or fixed */
         right: 0;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
 
         img {
             max-width: 100%;

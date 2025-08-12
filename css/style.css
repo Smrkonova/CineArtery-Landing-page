@@ -759,11 +759,10 @@ a {
 }
 .future__left {
   position: absolute;
-  /* or fixed */
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
 .future__left img {
   max-width: 100%;
@@ -771,11 +770,10 @@ a {
 }
 .future__right {
   position: absolute;
-  /* or fixed */
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
 }
 .future__right img {
   max-width: 100%;
