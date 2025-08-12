@@ -335,12 +335,23 @@ a {
 
     &__grid {
         margin: 4rem 0 0;
+        position: relative;
+        height: 45rem;
     }
 
     &__card {
         background-color: #232323;
         border-radius: 4rem;
         padding: 4rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform-origin: top center;
+
+        &:nth-child(1) {
+            z-index: 0 !important;
+        }
     }
 
     &__content {
@@ -392,27 +403,170 @@ a {
     }
 }
 
-.service__grid {
-    position: relative;
-    height: 45rem;
-}
+.movie {
+    padding: 6rem 0;
+    background-color: #fff;
 
-.service__card {
-    position: absolute;
-    /* Stack them */
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform-origin: top center;
-    // opacity: 0;
-    /* Hide initially */
-}
+    &__title {
+        margin: 0 0 6rem;
+        text-align: center;
 
-.service__card:first-child {
-    z-index: 0 !important;
-}
+        h2 {
+            color: #181927;
+            font-size: 4rem;
+            font-family: 'MyCustomFont', sans-serif !important;
+            margin: 0;
 
-// .service__card:last-child {
-//     z-index: 2;
-//     /* Second one comes above */
-// }
+        }
+    }
+
+    &__search {
+        flex: 1;
+
+        .input-group {
+            height: 4.4rem;
+            background-color: #DDDDDD;
+            border-radius: 10rem;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .input-group-text {
+            background-color: transparent;
+            border: none;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #000;
+
+            &:focus {
+                box-shadow: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__radio {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        label {
+            height: 4.4rem;
+            border-radius: 2.7rem;
+            padding: 1.2rem 1.6rem;
+            background-color: #1065EC80 !important;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #fff !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-color: transparent;
+
+        }
+
+        .btn-check:checked+.btn,
+        .btn.active,
+        .btn.show,
+        .btn:first-child:active,
+        :not(.btn-check)+.btn:active {
+            background-color: #1065EC !important;
+            border-color: transparent;
+        }
+    }
+
+    &__list {
+        margin: 6rem 0 0;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+
+            li {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+            }
+        }
+    }
+
+    &__grid {
+        border: 1px solid #181927;
+        border-radius: 1rem;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4rem;
+        align-items: center;
+        transition: all 200ms ease-in-out;
+
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-20px);
+            background-color: #F7C41F;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+
+        span {
+            color: #181927;
+            font-size: 1.6rem;
+            font-weight: 500;
+            display: block;
+        }
+
+        p {
+            color: #181927;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0;
+            writing-mode: vertical-rl;
+            height: 20rem;
+        }
+    }
+
+    &__cast {
+        background-color: #D0D0D0;
+        border-radius: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        padding: 2.4rem;
+
+        p {
+            color: #000000;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
