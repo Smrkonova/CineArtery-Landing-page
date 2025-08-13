@@ -86,6 +86,8 @@ a {
         font-size: 8rem;
         color: #fff;
         margin: 0;
+        font-family: 'MyCustomFont', sans-serif !important;
+
 
         span {
             color: #1065EC;
@@ -118,13 +120,14 @@ a {
 
         h1 {
             color: #fff;
-            font-size: 8rem;
+            font-size: 7.2rem;
             font-weight: 400;
             margin: 0;
             font-family: 'MyCustomFont', sans-serif !important;
             position: relative;
             opacity: 1;
             transform: translateY(0);
+            text-transform: uppercase;
 
 
             span {

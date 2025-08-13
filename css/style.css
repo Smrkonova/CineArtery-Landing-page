@@ -355,6 +355,7 @@ a {
   font-size: 8rem;
   color: #fff;
   margin: 0;
+  font-family: "MyCustomFont", sans-serif !important;
 }
 .load-para h4 span {
   color: #1065EC;
@@ -387,7 +388,7 @@ a {
 }
 .banner__title h1 {
   color: #fff;
-  font-size: 8rem;
+  font-size: 7.2rem;
   font-weight: 400;
   margin: 0;
   font-family: "MyCustomFont", sans-serif !important;
@@ -395,6 +396,7 @@ a {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  text-transform: uppercase;
 }
 .banner__title h1 span {
   color: #F7C41F;
