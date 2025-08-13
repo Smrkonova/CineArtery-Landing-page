@@ -809,8 +809,10 @@ a {
 }
 
 .branding {
-    padding: 6rem 0;
     background-color: #fff;
+    position: relative;
+    min-height: 100vh;
+    padding: 6rem 0 20rem;
 
     &__list {
         ul {
@@ -818,11 +820,13 @@ a {
             margin: 0;
             display: flex;
             flex-direction: column;
+            position: relative;
 
             li {
                 list-style-type: none;
                 border-bottom: 1px solid #6F6F6F;
                 padding: 1.6rem 0;
+                position: relative;
             }
         }
     }
@@ -853,6 +857,8 @@ a {
         display: flex;
         gap: 1rem;
         align-items: flex-start;
+        height: 0;
+        overflow: hidden;
 
         p {
             font-size: 2rem;

@@ -478,6 +478,48 @@
                 </div>
               </div>
             </li>
+            <li>
+              <div class="branding__title">
+                <span>01</span>
+                <h3>Branding</h3>
+              </div>
+              <div class="branding__content">
+                <div class="branding__para">
+                  <p>Lorem ipsum dolor sit amet consectetur. Pulvinar est porttitor arcu eget montes arcu et at blandit.
+                    In id elementum elit morbi hac in quisque etiam. Eget iaculis turpis cras orci mauris id egestas
+                    augue.</p>
+                  <div class="branding__list">
+                    <h5>Lorem ipsum</h5>
+                    <h5>Lorem ipsum</h5>
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                </div>
+                <div class="branding__img">
+                  <img src="./assets/img/branding/1.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="branding__title">
+                <span>01</span>
+                <h3>Branding</h3>
+              </div>
+              <div class="branding__content">
+                <div class="branding__para">
+                  <p>Lorem ipsum dolor sit amet consectetur. Pulvinar est porttitor arcu eget montes arcu et at blandit.
+                    In id elementum elit morbi hac in quisque etiam. Eget iaculis turpis cras orci mauris id egestas
+                    augue.</p>
+                  <div class="branding__list">
+                    <h5>Lorem ipsum</h5>
+                    <h5>Lorem ipsum</h5>
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                </div>
+                <div class="branding__img">
+                  <img src="./assets/img/branding/1.png" alt="">
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
 
@@ -839,6 +881,71 @@
         ease: "power2.out"
       }, 0);
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll(".branding ul li");
+
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".branding",
+          start: "top top",
+          end: "+=" + (items.length * 800), // adjust scroll distance
+          scrub: true,
+          pin: true,
+        }
+      });
+
+      items.forEach((item, index) => {
+        const content = item.querySelector(".branding__content");
+        const title = item.querySelector(".branding__title");
+
+        // OPEN current item
+        tl.to(content, {
+          height: "auto",
+          duration: 0.8,
+          ease: "power2.out"
+        });
+
+        tl.to(title, {
+          // xPercent: -50,
+          // left: "50%",
+          // position: "absolute",
+          // top: "50%",
+          // yPercent: -50,
+          color: "#e63946", // active color
+          duration: 0.5
+        }, "<");
+
+        // CLOSE previous item when the next starts
+        if (index < items.length - 1) {
+          const nextContent = items[index].querySelector(".branding__content");
+          const nextTitle = items[index].querySelector(".branding__title");
+
+          tl.to(nextContent, {
+            height: 0,
+            duration: 0.5,
+            ease: "power2.in"
+          });
+
+          tl.to(nextTitle, {
+            position: "relative",
+            xPercent: 0,
+            yPercent: 0,
+            top: "auto",
+            left: "auto",
+            color: "#181927",
+            duration: 0.3
+          }, "<");
+        }
+      });
+    });
+  </script>
+
 
 
 

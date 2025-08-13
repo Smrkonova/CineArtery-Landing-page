@@ -1110,8 +1110,10 @@ a {
 }
 
 .branding {
-  padding: 6rem 0;
   background-color: #fff;
+  position: relative;
+  min-height: 100vh;
+  padding: 6rem 0 20rem;
 }
 .branding__list ul {
   padding: 0;
@@ -1123,11 +1125,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .branding__list ul li {
   list-style-type: none;
   border-bottom: 1px solid #6F6F6F;
   padding: 1.6rem 0;
+  position: relative;
 }
 .branding__title {
   display: -webkit-box;
@@ -1162,6 +1166,8 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: 0;
+  overflow: hidden;
 }
 .branding__content p {
   font-size: 2rem;
