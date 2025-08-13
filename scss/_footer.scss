@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    background-color: #fff;
+    background: linear-gradient(180deg, #DEEBFF 0%, #FFFFFF 30.42%);
     padding: 6rem 0;
 
     &__row {
@@ -164,7 +164,7 @@
     transition: filter 0.3s ease;
 }
 
-.footer__link:hover>a:not(:hover) {
-    filter: blur(3px);
-    transition: filter 0.3s ease;
-}
+// .footer__link:hover>a:not(:hover) {
+//     filter: blur(3px);
+//     transition: filter 0.3s ease;
+// }
