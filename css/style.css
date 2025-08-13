@@ -989,4 +989,97 @@ a {
   transition: width 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
   transition: width 0.4s ease, transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
   display: flex;
+}
+
+.work {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+.work__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.work__left {
+  height: 100%;
+}
+.work__left img {
+  border-radius: 2.4rem 0 0 2.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work__right {
+  background-color: #000;
+  padding: 3rem;
+  border-radius: 0 2.4rem 2.4rem 0;
+}
+.work__right span {
+  color: #6F6F6F;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 1.6rem;
+  display: block;
+}
+.work__right h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0 0 1.6rem;
+}
+.work__right p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+.work__right ul {
+  margin: 4rem 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+.work__right ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+.work__right ul li p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+}
+.work__right a {
+  background-color: #524EF4;
+  border-radius: 10rem;
+  height: 4.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+}
+.work__banner {
+  margin: 4rem 0 0;
 }/*# sourceMappingURL=style.css.map */
