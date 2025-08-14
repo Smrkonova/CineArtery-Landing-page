@@ -1215,4 +1215,25 @@ a {
           justify-content: space-between;
   height: 100%;
   gap: 5rem;
+}
+.branding__text {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.branding__text h3 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background: -webkit-gradient(linear, right top, left top, color-stop(-36.11%, #524EF4), color-stop(77.69%, #FDFBFC));
+  background: linear-gradient(-90deg, #524EF4 -36.11%, #FDFBFC 77.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 8rem;
+  white-space: nowrap;
+  font-family: "MyCustomFont", sans-serif !important;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
