@@ -115,6 +115,7 @@ a {
     min-height: 100vh;
     padding: 20rem 0 2rem;
     position: relative;
+    background-color: #000;
 
     &__title {
         text-align: center;
@@ -903,8 +904,8 @@ a {
         transform: translateY(-50%);
 
         h3 {
-            writing-mode: vertical-rl;
-            background: linear-gradient(-90deg, #524EF4 -36.11%, #FDFBFC 77.69%);
+            writing-mode: sideways-lr;
+            background: linear-gradient(90deg, #524EF4 -36.11%, #FDFBFC 77.69%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;

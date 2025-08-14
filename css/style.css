@@ -284,9 +284,28 @@
   gap: 2.4rem;
 }
 .footer__list a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  display: block;
+}
+.footer__list-para {
+  margin: 0 0 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.4rem;
+}
+.footer__list-para a {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #000;
+  color: #585E6E;
   display: block;
 }
 .footer__copy {
@@ -318,15 +337,22 @@
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   list-style-type: none;
+  min-width: 10rem;
 }
 .footer__social ul li:nth-child(1) {
-  background-color: #000;
+  background-color: #0077B5;
 }
 .footer__social ul li:nth-child(2) {
   background-color: #1065EC;
 }
 .footer__social ul li:nth-child(3) {
-  background-color: #6F6F6F;
+  background-color: #9231AF;
+}
+.footer__social ul li:nth-child(4) {
+  background-color: #FF0000;
+}
+.footer__social ul li:nth-child(5) {
+  background-color: #000000;
 }
 .footer__social ul li:hover {
   -webkit-transform: scale(1.05);
@@ -386,7 +412,7 @@
           align-items: center;
   gap: 1.2rem;
   background-color: #000;
-  border-radius: 8rem;
+  border-radius: 1rem;
   padding: 1.6rem 2rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -548,6 +574,7 @@ a {
   min-height: 100vh;
   padding: 20rem 0 2rem;
   position: relative;
+  background-color: #000;
 }
 .banner__title {
   text-align: center;
@@ -1398,11 +1425,11 @@ a {
           transform: translateY(-50%);
 }
 .branding__text h3 {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  background: -webkit-gradient(linear, right top, left top, color-stop(-36.11%, #524EF4), color-stop(77.69%, #FDFBFC));
-  background: linear-gradient(-90deg, #524EF4 -36.11%, #FDFBFC 77.69%);
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-36.11%, #524EF4), color-stop(77.69%, #FDFBFC));
+  background: linear-gradient(90deg, #524EF4 -36.11%, #FDFBFC 77.69%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
