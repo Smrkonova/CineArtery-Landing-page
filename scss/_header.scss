@@ -1,6 +1,6 @@
 .header {
-    padding: 4rem 2rem;
-    position: absolute;
+    padding: 2rem 2rem;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -10,16 +10,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        background: rgba(35, 35, 35, 0.4); // semi-transparent dark
-        backdrop-filter: blur(10px); // blur behind the element
-        -webkit-backdrop-filter: blur(10px); // Safari support
-
+        background: rgba(35, 35, 35, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border-radius: 10rem;
         padding: 1rem 3rem;
-
-        border: 1px solid rgba(255, 255, 255, 0.1); // subtle border for glass feel
-        // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     &__middle {
