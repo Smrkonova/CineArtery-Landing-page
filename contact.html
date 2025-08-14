@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Artery</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- <div id="loader">
+    <div class="load-content">
+      <span id="welcome-text">Welcome to</span>
+      <img src="./assets/img/logo.png" alt="">
+    </div>
+    <div class="load-para">
+      <h4>From imagination to <span>‘Action!’</span> Your story starts here...</h4>
+    </div>
+  </div> -->
+
+  <div id="content">
+    <div id="header"></div>
+    <section class="contact">
+      <div class="container">
+        <div class="contact__title">
+          <h1>Contact</h1>
+        </div>
+        <div class="contact__row">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="contact__left">
+                <div class="contact__left-title">
+                  <h3>Would You like to Meet Us?</h3>
+                  <p>Lets Book a coffee, a call, or a chat session</p>
+                </div>
+                <div class="contact__list">
+                  <ul>
+                    <li>
+                      <h4>General</h4>
+                      <a href="mailto:curious@rabbitsblack.com">curious@rabbitsblack.com</a>
+                    </li>
+                    <li>
+                      <h4>Support Team</h4>
+                      <p>WhatsApp No: +91</p>
+                      <p>PH Number: +91</p>
+                    </li>
+                    <li>
+                      <h4>Address</h4>
+                      <p>Bredastraat 136, 2060 Antwerpen, Belgium</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="contact__right">
+                <p>Let’s talk.</p>
+                <p>A question, a project, an idea - or simple a conversation.</p>
+                <div class="contact__box">
+                  <div class="contact__form">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="contact__input">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact__input">
+                            <label class="form-label">Company Name</label>
+                            <input type="text" class="form-control" placeholder="Enter the name of your company">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact__input">
+                            <label class="form-label">E-Mail</label>
+                            <input type="email" class="form-control" placeholder="Enter your e-mail address">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact__input">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control" placeholder="Enter your Phone number">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact__radio">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                              <label class="form-check-label" for="radioDefault1">
+                                E-mail
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
+                                checked>
+                              <label class="form-check-label" for="radioDefault2">
+                                Phone
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="contact__input">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" placeholder="I want to talk about...">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="contact__input">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea placeholder="Write your message" class="form-control"
+                              id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contact__btn">
+                        <button type="submit">Send</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      // Disable scroll while loader is active
+      document.body.style.overflow = 'hidden';
+
+      const loadContent = document.querySelector('.load-content');
+      const loadPara = document.querySelector('.load-para');
+
+      // Step 1: Show load-content
+      loadContent.classList.add('show');
+
+      // Step 2: Wait, then hide load-content
+      setTimeout(function () {
+        loadContent.classList.remove('show');
+
+        // Step 3: After it's hidden, show load-para
+        setTimeout(function () {
+          loadPara.classList.add('show');
+        }, 800); // matches transition duration
+      }, 5000); // how long load-content stays visible
+
+      // Step 4: Hide loader completely after 8.7s
+      setTimeout(function () {
+        var loader = document.getElementById('loader');
+        loader.style.opacity = '0';
+        setTimeout(function () {
+          loader.style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+          document.body.style.overflow = ''; // Re-enable scroll
+        }, 500);
+      }, 8000);
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 @import "variables";
+@import "contact";
 @import "header";
 @import "footer";
 
@@ -27,7 +28,7 @@ body {
     font-family: "Quicksand", sans-serif !important;
     font-size: 1.4rem;
     font-weight: 500;
-    background-color: $bg !important;
+    background-color: #fff !important;
 }
 
 a {

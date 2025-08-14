@@ -1,4 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+.contact {
+  padding: 20rem 0 10rem;
+}
+.contact__title h1 {
+  color: #181927;
+  font-size: 20rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact__right p {
+  color: #6F6F6F;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.contact__box {
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1019607843);
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1019607843);
+  background: #F6F6F6;
+  padding: 3.2rem;
+  margin: 2rem 0 0;
+}
+.contact__input {
+  margin: 0 0 4.8rem;
+}
+.contact__input label {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact__input input,
+.contact__input textarea {
+  border: none;
+  border-bottom: 1px solid #6F6F6F;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 0;
+}
+.contact__input input::-webkit-input-placeholder, .contact__input textarea::-webkit-input-placeholder {
+  color: #6F6F6F;
+}
+.contact__input input::-moz-placeholder, .contact__input textarea::-moz-placeholder {
+  color: #6F6F6F;
+}
+.contact__input input:-ms-input-placeholder, .contact__input textarea:-ms-input-placeholder {
+  color: #6F6F6F;
+}
+.contact__input input::-ms-input-placeholder, .contact__input textarea::-ms-input-placeholder {
+  color: #6F6F6F;
+}
+.contact__input input::placeholder,
+.contact__input textarea::placeholder {
+  color: #6F6F6F;
+}
+.contact__input input:focus,
+.contact__input textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid #6F6F6F;
+}
+.contact__btn button {
+  background-color: #1065EC !important;
+  border: none !important;
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff !important;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 100%;
+}
+.contact__left-title h3 {
+  font-size: 3.2rem;
+  color: #181927;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+.contact__left-title p {
+  color: #6F6F6F;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.contact__list ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+.contact__list ul li {
+  list-style-type: none;
+}
+.contact__list ul li h4 {
+  color: #181927;
+  font-size: 2.4rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+.contact__list ul li p,
+.contact__list ul li a {
+  color: #6F6F6F;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  display: block;
+}
+.contact__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin: 0 0 4.8rem;
+}
+.contact__radio label {
+  color: #6F6F6F;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.contact__radio .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.contact__radio .form-check-input {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #6F6F6F;
+  background-color: transparent;
+}
+
 .header {
   padding: 4rem 2rem;
   position: absolute;
@@ -275,7 +449,7 @@ body {
   font-family: "Quicksand", sans-serif !important;
   font-size: 1.4rem;
   font-weight: 500;
-  background-color: #141414 !important;
+  background-color: #fff !important;
 }
 
 a {
