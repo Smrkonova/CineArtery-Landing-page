@@ -203,8 +203,15 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         margin: 2rem 0 0;
+    }
+
+    &__img {
+        img {
+            width: 200px;
+            height: 200px;
+        }
     }
 }
 

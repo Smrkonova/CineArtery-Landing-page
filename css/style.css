@@ -666,8 +666,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 2rem 0 0;
+}
+.banner__img img {
+  width: 200px;
+  height: 200px;
 }
 
 .workflow {
