@@ -511,7 +511,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rgba(35, 35, 35, 0.8);
+  background-color: #000;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10rem;
@@ -547,7 +547,8 @@
   border-radius: 10rem;
 }
 .header__middle a.active {
-  background-color: #1065EC;
+  border-radius: 0;
+  font-weight: 600;
 }
 .header__end .input-group {
   height: 4.8rem;
@@ -571,6 +572,24 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
+}
+.header__end a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #524EF4;
+  height: 4.8rem;
+  border-radius: 10rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.6rem 2.4rem;
 }
 
 .footer {
