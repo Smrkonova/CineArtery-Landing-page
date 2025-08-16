@@ -81,8 +81,8 @@
           <!-- <div class="about__bg"></div> -->
           <div class="about__imgs">
             <img src="./assets/img/crearist/1.png" alt="">
-            <img src="./assets/img/crearist/2.png" alt="">
-            <img src="./assets/img/crearist/3.png" alt="">
+            <img src="./assets/img/crearist/2.gif" alt="">
+            <img src="./assets/img/crearist/1.gif" alt="">
             <img src="./assets/img/crearist/4.png" alt="">
             <img src="./assets/img/crearist/5.png" alt="">
 
@@ -819,7 +819,7 @@
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.fromTo(
-      ".about__content",
+      ".about__img",
       { scale: 0.4, opacity: 1 },
       {
         scale: 1,
@@ -894,38 +894,7 @@
     });
   </script>
 
-  <!-- <script>
-    gsap.registerPlugin(ScrollTrigger);
 
-    const cards = gsap.utils.toArray(".service__card");
-
-    // Stack cards, all visible
-    gsap.set(cards, { y: 1000, zIndex: 0 });
-    gsap.set(cards[0], { y: 0, zIndex: 1 }); // First card in view
-
-    // Create timeline
-    const sliderTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".service__grid",
-        start: "top 20%",
-        end: "+=" + (cards.length * 500), // 500px scroll per card
-        pin: true,
-        scrub: 1,
-        onLeaveBack: () => {
-          // Reset to first card
-          gsap.set(cards, { y: 1000, zIndex: 0 });
-          gsap.set(cards[0], { y: 0, zIndex: 1 });
-        }
-      }
-    });
-
-    // Animate each card sliding in above the previous
-    cards.forEach((card, i) => {
-      if (i !== 0) {
-        sliderTl.to(card, { y: 0, zIndex: i + 1, duration: 0.8 }, "+=0.2");
-      }
-    });
-  </script> -->
 
   <script>
     document.querySelectorAll(".movie__grid").forEach(grid => {
@@ -959,12 +928,12 @@
     })
       .to(".future__left", {
         yPercent: 10,             // adjust to fine-tune movement
-        xPercent: 120,             // move toward center
+        xPercent: 128,             // move toward center
         ease: "power2.out"
       }, 0)
       .to(".future__right", {
         yPercent: -10,            // adjust to fine-tune movement
-        xPercent: -120,            // move toward center
+        xPercent: -128,            // move toward center
         ease: "power2.out"
       }, 0);
   </script>
