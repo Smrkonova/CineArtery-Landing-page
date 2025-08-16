@@ -1,7 +1,12 @@
 .footer {
     position: relative;
-    background: linear-gradient(180deg, #DEEBFF 0%, #FFFFFF 30.42%);
+    background:
+        url("../assets/img/icons/footer.png"),
+        linear-gradient(180deg, #DEEBFF 0%, #FFFFFF 30.42%);
     padding: 6rem 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &__row {
         border-bottom: 1px solid #3D3D3D;

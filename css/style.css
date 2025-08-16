@@ -575,9 +575,12 @@
 
 .footer {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#DEEBFF), color-stop(30.42%, #FFFFFF));
-  background: linear-gradient(180deg, #DEEBFF 0%, #FFFFFF 30.42%);
+  background: url("../assets/img/icons/footer.png"), -webkit-gradient(linear, left top, left bottom, from(#DEEBFF), color-stop(30.42%, #FFFFFF));
+  background: url("../assets/img/icons/footer.png"), linear-gradient(180deg, #DEEBFF 0%, #FFFFFF 30.42%);
   padding: 6rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .footer__row {
   border-bottom: 1px solid #3D3D3D;
