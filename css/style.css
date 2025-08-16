@@ -173,6 +173,290 @@
   background-color: transparent;
 }
 
+.terms {
+  padding: 20rem 0 10rem;
+}
+.terms__title h1 {
+  color: #181927;
+  font-size: 16rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.terms__row {
+  margin: 8em 0 0;
+}
+.terms__left {
+  position: sticky;
+  top: 12rem;
+}
+.terms__left ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.terms__left ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.8rem;
+}
+.terms__left ul li span,
+.terms__left ul li p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0E0E0F;
+  display: block;
+}
+.terms__right h2 {
+  color: #0E0E0F;
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin: 0 0 3.2rem;
+}
+.terms__right ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  margin: 0;
+}
+.terms__right ul li {
+  list-style-type: none;
+}
+.terms__right ul li h3 {
+  color: #0E0E0F;
+  font-weight: 700;
+  margin: 0 0 2.4rem;
+  font-size: 4rem;
+}
+.terms__right ul li p {
+  color: #0E0E0F;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0 0 0.8rem;
+}
+
+.blog {
+  padding: 20rem 0 10rem;
+}
+.blog__title h1 {
+  color: #181927;
+  font-size: 20rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.blog__top-content {
+  border: 1px solid #E5E7EB;
+  backdrop-filter: blur(15px);
+  background-color: #fff;
+  padding: 3rem 4rem;
+  border-radius: 2rem;
+  height: 100%;
+}
+.blog__top-content h3 {
+  color: #0E0E0F;
+  font-size: 3.2rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0 0 1.2rem;
+}
+.blog__top-content p {
+  color: #626568;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+}
+.blog__top-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 2.4rem;
+}
+.blog__top-flex span {
+  background: #E3DCF6;
+  color: #0E0E0F;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.8rem 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3.4rem;
+  border-radius: 2.6rem;
+}
+.blog__top-flex h5 {
+  color: #626568;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.blog__row {
+  margin: 4rem 0 0;
+}
+.blog__content {
+  border: 1px solid #E5E7EB;
+  backdrop-filter: blur(15px);
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  height: 100%;
+}
+.blog__content h3 {
+  color: #0E0E0F;
+  font-size: 2.4rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0 0 1.2rem;
+}
+.blog__content p {
+  color: #626568;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+}
+.blog__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 2.4rem;
+}
+.blog__flex span {
+  background: #E3DCF6;
+  color: #0E0E0F;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2rem;
+  border-radius: 2.6rem;
+}
+.blog__flex h5 {
+  color: #626568;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.blog__img {
+  height: 100%;
+}
+.blog__img img {
+  max-width: 100%;
+  height: 100%;
+}
+.blog__list h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: #0E0E0F;
+  font-size: 2.4rem;
+  margin: 0;
+  font-family: "MyCustomFont", sans-serif !important;
+}
+.blog__list ul {
+  padding: 0;
+  margin: 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.blog__list ul li {
+  list-style-type: none;
+  border: 1px solid #E5E7EB;
+  padding: 1.6rem 2rem;
+  border-radius: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog__list ul li img {
+  width: 8.3rem;
+  height: 8.3rem;
+  border-radius: 1.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog__list-content h4 {
+  color: #0E0E0F;
+  font-size: 1.4rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  margin: 0 0 1.2rem;
+}
+.blog__list-content p {
+  color: #626568;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+.blog__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
 .header {
   padding: 2rem 2rem;
   position: fixed;

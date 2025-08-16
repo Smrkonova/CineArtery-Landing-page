@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Artery</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- <div id="loader">
+    <div class="load-content">
+      <span id="welcome-text">Welcome to</span>
+      <img src="./assets/img/logo.png" alt="">
+    </div>
+    <div class="load-para">
+      <h4>From imagination to <span>‘Action!’</span> Your story starts here...</h4>
+    </div>
+  </div> -->
+
+  <div id="content">
+    <div id="header"></div>
+    <section class="terms">
+      <div class="container">
+        <div class="terms__title">
+          <h1>Terms & Conditions</h1>
+        </div>
+        <div class="terms__row">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="terms__left">
+                <ul>
+                  <li>
+                    <span>1.</span>
+                    <p>01[ENG] Terms & Conditions Ask Phill B.V.</p>
+                  </li>
+                  <li>
+                    <span>2</span>
+                    <p>02[ENG] License conditions for third-party software used for the benefit of the Client</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="terms__right">
+                <h2>[ENG] Terms & Conditions Ask Phill B.V.</h2>
+                <ul>
+                  <li>
+                    <h3>Article 1. Applicability</h3>
+                    <p>1.1. These General Terms and Conditions apply to all offers, agreements, and activities of or by
+                      Ask Phill B.V. ("Ask Phill"), of any kind whatsoever, as well as to the establishment thereof,
+                      unless the applicability thereof has been explicitly excluded or explicitly agreed otherwise in
+                      writing, either entirely or in part.</p>
+                    <p>1.2. Any general terms and conditions of the Client are expressly rejected. Deviations from and
+                      additions to these conditions shall only apply if and insofar as they have been explicitly and in
+                      writing accepted by Ask Phill.</p>
+                    <p>1.3. A Client with whom an agreement has been concluded on the basis of these conditions shall be
+                      deemed to have tacitly consented to the applicability of these conditions to any later agreement
+                      entered into with Ask Phill.</p>
+                    <p>1.4. In case of any conflict between the contents of an agreement concluded between the Client
+                      and Ask Phill and these conditions, the content of the agreement shall prevail.</p>
+                    <p>1.5. Ask Phill is at all times entitled to amend these General Terms and Conditions. If the
+                      Client is put in a less favorable position by the amended content, the Client shall be entitled to
+                      terminate the agreement on the date on which the amended conditions come into effect.</p>
+                    <p>1.6. In case of conflicting provisions in the Agreement, General Terms and Conditions, or
+                      appendices thereto, the following order of precedence shall apply: i. the Agreement; ii. the
+                      Service Level Agreement (SLA) if any; iii. any appendices to the Agreement and/or the SLA; iv.
+                      these General Terms and Conditions.</p>
+                    <p>1.7. By signing the contract or otherwise orally, in writing, or electronically agreeing with Ask
+                      Phill, the Client declares that he has read and agrees to these general terms and conditions.</p>
+                    <p>1.8. All offers are without obligation unless expressly indicated otherwise in writing in the
+                      offer.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      // Disable scroll while loader is active
+      document.body.style.overflow = 'hidden';
+
+      const loadContent = document.querySelector('.load-content');
+      const loadPara = document.querySelector('.load-para');
+
+      // Step 1: Show load-content
+      loadContent.classList.add('show');
+
+      // Step 2: Wait, then hide load-content
+      setTimeout(function () {
+        loadContent.classList.remove('show');
+
+        // Step 3: After it's hidden, show load-para
+        setTimeout(function () {
+          loadPara.classList.add('show');
+        }, 800); // matches transition duration
+      }, 5000); // how long load-content stays visible
+
+      // Step 4: Hide loader completely after 8.7s
+      setTimeout(function () {
+        var loader = document.getElementById('loader');
+        loader.style.opacity = '0';
+        setTimeout(function () {
+          loader.style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+          document.body.style.overflow = ''; // Re-enable scroll
+        }, 500);
+      }, 8000);
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>
