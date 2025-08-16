@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Artery</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- <div id="loader">
+    <div class="load-content">
+      <span id="welcome-text">Welcome to</span>
+      <img src="./assets/img/logo.png" alt="">
+    </div>
+    <div class="load-para">
+      <h4>From imagination to <span>‘Action!’</span> Your story starts here...</h4>
+    </div>
+  </div> -->
+
+  <div id="content">
+    <div id="header"></div>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__back">
+          <a href="/articles.html">
+            <img src="../assets/img/icons/back.svg" alt="">
+            <span>Back to Blog</span>
+          </a>
+        </div>
+        <div class="blog__details-row">
+          <div class="row g-4">
+            <div class="col-md-8">
+              <div class="blog__details">
+                <div class="blog__flex">
+                  <span>Movie</span>
+                  <h5>Jun 13, 2025</h5>
+                </div>
+                <h2>Embracing the Art of Slowing Down in a Fast-Paced World</h2>
+                <div class="blog__img mb-5">
+                  <img src="../assets/img/blog/1.png" alt="">
+                </div>
+                <p>In an era defined by rapid notifications, endless to-do lists, and the constant chase for
+                  productivity,
+                  slowing down can feel like a rebellious act. We’ve been conditioned to believe that faster is
+                  better—that
+                  success lies in motion, in multitasking, in the hustle. But what if the real fulfillment comes not
+                  from doing
+                  more, but from doing less, more intentionally?</p>
+                <h3>The Illusion of Busyness</h3>
+                <p>Being busy has become a badge of honor. We equate packed schedules with importance and equate
+                  stillness with laziness. But chronic busyness often leaves us feeling disconnected—from ourselves,
+                  from
+                  others, and from the present moment. Our minds race ahead to the next task while our bodies lag
+                  behind,
+                  overwhelmed and fatigued.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog__list">
+                <h3><img src="../assets/img/icons/star.svg" alt="">Weekly trending</h3>
+                <ul>
+                  <li>
+                    <div class="blog__list-content">
+                      <h4>Stay Informed with Global
+                        Headlines</h4>
+                      <p>16 Jul, 2025</p>
+                    </div>
+                    <img src="../assets/img/blog/1.png" alt="">
+                  </li>
+                  <li>
+                    <div class="blog__list-content">
+                      <h4>Stay Informed with Global
+                        Headlines</h4>
+                      <p>16 Jul, 2025</p>
+                    </div>
+                    <img src="../assets/img/blog/1.png" alt="">
+                  </li>
+                  <li>
+                    <div class="blog__list-content">
+                      <h4>Stay Informed with Global
+                        Headlines</h4>
+                      <p>16 Jul, 2025</p>
+                    </div>
+                    <img src="../assets/img/blog/1.png" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
+      // Disable scroll while loader is active
+      document.body.style.overflow = 'hidden';
+
+      const loadContent = document.querySelector('.load-content');
+      const loadPara = document.querySelector('.load-para');
+
+      // Step 1: Show load-content
+      loadContent.classList.add('show');
+
+      // Step 2: Wait, then hide load-content
+      setTimeout(function () {
+        loadContent.classList.remove('show');
+
+        // Step 3: After it's hidden, show load-para
+        setTimeout(function () {
+          loadPara.classList.add('show');
+        }, 800); // matches transition duration
+      }, 5000); // how long load-content stays visible
+
+      // Step 4: Hide loader completely after 8.7s
+      setTimeout(function () {
+        var loader = document.getElementById('loader');
+        loader.style.opacity = '0';
+        setTimeout(function () {
+          loader.style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+          document.body.style.overflow = ''; // Re-enable scroll
+        }, 500);
+      }, 8000);
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>
