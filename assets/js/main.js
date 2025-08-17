@@ -1,3 +1,4 @@
+
 // Load header
 fetch('/./shared/header.html')
     .then(res => res.text())

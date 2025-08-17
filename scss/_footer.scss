@@ -21,18 +21,37 @@
         }
     }
 
+    &__logo {
+        text-align: center;
+
+        img {
+            @media #{$xs} {
+                width: 15rem;
+            }
+        }
+    }
+
     &__list {
         margin: 0 0 2.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2.4rem;
+        flex-wrap: wrap;
+
+        @media #{$xs} {
+            gap: 1.6rem;
+        }
 
         a {
             font-size: 2rem;
             font-weight: 700;
             color: #000;
             display: block;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
         }
     }
 
@@ -42,12 +61,22 @@
         align-items: center;
         justify-content: center;
         gap: 2.4rem;
+        flex-wrap: wrap;
+
+        @media #{$xs} {
+            gap: 1.6rem;
+        }
+
 
         a {
             font-size: 1.6rem;
             font-weight: 600;
             color: #585E6E;
             display: block;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -60,6 +89,10 @@
             font-size: 1.6rem;
             font-weight: 600;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -71,6 +104,8 @@
             align-items: center;
             justify-content: center;
             gap: 1.6rem;
+            flex-wrap: wrap;
+
 
             li {
                 min-width: 21.1rem;
@@ -184,6 +219,10 @@
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.2rem;
+            }
 
         }
     }
