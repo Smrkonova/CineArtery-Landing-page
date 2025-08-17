@@ -68,6 +68,9 @@
             <img src="./assets/img/banner/gallery.png" alt="">
           </div>
         </div>
+        <!-- <div class="banner__down-arrow">
+          <img src="./assets/img/icons/down-arrow.svg" alt="">
+        </div> -->
       </div>
     </section>
     <section class="about">
@@ -94,7 +97,6 @@
             <img src="./assets/img/icons/down-arrow.svg" alt="">
           </div>
         </div>
-
       </div>
     </section>
     <section class="service">
@@ -134,7 +136,6 @@
                   the brand's tone, values, objectives and goals.</p>
               </div>
             </div>
-
           </div>
           <div class="service__card">
             <div class="service__row">
@@ -997,6 +998,34 @@
         }
       });
     });
+  </script>
+
+  <script>
+    const ul = document.querySelector(".review__list ul");
+    const lis = ul.querySelectorAll("li");
+
+    // Clone items for seamless loop
+    lis.forEach(li => {
+      ul.appendChild(li.cloneNode(true));
+    });
+
+    // Get total width of list
+    let listWidth = 0;
+    ul.querySelectorAll("li").forEach(li => {
+      listWidth += li.offsetWidth + 20; // +gap
+    });
+
+    // GSAP infinite scrolling
+    let tl2 = gsap.to(ul, {
+      x: -listWidth / 2,
+      duration: 20,
+      ease: "linear",
+      repeat: -1,
+    });
+
+    // Pause on hover
+    ul.addEventListener("mouseenter", () => tl2.pause());
+    ul.addEventListener("mouseleave", () => tl2.resume());
   </script>
 
 
