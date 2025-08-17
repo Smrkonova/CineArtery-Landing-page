@@ -245,6 +245,10 @@
             font-size: 3.2rem;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 2.4rem;
+            }
         }
 
         p {
@@ -258,7 +262,11 @@
             font-size: 3.2rem;
             color: #0E0E0F;
             font-family: 'MyCustomFont', sans-serif !important;
-            margin: 0 0 1.6rm;
+            margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 2.2rem;
+            }
         }
     }
 
