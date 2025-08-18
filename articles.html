@@ -144,7 +144,7 @@
   <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
   <script src="./assets/js/main.js"></script>
 
-  <script>
+  <!-- <script>
     window.addEventListener('load', function () {
       // Disable scroll while loader is active
       document.body.style.overflow = 'hidden';
@@ -176,7 +176,41 @@
         }, 500);
       }, 8000);
     });
-  </script>
+  </script> -->
+  <!-- <script>
+    const languages = [
+      "Welcome to",        // English
+      "സ്വാഗതം",           // Malayalam
+      "வரவேற்கிறேன்",      // Tamil
+      "ಸ್ವಾಗತ",            // Kannada
+      "స్వాగతం",          // Telugu
+      "आपका स्वागत है"     // Hindi
+    ];
+
+    const welcomeText = document.getElementById("welcome-text");
+    let currentIndex = 0;
+
+    function changeLanguage() {
+      currentIndex = (currentIndex + 1) % languages.length;
+
+      gsap.to(welcomeText, {
+        duration: 0.5,
+        opacity: 0,
+        y: -20,
+        onComplete: () => {
+          welcomeText.textContent = languages[currentIndex];
+          gsap.to(welcomeText, {
+            duration: 0.5,
+            opacity: 1,
+            y: 0
+          });
+        }
+      });
+    }
+
+    // Change language every 2 seconds
+    setInterval(changeLanguage, 700);
+  </script> -->
 
 
 

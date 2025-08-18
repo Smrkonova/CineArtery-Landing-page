@@ -1146,6 +1146,16 @@ a {
   font-size: 4.8rem;
   font-family: "MyCustomFont", sans-serif !important;
 }
+@media (max-width: 767px) {
+  .load-content span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .load-content img {
+    width: 10rem;
+  }
+}
 
 .banner__img {
   -webkit-box-flex: 0;
@@ -1177,6 +1187,11 @@ a {
   color: #fff;
   margin: 0;
   font-family: "MyCustomFont", sans-serif !important;
+}
+@media (max-width: 767px) {
+  .load-para h4 {
+    font-size: 3rem;
+  }
 }
 .load-para h4 span {
   color: #1065EC;
