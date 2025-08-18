@@ -37,6 +37,11 @@ a {
     text-decoration: none !important;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 #loader {
     position: fixed;
     top: 0;
@@ -133,6 +138,10 @@ a {
     position: relative;
     background-color: #000;
 
+    @media #{$xs} {
+        padding: 12rem 0 2rem;
+    }
+
     &__title {
         text-align: center;
 
@@ -151,6 +160,10 @@ a {
             span {
                 color: #F7C41F;
             }
+
+            @media #{$xs} {
+                font-size: 3.2rem;
+            }
         }
     }
 
@@ -164,6 +177,10 @@ a {
             padding: 0;
             margin: 0;
             gap: 2.4rem;
+
+            @media #{$xs} {
+                flex-direction: column;
+            }
 
             li {
                 list-style-type: none;
@@ -227,6 +244,11 @@ a {
         img {
             width: 200px;
             height: 200px;
+
+            @media #{$xs} {
+                width: 6rem;
+                height: 6rem;
+            }
         }
     }
 }
@@ -247,6 +269,10 @@ a {
             font-weight: 500;
             display: block;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         h2 {
@@ -255,6 +281,10 @@ a {
             font-weight: 900;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 2.4rem 0;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -282,6 +312,10 @@ a {
             font-weight: 700;
             display: block;
             margin: 0 0 2.4rem;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
         }
 
         h2 {
@@ -290,6 +324,10 @@ a {
             margin: 0;
             font-family: 'MyCustomFont', sans-serif !important;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -399,6 +437,10 @@ a {
             margin: 0;
             font-family: 'MyCustomFont', sans-serif !important;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -543,6 +585,10 @@ a {
         top: 50%;
         transform: translateY(-60%);
 
+        @media #{$xs} {
+            display: none;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -554,6 +600,10 @@ a {
         right: 0;
         top: 50%;
         transform: translateY(-40%);
+
+        @media #{$xs} {
+            display: none;
+        }
 
         img {
             max-width: 100%;
@@ -873,6 +923,10 @@ a {
             font-size: 2.4rem;
             display: block;
             font-family: 'MyCustomFont', sans-serif !important;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
         }
 
         h3 {
@@ -881,6 +935,10 @@ a {
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
             text-transform: uppercase;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
     }
 
