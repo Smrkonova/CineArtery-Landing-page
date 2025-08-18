@@ -83,10 +83,10 @@
         <div class="about__bg-content">
           <!-- <div class="about__bg"></div> -->
           <div class="about__imgs">
-            <img src="./assets/img/crearist/1.png" alt="">
+            <img src="./assets/img/crearist/3.gif" alt="">
             <img src="./assets/img/crearist/2.gif" alt="">
             <img src="./assets/img/crearist/1.gif" alt="">
-            <img src="./assets/img/crearist/4.png" alt="">
+            <img src="./assets/img/crearist/4.gif" alt="">
             <img src="./assets/img/crearist/5.png" alt="">
 
           </div>
@@ -800,7 +800,7 @@
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.fromTo(
-      ".about__bg",
+      ".about__imgs img",
       { scale: 0.4, opacity: 1 },
       {
         scale: 1,
@@ -809,7 +809,7 @@
         duration: 1.5, // longer duration for smoothness
         scrollTrigger: {
           trigger: ".about",
-          start: "top 10%",
+          start: "top 30%",
           end: "bottom 90%",
           scrub: 1.6 // smoothness factor
         }
@@ -820,7 +820,7 @@
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.fromTo(
-      ".about__img",
+      ".about__content",
       { scale: 0.4, opacity: 1 },
       {
         scale: 1,

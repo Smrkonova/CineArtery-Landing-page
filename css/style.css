@@ -1485,6 +1485,8 @@ img {
   position: absolute;
   top: 0;
   left: 30%;
+  width: 20rem;
+  border-radius: 1.6rem;
 }
 .about__imgs img:nth-child(2) {
   position: absolute;
@@ -1504,6 +1506,8 @@ img {
   position: absolute;
   right: 20%;
   bottom: 10%;
+  width: 20rem;
+  border-radius: 1.6rem;
 }
 .about__imgs img:nth-child(5) {
   position: absolute;

@@ -382,6 +382,8 @@ img {
                 position: absolute;
                 top: 0;
                 left: 30%;
+                width: 20rem;
+                border-radius: 1.6rem;
             }
 
             &:nth-child(2) {
@@ -398,14 +400,14 @@ img {
                 left: 0;
                 width: 37rem;
                 border-radius: 1.6rem;
-
-
             }
 
             &:nth-child(4) {
                 position: absolute;
                 right: 20%;
                 bottom: 10%;
+                width: 20rem;
+                border-radius: 1.6rem;
             }
 
             &:nth-child(5) {
