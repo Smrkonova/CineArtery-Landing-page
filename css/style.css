@@ -1611,6 +1611,10 @@ img {
   font-weight: 600;
   margin: 0;
 }
+.service__img img {
+  width: 52rem;
+  border-radius: 1.2rem;
+}
 
 .future {
   min-height: 100vh;

@@ -514,6 +514,13 @@ img {
             margin: 0;
         }
     }
+
+    &__img {
+        img {
+            width: 52rem;
+            border-radius: 1.2rem;
+        }
+    }
 }
 
 .future {
