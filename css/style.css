@@ -2168,6 +2168,7 @@ img {
 .review {
   padding: 12rem 0 6rem;
   background-color: #fff;
+  overflow: hidden;
   /* Keep your existing front styles */
   /* Your back styles + flip position */
 }
@@ -2284,4 +2285,7 @@ img {
   font-weight: 600;
   font-size: 2.4rem;
   margin: 0;
+}
+.review__img img {
+  max-width: 38rem;
 }/*# sourceMappingURL=style.css.map */
