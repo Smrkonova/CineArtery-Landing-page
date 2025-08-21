@@ -1,0 +1,130 @@
+.we {
+  padding: 20rem 0 10rem;
+  overflow: hidden;
+
+  @media #{$xs} {
+    padding: 12rem 0 4rem;
+  }
+
+  &__title {
+    h1 {
+      color: #181927;
+      font-size: 20rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+
+      @media #{$xs} {
+        font-size: 3.2rem;
+        margin: 0 0 3rem;
+      }
+    }
+  }
+
+  &__head {
+    text-align: center;
+    margin: 0 0 8rem;
+
+    h2 {
+      color: #181927;
+      font-size: 6rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+      margin: 0 0 2.4rem;
+    }
+
+    p {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 0;
+      color: #6F6F6F;
+    }
+  }
+
+  &__line {
+    background-color: #232323;
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 35rem;
+
+
+    h3 {
+      font-size: 12rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+      white-space: nowrap;
+      display: inline-block;
+    }
+  }
+
+  &__row {
+    padding: 6rem 0;
+  }
+
+  &__right {
+    h3 {
+      color: #181927;
+      font-size: 4rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+    }
+
+    p {
+      color: #6F6F6F;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
+  &__top-row {
+    padding: 4rem 0 0;
+  }
+
+  &__content {
+    h3 {
+      color: #181927;
+      font-size: 4rem;
+      margin: 0 0 1rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+    }
+
+    p {
+      color: #6F6F6F;
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin: 0 0 4rem;
+    }
+
+    a {
+      color: #fff;
+      background-color: #524EF4;
+      height: 6rem;
+      display: inline-flex;
+      border-radius: 10rem;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      font-weight: 600;
+      padding: 1rem 2.4rem;
+
+    }
+  }
+
+  &__right-img {
+    text-align: center;
+  }
+}
+
+.marquee-right {
+  h3 {
+    color: #1065EC;
+  }
+}
+
+.marquee-left {
+  h3 {
+    color: #fff;
+  }
+}
