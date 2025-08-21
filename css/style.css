@@ -1663,6 +1663,7 @@ img {
   font-weight: 700;
   display: block;
   margin: 0 0 2.4rem;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .about__title span {
@@ -1774,6 +1775,7 @@ img {
   font-weight: 700;
   display: block;
   margin: 0 0 2.4rem;
+  text-align: center;
 }
 .service__title h2 {
   color: #181927;
@@ -2545,4 +2547,122 @@ img {
 }
 .review__img img {
   max-width: 38rem;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 6rem 0;
+}
+.feature__title {
+  text-align: center;
+}
+.feature__title span {
+  color: #6F6F6F;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 2.4rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .feature__title span {
+    font-size: 1.4rem;
+  }
+}
+.feature__title h2 {
+  color: #181927;
+  font-size: 4rem;
+  margin: 0;
+  font-family: "MyCustomFont", sans-serif !important;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .feature__title h2 {
+    font-size: 1.8rem;
+  }
+}
+.feature__tab {
+  margin: 2rem 0 0;
+}
+.feature__tab .nav-pills {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+.feature__tab .nav-link {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 2.4rem;
+  border-radius: 10rem !important;
+  background-color: #999;
+  color: #fff !important;
+}
+.feature__tab .nav-link.active {
+  background-color: #000 !important;
+}
+.feature__card {
+  background-color: #232323;
+  padding: 3rem 2rem;
+  border-radius: 1.6rem;
+  margin: 2rem 0 6rem;
+  text-align: center;
+}
+.feature__card h4 {
+  font-size: 4rem;
+  font-family: "MyCustomFont", sans-serif !important;
+  color: #fff;
+}
+.feature__card p {
+  color: #FDF9F0;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 2rem;
+}
+.feature .swiper-pagination-bullet {
+  background: #999;
+  /* default color */
+  opacity: 0.5;
+}
+.feature .swiper-pagination-bullet-active {
+  background: #000;
+  /* active dot color */
+  opacity: 1;
+}
+.feature .swiper-pagination-bullet {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.feature .swiper-pagination {
+  bottom: -1rem;
+}
+
+.feature__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature__slider::before,
+.feature__slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  /* adjust the fade width */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  /* allows clicks through */
+}
+
+.feature__slider::before {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.feature__slider::after {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }/*# sourceMappingURL=style.css.map */
