@@ -466,6 +466,10 @@ img {
         width: 100%;
         transform-origin: top center;
 
+        @media #{$xs} {
+            padding: 3rem 2rem;
+        }
+
         &:nth-child(1) {
             z-index: 0 !important;
         }
@@ -477,6 +481,11 @@ img {
             margin: 0 0 4rem;
             font-family: 'MyCustomFont', sans-serif !important;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 2rem;
+                margin: 0 0 2rem;
+            }
         }
     }
 
@@ -561,6 +570,10 @@ img {
             font-size: 6rem;
             margin: 0 0 1rem;
             font-family: 'MyCustomFont', sans-serif !important;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -568,6 +581,10 @@ img {
             font-size: 2rem;
             font-weight: 600;
             margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         a {
@@ -822,6 +839,10 @@ img {
 
     &__grid {
         display: flex;
+
+        @media #{$xs} {
+            flex-direction: column;
+        }
     }
 
     &__left {
@@ -830,6 +851,10 @@ img {
         img {
             border-radius: 2.4rem 0 0 2.4rem;
             object-fit: cover;
+
+            @media #{$xs} {
+                border-radius: 2.4rem 2.4rem 0 0;
+            }
         }
     }
 
@@ -837,6 +862,10 @@ img {
         background-color: #000;
         padding: 3rem;
         border-radius: 0 2.4rem 2.4rem 0;
+
+        @media #{$xs} {
+            border-radius: 0 0 2.4rem 2.4rem;
+        }
 
         span {
             color: #6F6F6F;
@@ -909,6 +938,10 @@ img {
     min-height: 100vh;
     padding: 6rem 0 20rem;
 
+    @media #{$xs} {
+        padding: 6rem 0;
+    }
+
     &__list {
         ul {
             padding: 0;
@@ -968,6 +1001,10 @@ img {
             font-weight: 500;
             color: #181927;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -975,6 +1012,7 @@ img {
         display: flex;
         align-items: center;
         gap: 1rem;
+        flex-wrap: wrap;
 
         h5 {
             border: 1px solid #181927;
@@ -987,6 +1025,7 @@ img {
             color: #181927;
             font-size: 1.6rem;
             font-weight: 500;
+            white-space: nowrap;
         }
     }
 
@@ -1023,6 +1062,10 @@ img {
     padding: 12rem 0 6rem;
     background-color: #fff;
     overflow: hidden;
+
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
 
     &__title {
         margin: 0 0 6rem;
@@ -1101,11 +1144,19 @@ img {
         height: 100%;
         transform: rotateY(180deg);
 
+        @media #{$xs} {
+            height: unset;
+        }
+
         p {
             color: #181927;
             font-weight: 600;
             font-size: 2.4rem;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -1119,6 +1170,10 @@ img {
             font-size: 2.4rem;
             font-weight: 600;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         span {
@@ -1126,6 +1181,10 @@ img {
             font-size: 2.4rem;
             font-weight: 600;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -1137,12 +1196,20 @@ img {
             font-weight: 600;
             font-size: 2.4rem;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
     &__img {
         img {
             max-width: 38rem;
+
+            @media #{$xs} {
+                max-width: 20rem;
+            }
         }
     }
 
@@ -1214,6 +1281,10 @@ img {
             font-size: 4rem;
             font-family: "MyCustomFont", sans-serif !important;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
 
         p {
@@ -1221,6 +1292,10 @@ img {
             font-size: 2rem;
             font-weight: 600;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
