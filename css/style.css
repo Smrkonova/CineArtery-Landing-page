@@ -753,6 +753,7 @@
 @media (max-width: 767px) {
   .we__content p {
     font-size: 1.4rem;
+    margin: 0 0 2rem;
   }
 }
 .we__content a {
