@@ -2038,6 +2038,7 @@ img {
 .service__img img {
   width: 52rem;
   border-radius: 1.2rem;
+  height: 30rem;
 }
 
 .future {

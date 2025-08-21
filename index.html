@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <!-- 
+
   <div id="loader">
     <div class="load-content">
       <span id="welcome-text">Welcome to</span>
@@ -21,7 +21,7 @@
     <div class="load-para">
       <h4>From imagination to <span>‘Action!’</span> Your story starts here...</h4>
     </div>
-  </div> -->
+  </div>
 
   <div id="content">
     <div id="header"></div>
@@ -292,7 +292,7 @@
         </div>
       </div>
     </section>
-    <section class="movie">
+    <!-- <section class="movie">
       <div class="container">
         <div class="movie__title">
           <h2>Movie List </h2>
@@ -432,7 +432,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="feature">
       <div class="container">
         <div class="feature__title">
@@ -821,19 +821,30 @@
 
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "1.5",   // auto width
-      spaceBetween: 20,        // gap between slides
-      centeredSlides: true,    // center active slide
-      loop: true,               // infinite loop
+      slidesPerView: "1.5",
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,   // makes dots clickable
+        clickable: true,
       },
     });
   </script>
 
   <script>
     window.addEventListener('load', function () {
+      // Check if loader was already shown
+      if (localStorage.getItem('loaderShown')) {
+        // Hide loader immediately
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        return;
+      }
+
+      // Mark loader as shown
+      localStorage.setItem('loaderShown', 'true');
+
       // Disable scroll while loader is active
       document.body.style.overflow = 'hidden';
 
@@ -851,9 +862,9 @@
         setTimeout(function () {
           loadPara.classList.add('show');
         }, 800); // matches transition duration
-      }, 5000); // how long load-content stays visible
+      }, 5000);
 
-      // Step 4: Hide loader completely after 8.7s
+      // Step 4: Hide loader completely after 8s
       setTimeout(function () {
         var loader = document.getElementById('loader');
         loader.style.opacity = '0';
