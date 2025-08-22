@@ -251,6 +251,7 @@ img {
 
         @media #{$xs} {
             gap: 1rem;
+            margin: 10rem 0 0;
         }
     }
 
@@ -399,6 +400,10 @@ img {
                 left: 30%;
                 width: 20rem;
                 border-radius: 1.6rem;
+
+                @media #{$xs} {
+                    width: 10rem;
+                }
             }
 
             &:nth-child(2) {
@@ -407,6 +412,10 @@ img {
                 top: 5%;
                 width: 31rem;
                 border-radius: 1.6rem;
+
+                @media #{$xs} {
+                    width: 12rem;
+                }
             }
 
             &:nth-child(3) {
@@ -415,6 +424,12 @@ img {
                 left: 0;
                 width: 37rem;
                 border-radius: 1.6rem;
+
+                @media #{$xs} {
+                    width: 12rem;
+                    bottom: 10%;
+                    top: unset;
+                }
             }
 
             &:nth-child(4) {
@@ -423,12 +438,20 @@ img {
                 bottom: 10%;
                 width: 20rem;
                 border-radius: 1.6rem;
+
+                @media #{$xs} {
+                    width: 10rem;
+                }
             }
 
             &:nth-child(5) {
                 position: absolute;
                 bottom: 0%;
                 left: 30%;
+
+                @media #{$xs} {
+                    width: 10rem;
+                }
             }
         }
 
@@ -1108,6 +1131,10 @@ img {
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
     }
 

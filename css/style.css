@@ -1767,6 +1767,7 @@ img {
 @media (max-width: 767px) {
   .banner__list {
     gap: 1rem;
+    margin: 10rem 0 0;
   }
 }
 .banner__img img {
@@ -1922,12 +1923,22 @@ img {
   width: 20rem;
   border-radius: 1.6rem;
 }
+@media (max-width: 767px) {
+  .about__imgs img:nth-child(1) {
+    width: 10rem;
+  }
+}
 .about__imgs img:nth-child(2) {
   position: absolute;
   right: 0;
   top: 5%;
   width: 31rem;
   border-radius: 1.6rem;
+}
+@media (max-width: 767px) {
+  .about__imgs img:nth-child(2) {
+    width: 12rem;
+  }
 }
 .about__imgs img:nth-child(3) {
   position: absolute;
@@ -1936,6 +1947,13 @@ img {
   width: 37rem;
   border-radius: 1.6rem;
 }
+@media (max-width: 767px) {
+  .about__imgs img:nth-child(3) {
+    width: 12rem;
+    bottom: 10%;
+    top: unset;
+  }
+}
 .about__imgs img:nth-child(4) {
   position: absolute;
   right: 20%;
@@ -1943,10 +1961,20 @@ img {
   width: 20rem;
   border-radius: 1.6rem;
 }
+@media (max-width: 767px) {
+  .about__imgs img:nth-child(4) {
+    width: 10rem;
+  }
+}
 .about__imgs img:nth-child(5) {
   position: absolute;
   bottom: 0%;
   left: 30%;
+}
+@media (max-width: 767px) {
+  .about__imgs img:nth-child(5) {
+    width: 10rem;
+  }
 }
 
 .service {
@@ -2704,6 +2732,11 @@ img {
   font-family: "MyCustomFont", sans-serif !important;
   margin: 0;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .review__title h2 {
+    font-size: 2rem;
+  }
 }
 .review__list ul {
   padding: 0;
