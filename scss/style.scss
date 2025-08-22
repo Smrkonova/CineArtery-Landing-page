@@ -513,8 +513,8 @@ img {
 
     &__content {
         h3 {
-            font-size: 6rem;
-            margin: 0 0 4rem;
+            font-size: 3.2rem;
+            margin: 0 0 1rem;
             font-family: 'MyCustomFont', sans-serif !important;
             color: #fff;
 
@@ -522,6 +522,13 @@ img {
                 font-size: 2rem;
                 margin: 0 0 2rem;
             }
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0 0 2rem;
         }
     }
 
@@ -540,22 +547,31 @@ img {
 
             li {
                 list-style-type: none;
-                background-color: #444342;
-                height: 4rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #FDF9F0;
-                font-size: 1.6rem;
-                font-weight: 600;
-                padding: 1rem 2.4rem;
-                border-radius: 10rem;
 
-                @media #{$xs} {
-                    font-size: 1.4rem;
-                    height: 3.6rem;
-                    padding: 1rem;
+                button.active {
+                    background-color: #524EF4 !important;
                 }
+
+                button {
+                    background-color: #444342;
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FDF9F0 !important;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    padding: 1rem 2.4rem;
+                    border-radius: 10rem !important;
+
+                    @media #{$xs} {
+                        font-size: 1.4rem;
+                        height: 3.6rem;
+                        padding: 1rem;
+                    }
+                }
+
+
             }
         }
     }
@@ -588,6 +604,12 @@ img {
                 height: 16rem;
             }
         }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 }
 
