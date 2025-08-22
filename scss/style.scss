@@ -180,12 +180,17 @@ img {
             margin: 0;
             gap: 2.4rem;
 
-            @media #{$xs} {
-                flex-direction: column;
-            }
 
             li {
                 list-style-type: none;
+
+                a {
+                    img {
+                        @media #{$xs} {
+                            width: 12rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -616,13 +621,14 @@ img {
         top: 50%;
         transform: translateY(-60%);
 
-        @media #{$xs} {
-            display: none;
-        }
 
         img {
             max-width: 100%;
             height: auto;
+
+            @media #{$xs} {
+                max-width: 10rem;
+            }
         }
     }
 
@@ -632,13 +638,14 @@ img {
         top: 50%;
         transform: translateY(-40%);
 
-        @media #{$xs} {
-            display: none;
-        }
 
         img {
             max-width: 100%;
             height: auto;
+
+            @media #{$xs} {
+                max-width: 10rem;
+            }
         }
     }
 
