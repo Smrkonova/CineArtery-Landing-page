@@ -975,7 +975,7 @@
     imgs.forEach((img, i) => {
       tl.to(img, {
         opacity: 1,
-        y: -200,
+        y: window.innerWidth <= 767 ? -100 : -200,
         ease: "power2.out",
         duration: 0.5
       }, "+=0.3");
@@ -1163,7 +1163,7 @@
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".branding",
-          start: "top top",
+          start: window.innerWidth <= 767 ? "top 10%" : "top top",
           end: "+=" + (items.length * 800), // adjust scroll distance
           scrub: true,
           pin: true,
