@@ -69,8 +69,8 @@
 
 
         a {
-            font-size: 1.6rem;
-            font-weight: 600;
+            font-size: 1.4rem;
+            font-weight: 400;
             color: #585E6E;
             display: block;
 
@@ -108,11 +108,11 @@
 
 
             li {
-                min-width: 21.1rem;
+                // min-width: 21.1rem;
                 border-radius: 0.6rem;
                 transition: all 200ms ease-in-out;
                 list-style-type: none;
-                min-width: 10rem;
+                // min-width: 10rem;
 
                 &:nth-child(1) {
                     background-color: #0077B5;

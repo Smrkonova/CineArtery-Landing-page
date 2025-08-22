@@ -50,7 +50,7 @@
   }
 
   &__line {
-    background-color: #232323;
+    // background-color: #232323;
     padding: 2rem 0;
     position: relative;
     overflow: hidden;
@@ -67,6 +67,7 @@
         font-family: 'MyCustomFont', sans-serif !important;
         // padding-right: 4rem; // spacing between repeats
         color: #1065EC;
+        line-height: 9rem;
 
         @media #{$xs} {
           font-size: 2.4rem;
@@ -181,8 +182,8 @@
 
   span {
     color: transparent !important;
-    -webkit-text-stroke: 2px #fff;
-    text-stroke: 2px #fff;
+    -webkit-text-stroke: 2px #000000;
+    text-stroke: 2px #000000;
 
   }
 }
