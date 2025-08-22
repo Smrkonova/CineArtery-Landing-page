@@ -50,6 +50,10 @@
           <h2>CineArtery brings everything, <br> and everyone you need for your next <br>blockbuster into one
             streamlined
             platform. <br> </h2>
+          <div class="banner__down-arrow">
+            <img src="./assets/img/icons/down-arrow.svg" alt="">
+            <span>Scroll</span>
+          </div>
         </div>
         <div class="banner__list">
           <div class="banner__img">
@@ -68,9 +72,8 @@
             <img src="./assets/img/banner/gallery.png" alt="">
           </div>
         </div>
-        <!-- <div class="banner__down-arrow">
-          <img src="./assets/img/icons/down-arrow.svg" alt="">
-        </div> -->
+
+
       </div>
     </section>
     <section class="about">
@@ -1282,6 +1285,8 @@
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
+    // gsap.set(".future__left", { yPercent: -30, xPercent: 0 });
+    // gsap.set(".future__right", { yPercent: -50, xPercent: 0 });
 
     gsap.timeline({
       scrollTrigger: {

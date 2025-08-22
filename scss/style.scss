@@ -267,6 +267,39 @@ img {
             }
         }
     }
+
+    &__down-arrow {
+        position: absolute;
+        bottom: -25rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            animation: slideDown 1s ease-in-out forwards infinite;
+        }
+
+        span {
+            color: #444342;
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: block;
+            text-align: center;
+            margin: 2rem 0 0;
+
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .workflow {
