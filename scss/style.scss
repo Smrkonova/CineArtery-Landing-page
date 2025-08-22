@@ -526,7 +526,7 @@ img {
 
         p {
             color: #fff;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 400;
             margin: 0 0 2rem;
         }
@@ -644,6 +644,17 @@ img {
         h2 {
             color: #181927;
             font-size: 4rem;
+            margin: 0;
+            font-family: 'MyCustomFont', sans-serif !important;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
+        }
+
+        h3 {
+            color: #181927;
+            font-size: 3.2rem;
             margin: 0 0 1rem;
             font-family: 'MyCustomFont', sans-serif !important;
 
@@ -1167,7 +1178,7 @@ img {
     overflow: hidden;
 
     @media #{$xs} {
-        padding: 4rem 0;
+        padding: 20rem 0 4rem;
     }
 
     &__title {
@@ -1362,6 +1373,10 @@ img {
             justify-content: center;
             gap: 1rem;
             margin: 0 0 5rem;
+
+            @media #{$xs} {
+                margin: 0 0 2rem;
+            }
         }
 
         .nav-link {
@@ -1371,6 +1386,11 @@ img {
             border-radius: 10rem !important;
             background-color: #fff;
             color: #181927 !important;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+                padding: 1rem 1.6rem;
+            }
 
             &:hover {
                 background-color: #1065EC !important;
@@ -1388,7 +1408,6 @@ img {
         background-color: #fff;
         padding: 3rem 2rem;
         border-radius: 1.6rem;
-        margin: 2rem 0 6rem;
         // text-align: center;
         border: 1px solid #6F6F6F;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -1429,6 +1448,10 @@ img {
                 color: #181927;
                 font-size: 1.6rem;
                 font-weight: 500;
+
+                @media #{$xs} {
+                    font-size: 1.4rem;
+                }
             }
         }
     }

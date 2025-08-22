@@ -2037,7 +2037,7 @@ img {
 }
 .service__content p {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin: 0 0 2rem;
 }
@@ -2165,11 +2165,22 @@ img {
 .future__content h2 {
   color: #181927;
   font-size: 4rem;
-  margin: 0 0 1rem;
+  margin: 0;
   font-family: "MyCustomFont", sans-serif !important;
 }
 @media (max-width: 767px) {
   .future__content h2 {
+    font-size: 2rem;
+  }
+}
+.future__content h3 {
+  color: #181927;
+  font-size: 3.2rem;
+  margin: 0 0 1rem;
+  font-family: "MyCustomFont", sans-serif !important;
+}
+@media (max-width: 767px) {
+  .future__content h3 {
     font-size: 2rem;
   }
 }
@@ -2758,7 +2769,7 @@ img {
 }
 @media (max-width: 767px) {
   .review {
-    padding: 4rem 0;
+    padding: 20rem 0 4rem;
   }
 }
 .review__title {
@@ -2957,6 +2968,11 @@ img {
   gap: 1rem;
   margin: 0 0 5rem;
 }
+@media (max-width: 767px) {
+  .feature__tab .nav-pills {
+    margin: 0 0 2rem;
+  }
+}
 .feature__tab .nav-link {
   font-size: 1.6rem;
   font-weight: 500;
@@ -2964,6 +2980,12 @@ img {
   border-radius: 10rem !important;
   background-color: #fff;
   color: #181927 !important;
+}
+@media (max-width: 767px) {
+  .feature__tab .nav-link {
+    font-size: 1.4rem;
+    padding: 1rem 1.6rem;
+  }
 }
 .feature__tab .nav-link:hover {
   background-color: #1065EC !important;
@@ -2977,7 +2999,6 @@ img {
   background-color: #fff;
   padding: 3rem 2rem;
   border-radius: 1.6rem;
-  margin: 2rem 0 6rem;
   border: 1px solid #6F6F6F;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -3020,6 +3041,11 @@ img {
   color: #181927;
   font-size: 1.6rem;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .feature__list ul li {
+    font-size: 1.4rem;
+  }
 }
 .feature .swiper-pagination-bullet {
   background: #999;

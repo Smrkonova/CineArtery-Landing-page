@@ -408,6 +408,9 @@
                 </div>
                 <div class="future__content">
                   <h2>Your Gateway to</h2>
+                  <h3 class="rotating-head">
+                    Creative Collaboration
+                  </h3>
                   <p>Lorem ipsum dolor amet consur adipiscing. Nunc tortor odio rutrum fringilla.</p>
                   <a href="">Explore services</a>
                 </div>
@@ -1309,7 +1312,7 @@
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".branding",
-          start: window.innerWidth <= 767 ? "top 10%" : "top -10%",
+          start: window.innerWidth <= 767 ? "top -30%" : "top -10%",
           end: "+=" + (items.length * 800), // adjust scroll distance
           scrub: true,
           pin: true,
@@ -1388,6 +1391,43 @@
     // Pause on hover
     ul.addEventListener("mouseenter", () => tl2.pause());
     ul.addEventListener("mouseleave", () => tl2.resume());
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const titles = [
+        'Smarter Budgets',
+        'Career Breakthroughs',
+        'Frictionless Production',
+        'Global Networking'
+      ];
+
+      const titleElement = document.querySelector('.rotating-head');
+      let currentIndex = 0;
+
+      function rotateTitle() {
+        // Animate current title out (move up and fade out)
+        gsap.to(titleElement, {
+          y: -30,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.in",
+          onComplete: function () {
+            // Change text
+            currentIndex = (currentIndex + 1) % titles.length;
+            titleElement.innerHTML = titles[currentIndex];
+
+            // Animate new title in (from bottom to original position)
+            gsap.fromTo(titleElement,
+              { y: 30, opacity: 0 },
+              { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
+            );
+          }
+        });
+      }
+
+      // Rotate every 5 seconds
+      setInterval(rotateTitle, 3000);
+    });
   </script>
 
   <!-- <div class="feature__slider">
