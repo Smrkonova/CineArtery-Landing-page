@@ -1650,6 +1650,15 @@ img {
 @media (max-width: 767px) {
   .banner {
     padding: 12rem 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .banner__title {
@@ -1754,6 +1763,11 @@ img {
           justify-content: center;
   gap: 2rem;
   margin: 2rem 0 0;
+}
+@media (max-width: 767px) {
+  .banner__list {
+    gap: 1rem;
+  }
 }
 .banner__img img {
   width: 200px;
@@ -2008,6 +2022,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  .service__tag ul {
+    gap: 0.6rem;
+  }
+}
 .service__tag ul li {
   list-style-type: none;
   background-color: #444342;
@@ -2027,6 +2046,13 @@ img {
   padding: 1rem 2.4rem;
   border-radius: 10rem;
 }
+@media (max-width: 767px) {
+  .service__tag ul li {
+    font-size: 1.4rem;
+    height: 3.6rem;
+    padding: 1rem;
+  }
+}
 .service__end {
   margin: 2.4rem 0 0;
   display: -webkit-box;
@@ -2043,10 +2069,20 @@ img {
   font-weight: 600;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .service__end p {
+    font-size: 1.4rem;
+  }
+}
 .service__img img {
   width: 52rem;
   border-radius: 1.2rem;
   height: 30rem;
+}
+@media (max-width: 767px) {
+  .service__img img {
+    height: 16rem;
+  }
 }
 
 .future {
