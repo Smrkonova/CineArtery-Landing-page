@@ -1226,6 +1226,7 @@ img {
     padding: 12rem 0 6rem;
     background-color: #fff;
     overflow: hidden;
+    position: relative;
 
     @media #{$xs} {
         padding: 20rem 0 4rem;
@@ -1566,6 +1567,29 @@ img {
             }
         }
     }
+
+    &__left-arrow {
+        position: absolute;
+        left: 0%;
+        top: 35%;
+        transform: translateY(-50%);
+        z-index: 3;
+        cursor: pointer;
+
+
+
+    }
+
+    &__right-arrow {
+        position: absolute;
+        right: 0%;
+        top: 35%;
+        transform: translateY(-50%);
+        z-index: 3;
+        cursor: pointer;
+
+
+    }
 }
 
 .feature__slider {
@@ -1602,34 +1626,33 @@ img {
     background: linear-gradient(to left, #f2f2ec 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-// .review-list {
-//     position: relative;
-//     position: relative;
-//     overflow: hidden;
-//     /* important to hide extra content */
-//     width: 100%;
-// }
+.review-list {
+    position: relative;
+    overflow: hidden;
+    /* important to hide extra content */
+    width: 100%;
+}
 
 
-// .review__list::before,
-// .review__list::after {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     width: 120px;
-//     /* adjust the fade width */
-//     height: 100%;
-//     z-index: 2;
-//     pointer-events: none;
-//     /* allows clicks through */
-// }
+.review__list::before,
+.review__list::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    /* adjust the fade width */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    /* allows clicks through */
+}
 
-// .review__list::before {
-//     left: 0;
-//     background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
-// }
+.review__list::before {
+    left: 0;
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
 
-// .review__list::after {
-//     right: 0;
-//     background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
-// }
+.review__list::after {
+    right: 0;
+    background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}

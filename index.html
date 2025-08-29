@@ -756,12 +756,12 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <!-- <div class="feature__left">
-            <img src="" alt="">
+          <div class="feature__left-arrow">
+            <img src="./assets/img/icons/left-slider.svg" alt="">
           </div>
-          <div class="feature__right">
-            <img src="" alt="">
-          </div> -->
+          <div class="feature__right-arrow">
+            <img src="./assets/img/icons/right-slider.svg" alt="">
+          </div>
         </div>
 
 
@@ -1183,6 +1183,10 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      navigation: {
+        nextEl: ".feature__right-arrow",
+        prevEl: ".feature__left-arrow",
       },
     });
 
