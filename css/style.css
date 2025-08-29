@@ -3043,6 +3043,7 @@ img {
   background-color: #fff;
   padding: 3rem 2rem;
   border-radius: 1.6rem;
+  min-height: 35rem;
   border: 1px solid #6F6F6F;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -3106,12 +3107,47 @@ img {
   height: 1.6rem;
 }
 .feature .swiper-pagination {
-  bottom: -1rem;
+  bottom: 0rem !important;
+}
+.feature__tab-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 5rem;
+}
+.feature__tab-list ul li {
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2.4rem;
+  border-radius: 10rem !important;
+  background-color: #fff;
+  color: #181927 !important;
+  cursor: pointer;
+}
+.feature__tab-list ul li:hover {
+  background-color: #1065EC !important;
+  color: #fff !important;
+}
+.feature__tab-list ul li.active {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
 .feature__slider {
   position: relative;
-  overflow: hidden;
+}
+
+.feature__slider .swiper {
+  padding-bottom: 80px;
+  /* make room for dots */
 }
 
 .feature__slider::before,
@@ -3119,7 +3155,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  width: 80px;
+  width: 120px;
   /* adjust the fade width */
   height: 100%;
   z-index: 2;
@@ -3129,12 +3165,12 @@ img {
 
 .feature__slider::before {
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f2f2ec), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #f2f2ec 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .feature__slider::after {
   right: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#f2f2ec), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, #f2f2ec 0%, rgba(255, 255, 255, 0) 100%);
 }/*# sourceMappingURL=style.css.map */
