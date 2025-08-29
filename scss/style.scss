@@ -1240,8 +1240,8 @@ img {
 
             li {
                 list-style-type: none;
-                height: 41rem;
-                width: 38rem;
+                height: 30rem;
+                // width: 38rem;
                 perspective: 1000px; // needed for 3D flip
 
                 &:nth-child(odd) {
@@ -1301,8 +1301,8 @@ img {
 
         p {
             color: #181927;
-            font-weight: 600;
-            font-size: 2.4rem;
+            font-weight: 500;
+            font-size: 1.4rem;
             margin: 0;
 
             @media #{$xs} {
@@ -1318,8 +1318,8 @@ img {
 
         h3 {
             color: #fff;
-            font-size: 2.4rem;
-            font-weight: 600;
+            font-size: 1.6rem;
+            font-weight: 500;
             margin: 0;
 
             @media #{$xs} {
@@ -1329,7 +1329,7 @@ img {
 
         span {
             color: #fff;
-            font-size: 2.4rem;
+            font-size: 1.6rem;
             font-weight: 600;
             margin: 0;
 
@@ -1344,8 +1344,8 @@ img {
         h3,
         span {
             color: #181927;
-            font-weight: 600;
-            font-size: 2.4rem;
+            font-weight: 500;
+            font-size: 1.6rem;
             margin: 0;
 
             @media #{$xs} {
@@ -1356,7 +1356,7 @@ img {
 
     &__img {
         img {
-            max-width: 38rem;
+            max-width: 28rem;
 
             @media #{$xs} {
                 max-width: 20rem;
@@ -1576,3 +1576,35 @@ img {
     right: 0;
     background: linear-gradient(to left, #f2f2ec 0%, rgba(255, 255, 255, 0) 100%);
 }
+
+// .review-list {
+//     position: relative;
+//     position: relative;
+//     overflow: hidden;
+//     /* important to hide extra content */
+//     width: 100%;
+// }
+
+
+// .review__list::before,
+// .review__list::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     width: 120px;
+//     /* adjust the fade width */
+//     height: 100%;
+//     z-index: 2;
+//     pointer-events: none;
+//     /* allows clicks through */
+// }
+
+// .review__list::before {
+//     left: 0;
+//     background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+// }
+
+// .review__list::after {
+//     right: 0;
+//     background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+// }

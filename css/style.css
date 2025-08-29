@@ -2844,8 +2844,7 @@ img {
 }
 .review__list ul li {
   list-style-type: none;
-  height: 41rem;
-  width: 38rem;
+  height: 30rem;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
@@ -2912,8 +2911,8 @@ img {
 }
 .review__back p {
   color: #181927;
-  font-weight: 600;
-  font-size: 2.4rem;
+  font-weight: 500;
+  font-size: 1.4rem;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -2928,8 +2927,8 @@ img {
 }
 .review__name h3 {
   color: #fff;
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -2939,7 +2938,7 @@ img {
 }
 .review__name span {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
 }
@@ -2951,8 +2950,8 @@ img {
 .review__end h3,
 .review__end span {
   color: #181927;
-  font-weight: 600;
-  font-size: 2.4rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -2962,7 +2961,7 @@ img {
   }
 }
 .review__img img {
-  max-width: 38rem;
+  max-width: 28rem;
 }
 @media (max-width: 767px) {
   .review__img img {
