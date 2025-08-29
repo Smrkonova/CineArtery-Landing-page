@@ -1105,6 +1105,18 @@
     padding: 1rem;
   }
 }
+.header .container {
+  max-width: 90%;
+  margin: 0 auto;
+  -webkit-transition: max-width 0.4s ease;
+  transition: max-width 0.4s ease;
+}
+.header.scrolled {
+  padding: 1rem 2rem;
+}
+.header.scrolled .container {
+  max-width: 50%;
+}
 .header__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1208,6 +1220,7 @@
   font-size: 1.8rem;
   font-weight: 600;
   color: #fff;
+  white-space: nowrap;
   padding: 1.6rem 2.4rem;
 }
 @media (max-width: 767px) {

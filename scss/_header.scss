@@ -10,6 +10,20 @@
         padding: 1rem;
     }
 
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+        transition: max-width 0.4s ease; // smooth change
+    }
+
+    &.scrolled {
+        padding: 1rem 2rem; // smaller padding on scroll
+
+        .container {
+            max-width: 50%; // shrink on scroll
+        }
+    }
+
     &__flex {
         display: flex;
         align-items: center;
@@ -111,6 +125,7 @@
             font-size: 1.8rem;
             font-weight: 600;
             color: #fff;
+            white-space: nowrap;
             padding: 1.6rem 2.4rem;
 
             @media #{$xs} {
