@@ -7,7 +7,7 @@
 
     &__title {
         h1 {
-            color: #181927;
+            color: #ededed;
             font-size: 20rem;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
@@ -163,8 +163,15 @@
 
                 }
 
-                p,
                 a {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin: 0;
+                    display: block;
+                    color: $primary;
+                }
+
+                p {
                     color: #6F6F6F;
                     font-size: 2rem;
                     font-weight: 600;

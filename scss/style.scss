@@ -628,10 +628,13 @@ img {
     }
 
     &__img {
+        text-align: end;
+
         img {
-            width: 52rem;
+            width: 35rem;
             border-radius: 1.2rem;
-            height: 30rem;
+            height: 40rem;
+            object-fit: cover;
 
             @media #{$xs} {
                 height: 16rem;
@@ -643,6 +646,13 @@ img {
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
+
+    &__flex-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 }
 
@@ -762,6 +772,10 @@ img {
                 max-width: 10rem;
             }
         }
+    }
+
+    &__imgd {
+        height: 50rem;
     }
 
 }
@@ -1100,8 +1114,9 @@ img {
             li {
                 list-style-type: none;
                 border-bottom: 1px solid #6F6F6F;
-                padding: 1.6rem 0;
+                padding: 2.6rem 0;
                 position: relative;
+                text-align: center;
             }
         }
     }
@@ -1110,7 +1125,8 @@ img {
         display: flex;
         align-items: center;
         gap: 2.4rem;
-        // justify-content: center;
+
+        justify-content: center;
 
         span {
             color: #6F6F6F;
@@ -1340,10 +1356,17 @@ img {
     }
 
     &__end {
+        h3 {
+            font-weight: 700;
+            color: #181927;
+        }
+
+        span {
+            color: #6f6f6f;
+        }
 
         h3,
         span {
-            color: #181927;
             font-weight: 500;
             font-size: 1.6rem;
             margin: 0;
@@ -1439,9 +1462,10 @@ img {
 
     &__card {
         background-color: #fff;
-        padding: 3rem 2rem;
+        padding: 4rem 6rem;
+
         border-radius: 1.6rem;
-        min-height: 35rem;
+        min-height: 30rem;
         // text-align: center;
         border: 1px solid #6F6F6F;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -1451,6 +1475,7 @@ img {
             font-size: 2.8rem;
             font-family: "MyCustomFont", sans-serif !important;
             color: #181927;
+            margin: 0;
 
             @media #{$xs} {
                 font-size: 1.8rem;
@@ -1458,7 +1483,7 @@ img {
         }
 
         p {
-            color: #181927;
+            color: #6f6f6f;
             font-size: 1.6rem;
             font-weight: 500;
             margin: 0 0 2rem;
@@ -1471,11 +1496,10 @@ img {
 
     &__list {
         ul {
-            padding: 0 0 0 3rem;
+            padding: 0 0 0 2rem;
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
 
             li {
                 list-style-type: disc;

@@ -8,7 +8,7 @@
 
   &__title {
     h1 {
-      color: #181927;
+      color: #ededed;
       font-size: 20rem;
       font-family: 'MyCustomFont', sans-serif !important;
       margin: 0;
@@ -124,7 +124,7 @@
 
     h3 {
       color: #181927;
-      font-size: 4rem;
+      font-size: 2.4rem;
       margin: 0 0 1rem;
       font-family: 'MyCustomFont', sans-serif !important;
 
@@ -135,7 +135,7 @@
 
     p {
       color: #6F6F6F;
-      font-size: 2.4rem;
+      font-size: 1.6rem;
       font-weight: 500;
       margin: 0 0 4rem;
 
@@ -153,8 +153,8 @@
       border-radius: 10rem;
       align-items: center;
       justify-content: center;
-      font-size: 2.4rem;
-      font-weight: 600;
+      font-size: 1.8rem;
+      font-weight: 500;
       padding: 1rem 2.4rem;
 
       @media #{$xs} {
@@ -168,6 +168,55 @@
 
   &__right-img {
     text-align: center;
+  }
+
+  &__left {
+    h5 {
+      color: #181927;
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__flex-left {
+    h3 {
+      font-size: 3rem;
+      color: #181927;
+      margin: 0 0 1rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+    }
+
+    p {
+      color: #6F6F6F;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+
+  &__right-list {
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        list-style-type: none;
+        color: #181927;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__flex-list {
+    padding: 0 0 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
   }
 }
 
