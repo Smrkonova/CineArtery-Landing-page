@@ -270,17 +270,17 @@ img {
 
     &__down-arrow {
         position: absolute;
-        bottom: -25rem;
+        bottom: -30rem;
         left: 50%;
         transform: translateX(-50%);
 
         img {
-            animation: slideDown 1s ease-in-out forwards infinite;
+            animation: slideDown 1.6s ease-in-out forwards infinite;
         }
 
         span {
-            color: #444342;
-            font-size: 1.4rem;
+            color: #6F6F6F;
+            font-size: 2.4rem;
             font-weight: 400;
             display: block;
             text-align: center;
@@ -292,7 +292,7 @@ img {
 
 @keyframes slideDown {
     from {
-        transform: translateY(-50%);
+        transform: translateY(-40%);
         opacity: 0;
     }
 
@@ -612,8 +612,9 @@ img {
     &__end {
         margin: 2.4rem 0 0;
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 1.2rem;
+        flex-direction: column;
 
         p {
             color: #FDF9F0;
