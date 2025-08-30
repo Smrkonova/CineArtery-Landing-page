@@ -3397,6 +3397,11 @@ img {
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+@media (max-width: 767px) {
+  .feature__card {
+    padding: 2rem;
+  }
+}
 .feature__card h4 {
   font-size: 2.8rem;
   font-family: "MyCustomFont", sans-serif !important;
@@ -3405,7 +3410,7 @@ img {
 }
 @media (max-width: 767px) {
   .feature__card h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 .feature__card p {
@@ -3470,6 +3475,8 @@ img {
           justify-content: center;
   gap: 1rem;
   margin: 2rem 0 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .feature__tab-list ul li {
   list-style-type: none;
@@ -3480,6 +3487,12 @@ img {
   background-color: #fff;
   color: #181927 !important;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .feature__tab-list ul li {
+    padding: 1rem 1.4rem;
+    font-size: 1.4rem;
+  }
 }
 .feature__tab-list ul li:hover {
   background-color: #1065EC !important;
