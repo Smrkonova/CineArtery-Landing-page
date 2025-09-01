@@ -7,6 +7,11 @@
     padding: 12rem 0 4rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    padding: 12rem 0 4rem;
+  }
+}
 .contact__title h1 {
   color: #ccc;
   font-size: 20rem;
@@ -21,6 +26,18 @@
     margin: 0 0 3rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact__title h1 {
+    font-size: 6rem;
+    margin: 0 0 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact__title h1 {
+    font-size: 8rem;
+    margin: 0 0 3rem;
+  }
+}
 @media (max-width: 767px) {
   .contact__right {
     margin: 4rem 0 0;
@@ -31,6 +48,11 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .contact__right p {
+    text-align: center;
+  }
 }
 .contact__box {
   -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1019607843);
@@ -130,6 +152,18 @@
           align-items: baseline;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .contact__left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .contact__left-title {
+    text-align: center;
+  }
+}
 .contact__left-title h3 {
   font-size: 3.2rem;
   color: #181927;
@@ -139,7 +173,7 @@
 }
 @media (max-width: 767px) {
   .contact__left-title h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 .contact__left-title p {
@@ -169,10 +203,18 @@
   .contact__list ul {
     gap: 2rem;
     margin: 3rem 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .contact__list ul li {
   list-style-type: none;
+}
+@media (max-width: 767px) {
+  .contact__list ul li {
+    text-align: center;
+  }
 }
 .contact__list ul li h4 {
   color: #181927;
@@ -183,7 +225,7 @@
 }
 @media (max-width: 767px) {
   .contact__list ul li h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 .contact__list ul li a {
@@ -192,6 +234,11 @@
   margin: 0;
   display: block;
   color: #0073ff;
+}
+@media (max-width: 767px) {
+  .contact__list ul li a {
+    font-size: 1.6rem;
+  }
 }
 .contact__list ul li p {
   color: #6F6F6F;
@@ -206,6 +253,11 @@
 @media (max-width: 767px) {
   .contact__list ul li p {
     font-size: 1.4rem;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .contact__radio {
@@ -996,8 +1048,13 @@
     padding: 12rem 0 4rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we {
+    padding: 12rem 0 4rem;
+  }
+}
 .we__title h1 {
-  color: #ededed;
+  color: #ccc;
   font-size: 20rem;
   font-family: "MyCustomFont", sans-serif !important;
   margin: 0;
@@ -1010,9 +1067,26 @@
     margin: 0 0 3rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we__title h1 {
+    font-size: 6rem;
+    margin: 0 0 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .we__title h1 {
+    font-size: 8rem;
+    margin: 0 0 3rem;
+  }
+}
 .we__head {
   text-align: center;
   margin: 0 0 8rem;
+}
+@media (max-width: 767px) {
+  .we__head {
+    margin: 0 0 2rem;
+  }
 }
 .we__head h2 {
   color: #181927;
@@ -1059,7 +1133,8 @@
 }
 @media (max-width: 767px) {
   .we__line .marquee span {
-    font-size: 2.4rem;
+    font-size: 5.4rem;
+    line-height: 7rem;
   }
 }
 .we__line .reverse {
@@ -1071,23 +1146,53 @@
 @media (max-width: 767px) {
   .we__right {
     margin: 2rem 0;
+    text-align: center;
   }
 }
 .we__right h3 {
   color: #181927;
-  font-size: 4rem;
-  font-family: "MyCustomFont", sans-serif !important;
+  font-size: 8rem;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .we__right h3 {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we__right h3 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .we__right h3 {
+    font-size: 6rem;
+  }
+}
+.we__right a {
+  border: 0.3rem solid #0073ff;
+  color: #0073ff;
+  border-radius: 4rem;
+  padding: 0.3rem 2rem;
+  font-size: 5rem;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .we__right a {
+    font-size: 2rem;
+    margin: 1rem 0 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we__right a {
+    font-size: 3.2rem;
+  }
+}
 .we__right p {
   color: #6F6F6F;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 3rem 0 0;
 }
 @media (max-width: 767px) {
   .we__right p {
@@ -1100,6 +1205,7 @@
 @media (max-width: 767px) {
   .we__content {
     margin: 0 0 2rem;
+    text-align: center;
   }
 }
 .we__content h3 {
@@ -1155,15 +1261,36 @@
 }
 .we__left h5 {
   color: #181927;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 500;
   margin: 0 0 2rem;
+}
+@media (max-width: 767px) {
+  .we__left h5 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we__left h5 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .we__flex-left {
+    text-align: center;
+  }
 }
 .we__flex-left h3 {
   font-size: 3rem;
   color: #181927;
   margin: 0 0 1rem;
   font-family: "MyCustomFont", sans-serif !important;
+}
+@media (max-width: 767px) {
+  .we__flex-left h3 {
+    font-size: 2.4rem;
+  }
 }
 .we__flex-left p {
   color: #6F6F6F;
@@ -1182,6 +1309,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+}
+@media (max-width: 767px) {
+  .we__right-list ul {
+    margin: 2rem 0 0;
+    gap: 1.4rem;
+  }
 }
 .we__right-list ul li {
   list-style-type: none;

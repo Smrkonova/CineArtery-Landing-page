@@ -6,9 +6,13 @@
     padding: 12rem 0 4rem;
   }
 
+  @media #{$md} {
+    padding: 12rem 0 4rem;
+  }
+
   &__title {
     h1 {
-      color: #ededed;
+      color: #ccc;
       font-size: 20rem;
       font-family: 'MyCustomFont', sans-serif !important;
       margin: 0;
@@ -19,12 +23,26 @@
         font-size: 3.2rem;
         margin: 0 0 3rem;
       }
+
+      @media #{$md} {
+        font-size: 6rem;
+        margin: 0 0 3rem;
+      }
+
+      @media #{$lg} {
+        font-size: 8rem;
+        margin: 0 0 3rem;
+      }
     }
   }
 
   &__head {
     text-align: center;
     margin: 0 0 8rem;
+
+    @media #{$xs} {
+      margin: 0 0 2rem;
+    }
 
     h2 {
       color: #181927;
@@ -70,7 +88,8 @@
         line-height: 9rem;
 
         @media #{$xs} {
-          font-size: 2.4rem;
+          font-size: 5.4rem;
+          line-height: 7rem;
         }
 
       }
@@ -89,23 +108,53 @@
   &__right {
     @media #{$xs} {
       margin: 2rem 0;
+      text-align: center;
     }
 
     h3 {
       color: #181927;
-      font-size: 4rem;
-      font-family: 'MyCustomFont', sans-serif !important;
+      font-size: 8rem;
+      // font-family: 'MyCustomFont', sans-serif !important;
+      text-transform: uppercase;
+
+
 
       @media #{$xs} {
         font-size: 2rem;
+      }
+
+      @media #{$md} {
+        font-size: 4rem;
+      }
+
+      @media #{$lg} {
+        font-size: 6rem;
+      }
+    }
+
+    a {
+      border: 0.3rem solid $primary;
+      color: $primary;
+      border-radius: 4rem;
+      padding: 0.3rem 2rem;
+      font-size: 5rem;
+      display: inline-block;
+
+      @media #{$xs} {
+        font-size: 2rem;
+        margin: 1rem 0 0;
+      }
+
+      @media #{$md} {
+        font-size: 3.2rem;
       }
     }
 
     p {
       color: #6F6F6F;
-      font-size: 2.4rem;
-      font-weight: 700;
-      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 3rem 0 0;
 
       @media #{$xs} {
         font-size: 1.4rem;
@@ -120,6 +169,7 @@
   &__content {
     @media #{$xs} {
       margin: 0 0 2rem;
+      text-align: center;
     }
 
     h3 {
@@ -173,18 +223,35 @@
   &__left {
     h5 {
       color: #181927;
-      font-size: 2.4rem;
+      font-size: 3rem;
       font-weight: 500;
       margin: 0 0 2rem;
+
+      @media #{$xs} {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      @media #{$md} {
+        font-size: 2.4rem;
+      }
     }
   }
 
   &__flex-left {
+    @media #{$xs} {
+      text-align: center;
+    }
+
     h3 {
       font-size: 3rem;
       color: #181927;
       margin: 0 0 1rem;
       font-family: 'MyCustomFont', sans-serif !important;
+
+      @media #{$xs} {
+        font-size: 2.4rem;
+      }
     }
 
     p {
@@ -202,6 +269,11 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
+      @media #{$xs} {
+        margin: 2rem 0 0;
+        gap: 1.4rem;
+      }
 
       li {
         list-style-type: none;

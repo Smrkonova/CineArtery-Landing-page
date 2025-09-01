@@ -5,6 +5,10 @@
         padding: 12rem 0 4rem;
     }
 
+    @media #{$md} {
+        padding: 12rem 0 4rem;
+    }
+
     &__title {
         h1 {
             color: #ccc;
@@ -18,10 +22,21 @@
                 font-size: 3.2rem;
                 margin: 0 0 3rem;
             }
+
+            @media #{$md} {
+                font-size: 6rem;
+                margin: 0 0 3rem;
+            }
+
+            @media #{$lg} {
+                font-size: 8rem;
+                margin: 0 0 3rem;
+            }
         }
     }
 
     &__right {
+
         @media #{$xs} {
             margin: 4rem 0 0;
         }
@@ -31,6 +46,11 @@
             font-size: 2rem;
             font-weight: 600;
             margin: 0;
+
+            @media #{$xs} {
+                text-align: center;
+
+            }
         }
     }
 
@@ -107,9 +127,17 @@
         justify-content: space-between;
         align-items: baseline;
         height: 100%;
+
+        @media #{$xs} {
+            align-items: center;
+        }
     }
 
     &__left-title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h3 {
             font-size: 3.2rem;
             color: #181927;
@@ -118,7 +146,7 @@
             text-transform: uppercase;
 
             @media #{$xs} {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
         }
 
@@ -145,10 +173,15 @@
             @media #{$xs} {
                 gap: 2rem;
                 margin: 3rem 0 0;
+                align-items: center;
             }
 
             li {
                 list-style-type: none;
+
+                @media #{$xs} {
+                    text-align: center;
+                }
 
                 h4 {
                     color: #181927;
@@ -158,7 +191,7 @@
                     text-transform: uppercase;
 
                     @media #{$xs} {
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
                     }
 
                 }
@@ -169,6 +202,10 @@
                     margin: 0;
                     display: block;
                     color: $primary;
+
+                    @media #{$xs} {
+                        font-size: 1.6rem;
+                    }
                 }
 
                 p {
@@ -181,6 +218,8 @@
 
                     @media #{$xs} {
                         font-size: 1.4rem;
+                        max-width: 100%;
+                        flex-direction: column;
                     }
                 }
             }
