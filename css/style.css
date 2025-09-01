@@ -2198,7 +2198,7 @@ img {
 }
 @media (max-width: 767px) {
   .banner {
-    padding: 12rem 0 2rem;
+    padding: 20rem 0 0 !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2316,7 +2316,7 @@ img {
 @media (max-width: 767px) {
   .banner__list {
     gap: 1rem;
-    margin: 10rem 0 0;
+    margin: 0;
   }
 }
 .banner__img img {
@@ -2722,6 +2722,13 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 767px) {
+  .service__end {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .service__end p {
   color: #FDF9F0;
   font-size: 1.6rem;
@@ -2731,6 +2738,7 @@ img {
 @media (max-width: 767px) {
   .service__end p {
     font-size: 1.4rem;
+    text-align: center;
   }
 }
 .service__img {
@@ -2884,6 +2892,11 @@ img {
   -webkit-transform: translateY(-60%);
           transform: translateY(-60%);
 }
+@media (max-width: 767px) {
+  .future__left {
+    display: none;
+  }
+}
 .future__left img {
   max-width: 100%;
   height: auto;
@@ -2900,6 +2913,11 @@ img {
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
 }
+@media (max-width: 767px) {
+  .future__right {
+    display: none;
+  }
+}
 .future__right img {
   max-width: 100%;
   height: auto;
@@ -2911,6 +2929,18 @@ img {
 }
 .future__imgd {
   height: 50rem;
+}
+.future__down-arrow img {
+  -webkit-animation: slideDown 1.6s ease-in-out forwards infinite;
+          animation: slideDown 1.6s ease-in-out forwards infinite;
+}
+.future__down-arrow span {
+  color: #6F6F6F;
+  font-size: 2.4rem;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  margin: 2rem 0 0;
 }
 
 .movie {
@@ -3134,6 +3164,11 @@ img {
   padding: 6rem 0;
   background-color: #fff;
 }
+@media (max-width: 767px) {
+  .work {
+    padding: 0 0 6rem;
+  }
+}
 .work__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3263,6 +3298,11 @@ img {
   margin: 0 0 2.4rem;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .branding__head span {
+    font-size: 1.6rem;
+  }
+}
 .branding__head h2 {
   color: #181927;
   font-size: 4rem;
@@ -3293,6 +3333,11 @@ img {
   padding: 2.6rem 0;
   position: relative;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .branding__list ul li {
+    padding: 2rem 0;
+  }
 }
 .branding__title {
   display: -webkit-box;
@@ -3618,7 +3663,7 @@ img {
 }
 @media (max-width: 767px) {
   .feature__title h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 .feature__tab {
@@ -3670,6 +3715,7 @@ img {
 @media (max-width: 767px) {
   .feature__card {
     padding: 2rem;
+    min-height: 56rem;
   }
 }
 .feature__card h4 {
@@ -3681,6 +3727,7 @@ img {
 @media (max-width: 767px) {
   .feature__card h4 {
     font-size: 1.6rem;
+    text-align: center;
   }
 }
 .feature__card p {
@@ -3692,6 +3739,7 @@ img {
 @media (max-width: 767px) {
   .feature__card p {
     font-size: 1.4rem;
+    text-align: center;
   }
 }
 .feature__list ul {
@@ -3727,8 +3775,8 @@ img {
   opacity: 1;
 }
 .feature .swiper-pagination-bullet {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1rem;
+  height: 1rem;
 }
 .feature .swiper-pagination {
   bottom: 0rem !important;

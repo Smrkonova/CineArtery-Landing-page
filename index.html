@@ -460,6 +460,10 @@
                   <p>Check out who’ve tapped into our future-ready approach to creative collaboration.</p>
                   <a href="">Explore now </a>
                 </div>
+                <div class="future__down-arrow">
+                  <span>Scroll</span>
+                  <img src="./assets/img/icons/down-img.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -473,6 +477,7 @@
           <div class="future__right">
             <img src="./assets/img/future/1.png" alt="">
           </div>
+
         </div>
       </div>
     </section>
@@ -1176,7 +1181,7 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: "1.5",
-      spaceBetween: 40,
+      spaceBetween: 20,
       centeredSlides: true,
       loop: true,
       pagination: {
@@ -1187,6 +1192,11 @@
         nextEl: ".feature__right-arrow",
         prevEl: ".feature__left-arrow",
       },
+      // breakpoints: {
+      //   767: { // for screens ≤ 767px
+      //     spaceBetween: 20,
+      //   },
+      // }
     });
 
     const tabs = document.querySelectorAll(".feature__tab-list li");
@@ -1374,7 +1384,9 @@
 
     // Step 4: Slowly scale all images down
     tl.to(imgs, {
-      scale: 0.3,
+      // scale: 0.3,
+      scale: window.innerWidth <= 767 ? 0.5 : 0.3,
+
       ease: "none",
       duration: 1
     });
@@ -1387,7 +1399,7 @@
 
     tl.to(".workflow__content", {
       opacity: 1,
-      y: window.innerWidth <= 767 ? -100 : -200,
+      y: window.innerWidth <= 767 ? -200 : -200,
       duration: 0.6,
       ease: "power2.out"
     });
