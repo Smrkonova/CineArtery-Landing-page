@@ -170,6 +170,14 @@ img {
             @media #{$xs} {
                 font-size: 3.2rem;
             }
+
+            @media #{$md} {
+                font-size: 6.2rem;
+            }
+
+            @media #{$lg} {
+                font-size: 6.2rem;
+            }
         }
     }
 
@@ -264,6 +272,16 @@ img {
             @media #{$xs} {
                 width: 6rem;
                 height: 6rem;
+            }
+
+            @media #{$md} {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            @media #{$lg} {
+                width: 12rem;
+                height: 12rem;
             }
         }
     }
@@ -442,6 +460,14 @@ img {
                 @media #{$xs} {
                     width: 10rem;
                 }
+
+                @media #{$md} {
+                    left: 10%;
+                }
+
+                @media #{$lg} {
+                    left: 10%;
+                }
             }
 
             &:nth-child(2) {
@@ -453,6 +479,14 @@ img {
 
                 @media #{$xs} {
                     width: 12rem;
+                }
+
+                @media #{$md} {
+                    width: 17rem;
+                }
+
+                @media #{$lg} {
+                    width: 17rem;
                 }
             }
 
@@ -468,6 +502,19 @@ img {
                     bottom: 10%;
                     top: unset;
                 }
+
+                @media #{$md} {
+                    width: 17rem;
+                    bottom: 10%;
+                    top: unset;
+                }
+
+                @media #{$lg} {
+                    width: 20rem;
+                    bottom: 10%;
+                    top: unset;
+                    left: 5%;
+                }
             }
 
             &:nth-child(4) {
@@ -479,6 +526,10 @@ img {
 
                 @media #{$xs} {
                     width: 10rem;
+                }
+
+                @media #{$md} {
+                    right: 10%;
                 }
             }
 
@@ -664,6 +715,10 @@ img {
             @media #{$xs} {
                 height: 16rem;
             }
+
+            @media #{$md} {
+                width: 100%;
+            }
         }
     }
 
@@ -782,7 +837,7 @@ img {
         top: 50%;
         transform: translateY(-60%);
 
-        @media #{$xs} {
+        @media #{$xm} {
             display: none;
         }
 
@@ -803,7 +858,7 @@ img {
         top: 50%;
         transform: translateY(-40%);
 
-        @media #{$xs} {
+        @media #{$xm} {
             display: none;
         }
 
@@ -1225,6 +1280,10 @@ img {
             @media #{$xs} {
                 font-size: 2rem;
             }
+
+            @media #{$lg} {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -1549,6 +1608,10 @@ img {
         @media #{$xs} {
             padding: 2rem;
             min-height: 56rem;
+        }
+
+        @media #{$lg} {
+            min-height: 44rem;
         }
 
 

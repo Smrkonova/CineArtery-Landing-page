@@ -231,6 +231,14 @@
     .container {
         max-width: 50%; // shrink on scroll
 
+        @media #{$md} {
+            max-width: 100%;
+        }
+
+        @media #{$lg} {
+            max-width: 70%;
+        }
+
         @media #{$xs} {
             max-width: 100% !important;
         }
