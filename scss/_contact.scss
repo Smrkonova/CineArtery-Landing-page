@@ -7,7 +7,7 @@
 
     &__title {
         h1 {
-            color: #ededed;
+            color: #ccc;
             font-size: 20rem;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
@@ -176,7 +176,8 @@
                     font-size: 2rem;
                     font-weight: 600;
                     margin: 0;
-                    display: block;
+                    display: flex;
+                    max-width: 85%;
 
                     @media #{$xs} {
                         font-size: 1.4rem;

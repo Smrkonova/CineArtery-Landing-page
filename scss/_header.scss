@@ -6,23 +6,18 @@
     right: 0;
     z-index: 9;
 
-    @media #{$xs} {
-        padding: 1rem;
-    }
 
     .container {
         max-width: 90%;
         margin: 0 auto;
         transition: max-width 0.4s ease; // smooth change
-    }
 
-    &.scrolled {
-        padding: 1rem 2rem; // smaller padding on scroll
-
-        .container {
-            max-width: 50%; // shrink on scroll
+        @media #{$xs} {
+            max-width: 100% !important;
         }
     }
+
+
 
     &__flex {
         display: flex;
@@ -224,4 +219,20 @@
         }
     }
 
+}
+
+.header.scrolled {
+    padding: 1rem 2rem; // smaller padding on scroll
+
+    @media #{$xs} {
+        padding: 2rem !important;
+    }
+
+    .container {
+        max-width: 50%; // shrink on scroll
+
+        @media #{$xs} {
+            max-width: 100% !important;
+        }
+    }
 }

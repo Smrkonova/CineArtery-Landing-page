@@ -221,6 +221,10 @@
         display: flex;
         flex-direction: column;
         gap: 4rem;
+
+        @media #{$xs} {
+            margin: 0 0 2rem;
+        }
     }
 
     &__back {
@@ -256,6 +260,10 @@
             font-size: 1.6rem;
             font-weight: 500;
             margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         h3 {
@@ -334,6 +342,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
         margin: 3rem 0 0;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__info {
@@ -349,8 +361,8 @@
         ul {
             padding: 0;
             margin: 0;
-            display: flex;
-            // flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             align-items: center;
             justify-content: space-between;
@@ -454,6 +466,10 @@
         margin: 0 0 0 3rem;
         position: sticky;
         top: 15rem;
+
+        @media #{$xs} {
+            margin: 0;
+        }
     }
 
     &__info-box {

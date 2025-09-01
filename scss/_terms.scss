@@ -1,15 +1,26 @@
 .terms {
     padding: 20rem 0 10rem;
 
+    @media #{$xs} {
+        padding: 12rem 0 4rem;
+    }
+
     &__title {
         h1 {
             color: #ededed;
-
             font-size: 16rem;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
             text-align: center;
             text-transform: uppercase;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
+
+            @media #{$md} {
+                font-size: 6rem;
+            }
         }
     }
 
@@ -20,6 +31,10 @@
     &__left {
         position: sticky;
         top: 12rem;
+
+        @media #{$xs} {
+            display: none;
+        }
 
         ul {
             padding: 0;
@@ -58,6 +73,11 @@
             font-weight: 700;
             margin: 0 0 2.4rem;
             font-size: 4rem;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+                text-align: center;
+            }
         }
 
         p {
@@ -91,6 +111,11 @@
                     font-weight: 700;
                     margin: 0 0 2.4rem;
                     font-size: 4rem;
+
+                    @media #{$xs} {
+                        font-size: 2rem;
+                        text-align: center;
+                    }
                 }
 
                 h4 {
@@ -98,6 +123,11 @@
                     font-weight: 700;
                     margin: 0 0 2.4rem;
                     font-size: 3rem;
+
+                    @media #{$xs} {
+                        font-size: 1.8rem;
+                        text-align: center;
+                    }
                 }
 
                 p {
@@ -105,6 +135,11 @@
                     font-size: 1.6rem;
                     font-weight: 500;
                     margin: 0 0 0.8rem;
+
+                    @media #{$xs} {
+                        font-size: 1.4rem;
+                        text-align: center;
+                    }
                 }
             }
         }

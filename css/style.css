@@ -8,7 +8,7 @@
   }
 }
 .contact__title h1 {
-  color: #ededed;
+  color: #ccc;
   font-size: 20rem;
   font-family: "MyCustomFont", sans-serif !important;
   margin: 0;
@@ -198,7 +198,10 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
 }
 @media (max-width: 767px) {
   .contact__list ul li p {
@@ -249,6 +252,11 @@
 .terms {
   padding: 20rem 0 10rem;
 }
+@media (max-width: 767px) {
+  .terms {
+    padding: 12rem 0 4rem;
+  }
+}
 .terms__title h1 {
   color: #ededed;
   font-size: 16rem;
@@ -257,12 +265,27 @@
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  .terms__title h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .terms__title h1 {
+    font-size: 6rem;
+  }
+}
 .terms__row {
   margin: 8em 0 0;
 }
 .terms__left {
   position: sticky;
   top: 12rem;
+}
+@media (max-width: 767px) {
+  .terms__left {
+    display: none;
+  }
 }
 .terms__left ul {
   padding: 0;
@@ -308,6 +331,12 @@
   margin: 0 0 2.4rem;
   font-size: 4rem;
 }
+@media (max-width: 767px) {
+  .terms__right-title h3 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
 .terms__right-title p {
   color: #6f6f6f;
   font-size: 1.6rem;
@@ -341,17 +370,35 @@
   margin: 0 0 2.4rem;
   font-size: 4rem;
 }
+@media (max-width: 767px) {
+  .terms__right ul li h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .terms__right ul li h4 {
   color: #0E0E0F;
   font-weight: 700;
   margin: 0 0 2.4rem;
   font-size: 3rem;
 }
+@media (max-width: 767px) {
+  .terms__right ul li h4 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
 .terms__right ul li p {
   color: #6f6f6f;
   font-size: 1.6rem;
   font-weight: 500;
   margin: 0 0 0.8rem;
+}
+@media (max-width: 767px) {
+  .terms__right ul li p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
 
 .blog {
@@ -604,6 +651,11 @@
           flex-direction: column;
   gap: 4rem;
 }
+@media (max-width: 767px) {
+  .blog__grid {
+    margin: 0 0 2rem;
+  }
+}
 .blog__back {
   margin: 0 0 4rem;
 }
@@ -637,6 +689,11 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin: 0 0 4rem;
+}
+@media (max-width: 767px) {
+  .blog__details p {
+    font-size: 1.4rem;
+  }
 }
 .blog__details h3 {
   font-size: 3.2rem;
@@ -716,6 +773,11 @@
   gap: 3rem;
   margin: 3rem 0 0;
 }
+@media (max-width: 767px) {
+  .blog__list-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .blog__info {
   border: 1px solid #E5E7EB;
   padding: 1.6rem 2rem;
@@ -728,9 +790,8 @@
 .blog__info-list ul {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -835,6 +896,11 @@
   margin: 0 0 0 3rem;
   position: sticky;
   top: 15rem;
+}
+@media (max-width: 767px) {
+  .blog__info-right {
+    margin: 0;
+  }
 }
 .blog__info-box {
   background: #F6F6F6;
@@ -1376,22 +1442,16 @@
   right: 0;
   z-index: 9;
 }
-@media (max-width: 767px) {
-  .header {
-    padding: 1rem;
-  }
-}
 .header .container {
   max-width: 90%;
   margin: 0 auto;
   -webkit-transition: max-width 0.4s ease;
   transition: max-width 0.4s ease;
 }
-.header.scrolled {
-  padding: 1rem 2rem;
-}
-.header.scrolled .container {
-  max-width: 50%;
+@media (max-width: 767px) {
+  .header .container {
+    max-width: 100% !important;
+  }
 }
 .header__flex {
   display: -webkit-box;
@@ -1596,6 +1656,23 @@
 }
 .menu__close button img {
   width: 3rem;
+}
+
+.header.scrolled {
+  padding: 1rem 2rem;
+}
+@media (max-width: 767px) {
+  .header.scrolled {
+    padding: 2rem !important;
+  }
+}
+.header.scrolled .container {
+  max-width: 50%;
+}
+@media (max-width: 767px) {
+  .header.scrolled .container {
+    max-width: 100% !important;
+  }
 }
 
 .footer {
@@ -2392,7 +2469,7 @@ img {
 .service__card {
   background-color: #232323;
   border-radius: 4rem;
-  padding: 4rem;
+  padding: 4rem 4rem 4rem 8rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -2532,9 +2609,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
 }
 
