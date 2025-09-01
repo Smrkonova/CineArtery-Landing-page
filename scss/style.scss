@@ -191,7 +191,7 @@ img {
                 a {
                     img {
                         @media #{$xs} {
-                            width: 12rem;
+                            width: 16rem;
                         }
                     }
                 }
@@ -274,6 +274,10 @@ img {
         left: 50%;
         transform: translateX(-50%);
 
+        @media #{$xs} {
+            bottom: -27rem;
+        }
+
         img {
             animation: slideDown 1.6s ease-in-out forwards infinite;
         }
@@ -327,12 +331,11 @@ img {
         h2 {
             color: #181927;
             font-size: 4.4rem;
-            font-weight: 900;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 2.4rem 0;
 
             @media #{$xs} {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
         }
     }
@@ -504,6 +507,10 @@ img {
             display: block;
             margin: 0 0 2.4rem;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
         }
 
         h2 {
@@ -545,6 +552,10 @@ img {
     }
 
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h3 {
             font-size: 3.2rem;
             margin: 0 0 1rem;
@@ -553,7 +564,7 @@ img {
 
             @media #{$xs} {
                 font-size: 2rem;
-                margin: 0 0 2rem;
+                margin: 0 0 1rem;
             }
         }
 
@@ -562,6 +573,11 @@ img {
             font-size: 1.4rem;
             font-weight: 400;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                margin: 0;
+                font-size: 1.2rem;
+            }
 
         }
     }
@@ -577,6 +593,7 @@ img {
 
             @media #{$xs} {
                 gap: 0.6rem;
+                justify-content: center;
             }
 
             li {
@@ -594,12 +611,12 @@ img {
                     justify-content: center;
                     color: #FDF9F0 !important;
                     font-size: 1.6rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     padding: 1rem 2.4rem;
                     border-radius: 10rem !important;
 
                     @media #{$xs} {
-                        font-size: 1.4rem;
+                        font-size: 1.2rem;
                         height: 3.6rem;
                         padding: 1rem;
                     }
@@ -648,6 +665,12 @@ img {
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        img {
+            @media #{$xs} {
+                display: none;
+            }
+        }
     }
 
     &__flex-end {
@@ -727,9 +750,14 @@ img {
             height: 6rem;
             border-radius: 10rem;
             font-size: 2.4rem;
-            font-weight: 600;
+            font-weight: 500;
             color: #fff;
             padding: 1.6rem 2.4rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+
         }
     }
 

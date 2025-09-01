@@ -2255,7 +2255,7 @@ img {
 }
 @media (max-width: 767px) {
   .banner__download ul li a img {
-    width: 12rem;
+    width: 16rem;
   }
 }
 .banner__line {
@@ -2336,6 +2336,11 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  .banner__down-arrow {
+    bottom: -27rem;
+  }
+}
 .banner__down-arrow img {
   -webkit-animation: slideDown 1.6s ease-in-out forwards infinite;
           animation: slideDown 1.6s ease-in-out forwards infinite;
@@ -2405,13 +2410,12 @@ img {
 .workflow__content h2 {
   color: #181927;
   font-size: 4.4rem;
-  font-weight: 900;
   font-family: "MyCustomFont", sans-serif !important;
   margin: 2.4rem 0;
 }
 @media (max-width: 767px) {
   .workflow__content h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 .workflow__img {
@@ -2582,6 +2586,11 @@ img {
   margin: 0 0 2.4rem;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .service__title span {
+    font-size: 1.6rem;
+  }
+}
 .service__title h2 {
   color: #181927;
   font-size: 4rem;
@@ -2618,6 +2627,11 @@ img {
 .service__card:nth-child(1) {
   z-index: 0 !important;
 }
+@media (max-width: 767px) {
+  .service__content {
+    text-align: center;
+  }
+}
 .service__content h3 {
   font-size: 3.2rem;
   margin: 0 0 1rem;
@@ -2627,7 +2641,7 @@ img {
 @media (max-width: 767px) {
   .service__content h3 {
     font-size: 2rem;
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
   }
 }
 .service__content p {
@@ -2635,6 +2649,12 @@ img {
   font-size: 1.4rem;
   font-weight: 400;
   margin: 0 0 2rem;
+}
+@media (max-width: 767px) {
+  .service__content p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
 }
 .service__tag ul {
   padding: 0;
@@ -2652,6 +2672,9 @@ img {
 @media (max-width: 767px) {
   .service__tag ul {
     gap: 0.6rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .service__tag ul li {
@@ -2674,13 +2697,13 @@ img {
           justify-content: center;
   color: #FDF9F0 !important;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 1rem 2.4rem;
   border-radius: 10rem !important;
 }
 @media (max-width: 767px) {
   .service__tag ul li button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     height: 3.6rem;
     padding: 1rem;
   }
@@ -2733,6 +2756,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
+}
+@media (max-width: 767px) {
+  .service__flex img {
+    display: none;
+  }
 }
 .service__flex-end {
   display: -webkit-box;
@@ -2826,9 +2854,14 @@ img {
   height: 6rem;
   border-radius: 10rem;
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   padding: 1.6rem 2.4rem;
+}
+@media (max-width: 767px) {
+  .future__content a {
+    font-size: 1.8rem;
+  }
 }
 .future__sec {
   position: relative;
