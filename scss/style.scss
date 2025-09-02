@@ -448,6 +448,55 @@ img {
         }
     }
 
+    &__js-1 {
+        position: absolute;
+        right: 0;
+        top: 5%;
+        height: 30rem;
+        border-radius: 1.6rem;
+        overflow: hidden;
+
+        @media #{$xs} {
+            width: 12rem;
+        }
+
+        @media #{$md} {
+            width: 17rem;
+        }
+
+        @media #{$lg} {
+            width: 17rem;
+        }
+    }
+
+    &__js-2 {
+        position: absolute;
+        top: 35%;
+        left: 0;
+        height: 32rem;
+        border-radius: 1.6rem;
+        overflow: hidden;
+
+        @media #{$xs} {
+            width: 12rem;
+            bottom: 10%;
+            top: unset;
+        }
+
+        @media #{$md} {
+            width: 17rem;
+            bottom: 10%;
+            top: unset;
+        }
+
+        @media #{$lg} {
+            width: 20rem;
+            bottom: 10%;
+            top: unset;
+            left: 5%;
+        }
+    }
+
     &__imgs {
         img {
             &:nth-child(1) {
@@ -1805,4 +1854,51 @@ img {
 .review__list::after {
     right: 0;
     background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.future__content .rotating-head {
+    color: #f7c41f;
+}
+
+.submit {
+    padding: 10rem 0 4rem;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            font-size: 2.8rem;
+            font-family: "MyCustomFont", sans-serif !important;
+            color: #181927;
+            margin: 0;
+        }
+
+        p {
+            color: #6f6f6f;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0 0 2rem;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #524EF4;
+            height: 4rem;
+            border-radius: 10rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 1.6rem 2.4rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+
+        }
+
+    }
 }
