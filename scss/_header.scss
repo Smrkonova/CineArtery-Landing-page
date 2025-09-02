@@ -183,6 +183,15 @@
             font-size: 1.6rem;
             font-weight: 500;
             color: #fff;
+
+        }
+
+        a.active {
+            // background-color: #1065EC;
+            // color: #1065EC;
+            // border-bottom: 0.1rem solid #1065EC;
+            border-radius: 0;
+            font-weight: 600;
         }
     }
 

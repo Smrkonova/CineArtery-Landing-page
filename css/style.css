@@ -1808,6 +1808,10 @@
   font-weight: 500;
   color: #fff;
 }
+.menu__list a.active {
+  border-radius: 0;
+  font-weight: 600;
+}
 .menu__btn {
   position: absolute;
   bottom: 10%;
