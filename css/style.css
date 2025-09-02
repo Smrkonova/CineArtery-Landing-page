@@ -365,6 +365,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.terms__left ul li a {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0E0E0F;
+  display: block;
+}
 .terms__left ul li span {
   font-size: 2.4rem;
   font-weight: 700;
@@ -747,6 +753,11 @@
   font-size: 2rem;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .blog__details {
+    text-align: center;
+  }
+}
 .blog__details h2 {
   color: #0E0E0F;
   font-size: 3.2rem;
@@ -790,6 +801,7 @@
 @media (max-width: 767px) {
   .blog__details ul li {
     font-size: 1.4rem;
+    text-align: left;
   }
 }
 .blog__details h3 {
@@ -4093,6 +4105,12 @@ img {
   z-index: 2;
   pointer-events: none;
   /* allows clicks through */
+}
+@media (max-width: 767px) {
+  .review__list::before,
+  .review__list::after {
+    width: 4rem;
+  }
 }
 
 .review__list::before {

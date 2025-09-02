@@ -265,6 +265,10 @@
     }
 
     &__details {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             color: #0E0E0F;
             font-size: 3.2rem;
@@ -302,6 +306,7 @@
 
                 @media #{$xs} {
                     font-size: 1.4rem;
+                    text-align: left;
                 }
             }
         }

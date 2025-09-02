@@ -1846,7 +1846,11 @@ img {
     height: 100%;
     z-index: 2;
     pointer-events: none;
+
     /* allows clicks through */
+    @media #{$xs} {
+        width: 4rem;
+    }
 }
 
 .review__list::before {
