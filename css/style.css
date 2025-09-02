@@ -2614,17 +2614,19 @@ img {
 }
 @media (max-width: 767px) {
   .about__js-1 {
-    width: 12rem;
+    height: 13rem;
+    top: 11%;
+    right: 9%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about__js-1 {
-    width: 17rem;
+    height: 17rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about__js-1 {
-    width: 17rem;
+    height: 17rem;
   }
 }
 .about__js-2 {
@@ -2637,21 +2639,21 @@ img {
 }
 @media (max-width: 767px) {
   .about__js-2 {
-    width: 12rem;
+    height: 18rem;
     bottom: 10%;
     top: unset;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about__js-2 {
-    width: 17rem;
+    height: 17rem;
     bottom: 10%;
     top: unset;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about__js-2 {
-    width: 20rem;
+    height: 20rem;
     bottom: 10%;
     top: unset;
     left: 5%;
@@ -2667,6 +2669,7 @@ img {
 @media (max-width: 767px) {
   .about__imgs img:nth-child(1) {
     width: 10rem;
+    left: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

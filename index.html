@@ -1351,20 +1351,19 @@
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
-
     gsap.fromTo(
-      ".about__imgs img",
-      { scale: 0.1, opacity: 1 },
+      ".about__imgs img, .about__imgs lottie-player", // target both <img> and <lottie-player>
+      { scale: 0.1, opacity: 0 },
       {
         scale: 1,
         opacity: 1,
         ease: "power2.out",
-        duration: 1.5, // longer duration for smoothness
+        duration: 1.5,
         scrollTrigger: {
           trigger: ".about",
           start: "top 30%",
           end: "bottom 90%",
-          scrub: 1.6 // smoothness factor
+          scrub: 1.6
         }
       }
     );

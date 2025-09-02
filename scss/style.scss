@@ -457,15 +457,17 @@ img {
         overflow: hidden;
 
         @media #{$xs} {
-            width: 12rem;
+            height: 13rem;
+            top: 11%;
+            right: 9%;
         }
 
         @media #{$md} {
-            width: 17rem;
+            height: 17rem;
         }
 
         @media #{$lg} {
-            width: 17rem;
+            height: 17rem;
         }
     }
 
@@ -478,19 +480,19 @@ img {
         overflow: hidden;
 
         @media #{$xs} {
-            width: 12rem;
+            height: 18rem;
             bottom: 10%;
             top: unset;
         }
 
         @media #{$md} {
-            width: 17rem;
+            height: 17rem;
             bottom: 10%;
             top: unset;
         }
 
         @media #{$lg} {
-            width: 20rem;
+            height: 20rem;
             bottom: 10%;
             top: unset;
             left: 5%;
@@ -508,6 +510,7 @@ img {
 
                 @media #{$xs} {
                     width: 10rem;
+                    left: 0;
                 }
 
                 @media #{$md} {
