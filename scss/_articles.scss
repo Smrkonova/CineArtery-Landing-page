@@ -5,9 +5,14 @@
         padding: 12rem 0 4rem;
     }
 
+    @media #{$md} {
+        padding: 12rem 0 4rem;
+    }
+
+
     &__title {
         h1 {
-            color: #ededed;
+            color: #ccc;
             font-size: 20rem;
             font-family: 'MyCustomFont', sans-serif !important;
             margin: 0;
@@ -16,6 +21,16 @@
 
             @media #{$xs} {
                 font-size: 3.2rem;
+                margin: 0 0 3rem;
+            }
+
+            @media #{$md} {
+                font-size: 6rem;
+                margin: 0 0 3rem;
+            }
+
+            @media #{$lg} {
+                font-size: 8rem;
                 margin: 0 0 3rem;
             }
         }
@@ -153,6 +168,7 @@
             height: 100%;
             width: 100%;
             border-radius: 1.6rem;
+            object-fit: cover;
         }
     }
 
@@ -572,8 +588,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    border: 1px solid #E5E7EB;
-    background-color: #fff;
+    border: 1px solid #0E0E0F;
+    background-color: #0E0E0F;
     position: absolute;
     inset: 8px 0% 0% 8px;
     overflow: hidden;
@@ -582,6 +598,7 @@
     img {
         width: 2.4rem;
         height: 2.4rem;
+        filter: brightness(10000%);
     }
 
 }

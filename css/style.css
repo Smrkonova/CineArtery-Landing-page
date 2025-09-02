@@ -461,8 +461,13 @@
     padding: 12rem 0 4rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog {
+    padding: 12rem 0 4rem;
+  }
+}
 .blog__title h1 {
-  color: #ededed;
+  color: #ccc;
   font-size: 20rem;
   font-family: "MyCustomFont", sans-serif !important;
   margin: 0;
@@ -472,6 +477,18 @@
 @media (max-width: 767px) {
   .blog__title h1 {
     font-size: 3.2rem;
+    margin: 0 0 3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog__title h1 {
+    font-size: 6rem;
+    margin: 0 0 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog__title h1 {
+    font-size: 8rem;
     margin: 0 0 3rem;
   }
 }
@@ -623,6 +640,8 @@
   height: 100%;
   width: 100%;
   border-radius: 1.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .blog__list {
@@ -1056,8 +1075,8 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100px;
-  border: 1px solid #E5E7EB;
-  background-color: #fff;
+  border: 1px solid #0E0E0F;
+  background-color: #0E0E0F;
   position: absolute;
   inset: 8px 0% 0% 8px;
   overflow: hidden;
@@ -1067,6 +1086,8 @@
 .arrow-box img {
   width: 2.4rem;
   height: 2.4rem;
+  -webkit-filter: brightness(10000%);
+          filter: brightness(10000%);
 }
 
 .we {
