@@ -1025,16 +1025,115 @@
   }
 }
 .blog__info-box {
-  background: #F6F6F6;
+  background: #eaecee;
   padding: 3.2rem;
   border-radius: 1rem;
   margin: 0 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3rem;
+}
+.blog__info-content-name span {
+  color: #6f6f6f;
+}
+.blog__info-content-name p {
+  color: #0E0E0F;
+  font-size: 2.2rem;
+}
+.blog__info-content-name h4 {
+  color: #0E0E0F;
+  font-size: 1.4rem;
+  margin: 2rem 0 0;
+}
+.blog__author {
+  border-top: 0.1rem solid #6f6f6f;
+  padding: 3rem 0 0;
+}
+.blog__author p {
+  color: #0E0E0F;
+  font-style: italic;
 }
 .blog__post {
   margin: 0 0 3rem;
 }
 .blog__post img {
   border-radius: 1.6rem;
+}
+.blog__social {
+  margin: 2rem 0 0;
+}
+.blog__social h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+  color: #0E0E0F;
+  font-size: 2.4rem;
+  margin: 0;
+  font-family: "MyCustomFont", sans-serif !important;
+}
+.blog__social ul {
+  padding: 0;
+  margin: 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog__social ul li {
+  border-radius: 0.6rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  list-style-type: none;
+}
+.blog__social ul li:nth-child(1) {
+  background-color: #0077B5;
+}
+.blog__social ul li:nth-child(2) {
+  background-color: #1065EC;
+}
+.blog__social ul li:nth-child(3) {
+  background-color: #000000;
+}
+.blog__social ul li:nth-child(4) {
+  background-color: #FF0000;
+}
+.blog__social ul li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.blog__social ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem 1.6rem;
+}
+.blog__social ul li a p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .card-corner {

@@ -522,10 +522,41 @@
     }
 
     &__info-box {
-        background: #F6F6F6;
+        background: #eaecee;
         padding: 3.2rem;
         border-radius: 1rem;
         margin: 0 0 2rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    &__info-content-name {
+        span {
+            color: #6f6f6f;
+
+        }
+
+        p {
+            color: #0E0E0F;
+            font-size: 2.2rem;
+        }
+
+        h4 {
+            color: #0E0E0F;
+            font-size: 1.4rem;
+            margin: 2rem 0 0;
+        }
+    }
+
+    &__author {
+        border-top: 0.1rem solid #6f6f6f;
+        padding: 3rem 0 0;
+
+        p {
+            color: #0E0E0F;
+            font-style: italic;
+        }
     }
 
     &__post {
@@ -536,9 +567,78 @@
         }
     }
 
+    &__social {
+        margin: 2rem 0 0;
+
+        h3 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 1rem;
+            color: #0E0E0F;
+            font-size: 2.4rem;
+            margin: 0;
+            font-family: "MyCustomFont", sans-serif !important;
+        }
+
+        ul {
+            padding: 0;
+            margin: 2rem 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.6rem;
+            flex-wrap: wrap;
+
+
+            li {
+                // min-width: 21.1rem;
+                border-radius: 0.6rem;
+                transition: all 200ms ease-in-out;
+                list-style-type: none;
+                // min-width: 10rem;
+
+                &:nth-child(1) {
+                    background-color: #0077B5;
+                }
+
+                &:nth-child(2) {
+                    background-color: #1065EC;
+                }
+
+                &:nth-child(3) {
+                    background-color: #000000;
+                }
+
+                &:nth-child(4) {
+                    background-color: #FF0000;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1.2rem 1.6rem;
 
 
 
+                    p {
+                        color: #fff;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
