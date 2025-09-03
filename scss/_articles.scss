@@ -170,8 +170,36 @@
                 }
 
             }
+
+            .arrow-box {
+                background-color: #000;
+                border-color: #000;
+
+                img {
+                    filter: brightness(10000%);
+                    transform: rotate(-45deg);
+                }
+            }
+
+
+            .view-img {
+                transform: scale(1.05) rotate(1deg);
+
+            }
+
         }
     }
+
+    &__single {
+        h3 {
+            margin: 0;
+            color: #0E0E0F;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
+
 
     &__img {
         height: 100%;
@@ -393,6 +421,8 @@
         height: 20rem;
         position: relative;
         margin: 0 0 2rem;
+        border-radius: 1.6rem;
+        overflow: hidden;
 
         img {
             object-fit: cover;
@@ -732,6 +762,12 @@
         width: 2.4rem;
         height: 2.4rem;
         filter: brightness(0);
+        transition: all 0.3s ease-in-out;
+
     }
 
+}
+
+.view-img {
+    transition: all 0.3s ease-in-out;
 }
