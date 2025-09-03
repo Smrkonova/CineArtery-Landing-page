@@ -886,6 +886,9 @@
   height: 100%;
   width: 100%;
 }
+.blog__sinlge {
+  display: block;
+}
 .blog__list-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
