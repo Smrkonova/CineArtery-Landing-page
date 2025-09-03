@@ -312,9 +312,12 @@
     padding: 12rem 0 4rem;
   }
 }
+.terms__title {
+  border-bottom: 0.1rem solid #ccc;
+}
 .terms__title h1 {
   color: #ccc;
-  font-size: 16rem;
+  font-size: 8rem;
   font-family: "MyCustomFont", sans-serif !important;
   margin: 0;
   text-align: center;
@@ -331,7 +334,7 @@
   }
 }
 .terms__row {
-  margin: 8em 0 0;
+  margin: 4em 0 0;
 }
 .terms__left {
   position: sticky;
@@ -381,7 +384,7 @@
           transform: scale(1.02);
 }
 .terms__left ul li span {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #0E0E0F;
   display: block;
@@ -650,6 +653,8 @@
 }
 .blog__img {
   height: 100%;
+  overflow: hidden;
+  border-radius: 1.6rem;
 }
 .blog__img img {
   max-width: 100%;
@@ -658,6 +663,13 @@
   border-radius: 1.6rem;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.blog__img img:hover {
+  -webkit-transform: scale(1.05) rotate(1deg);
+          transform: scale(1.05) rotate(1deg);
 }
 @media (max-width: 767px) {
   .blog__list {
@@ -1477,7 +1489,7 @@
 }
 .we__right-list ul {
   padding: 0;
-  margin: 0;
+  margin: 10rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3112,7 +3124,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #f5f5f5;
   padding: 6rem 0;
 }
 .future__review {
@@ -3951,7 +3963,7 @@ img {
 }
 
 .feature {
-  background-color: #f2f2ec;
+  background-color: #f5f5f5;
   padding: 6rem 0;
 }
 .feature__title {
@@ -4184,14 +4196,14 @@ img {
 
 .feature__slider::before {
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#f2f2ec), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, #f2f2ec 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #f5f5f5 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .feature__slider::after {
   right: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#f2f2ec), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to left, #f2f2ec 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#f5f5f5), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, #f5f5f5 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .review-list {

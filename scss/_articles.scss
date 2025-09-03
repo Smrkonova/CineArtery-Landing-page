@@ -162,6 +162,9 @@
 
     &__img {
         height: 100%;
+        overflow: hidden;
+        border-radius: 1.6rem;
+
 
         img {
             max-width: 100%;
@@ -169,6 +172,12 @@
             width: 100%;
             border-radius: 1.6rem;
             object-fit: cover;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+
+            &:hover {
+                transform: scale(1.05) rotate(1deg);
+            }
         }
     }
 
