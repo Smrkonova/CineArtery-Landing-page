@@ -130,25 +130,19 @@
       @media #{$lg} {
         font-size: 6rem;
       }
-    }
 
-    a {
-      border: 0.3rem solid $primary;
-      color: $primary;
-      border-radius: 4rem;
-      padding: 0.3rem 2rem;
-      font-size: 5rem;
-      display: inline-block;
+      span {
+        font-weight: 600;
+        border: 4.48px solid #000000;
+        border-radius: 3.4rem;
 
-      @media #{$xs} {
-        font-size: 2rem;
-        margin: 1rem 0 0;
-      }
-
-      @media #{$md} {
-        font-size: 3.2rem;
+        @media #{$xs} {
+          border: 1px solid #000;
+        }
       }
     }
+
+
 
     p {
       color: #6F6F6F;
@@ -158,6 +152,11 @@
 
       @media #{$xs} {
         font-size: 1.4rem;
+      }
+
+      a {
+        color: #0064E1;
+        text-decoration: underline !important;
       }
     }
   }
@@ -223,13 +222,15 @@
   &__left {
     h5 {
       color: #181927;
-      font-size: 3rem;
-      font-weight: 500;
+      font-size: 4.4rem;
+      font-weight: 400;
       margin: 0 0 2rem;
+      max-width: 60%;
 
       @media #{$xs} {
         font-size: 2rem;
         text-align: center;
+        max-width: 100%;
       }
 
       @media #{$md} {
@@ -263,32 +264,51 @@
   }
 
   &__right-list {
-    ul {
-      padding: 0;
-      margin: 10rem 0 0;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+    h4 {
+      color: #000000;
+      font-size: 2.8rem;
+      margin: 0 0 0.6rem;
+      font-weight: 700;
 
       @media #{$xs} {
-        margin: 2rem 0 0;
-        gap: 1.4rem;
+        font-size: 2rem;
+        text-align: center;
       }
 
-      li {
-        list-style-type: none;
-        color: #181927;
-        font-size: 1.6rem;
-        font-weight: 500;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #000;
+      margin: 0;
+
+      @media #{$xs} {
+        font-size: 1.4rem;
+        text-align: center;
       }
     }
   }
 
   &__flex-list {
     padding: 0 0 8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
+
+    h3 {
+      font-size: 9.2rem;
+      color: #181927;
+      margin: 0 0 1rem;
+      font-family: 'MyCustomFont', sans-serif !important;
+
+      @media #{$md} {
+        font-size: 6rem;
+      }
+
+      @media #{$xs} {
+        font-size: 3.2rem;
+        text-align: center;
+      }
+    }
+
   }
 }
 
