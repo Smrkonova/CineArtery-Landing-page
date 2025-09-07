@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -526,7 +529,7 @@
           </div>
         </div> -->
         <div class="work__banner">
-          <img src="./assets/img/expertise-img.png" alt="">
+          <img src="./assets/img/expertise-img.svg" alt="">
         </div>
       </div>
     </section>
@@ -673,9 +676,13 @@
     </section> -->
     <section class="feature">
       <div class="container">
-        <div class="feature__title">
-          <!-- <span>Feature</span> -->
-          <h2>Benefit of Cast & Crew </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="feature__title">
+              <p>One platform, Infinity dreams.</p>
+              <h2>Explore <span>Endless</span> Opportunities for Cast & Crew</h2>
+            </div>
+          </div>
         </div>
         <div class="feature__tab-list">
           <ul>
@@ -685,66 +692,58 @@
             <li>💳 Payments Terms</li>
           </ul>
         </div>
-        <div class="feature__slider">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="feature__card">
-                  <h4>Bring your talent under the spotlight</h4>
-                  <div class="feature__list">
-                    <ul>
-                      <li>Showcase your headshots, resume, and social media in one professional profile.</li>
-                      <li>Upload images, links and demo reels to bring your portfolio to life and proudly present your
-                        craft.</li>
-                      <li>Get listed in our exclusive database, searched by producers, directors, and casting
-                        professionals.</li>
-                      <li>Every completed Project updates automatically adds another layer to your filmography's Journey
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature__card">
-                  <h4>Find the role that fits like a missing piece</h4>
-                  <div class="feature__list">
-                    <ul>
-                      <li>Explore and Discover fresh casting calls and crew openings posted daily</li>
-                      <li>Filter by role, department, Sector, skills, genre, or location that fit your goals</li>
-                      <li>Stay in the loop with real time notifications, so you never miss the right opportunity</li>
-                      <li>Apply instant and direct, with auto updated portfolio.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature__card">
-                  <h4>More than a platform, it’s a circle of creators</h4>
-                  <div class="feature__list">
-                    <ul>
-                      <li>Expand your career without borders, actors and crew alike can get visibility across global
-                      </li>
-                      <li>Join a thriving network, Share knowledge, ideas, and support within your filmmaker tribe.</li>
-                      <li>Discover in-development projects, connect and grow your industry contacts.</li>
-                      <li>Build networks that open doors to your next project role or crew career opportunity</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature__card">
-                  <h4>Get paid without the hassle, Payment Made Simple</h4>
-                  <div class="feature__list">
-                    <ul>
-                      <li>Get paid directly straight to your bank account or UPI.</li>
-                      <li>No middlemen, No delays – just quick pay outs for your work.</li>
-                      <li>Manage invoices easily, for both freelance crew and acting gigs.</li>
-                    </ul>
-                  </div>
-                </div>
+        <div class="feature__slider-slick">
+          <div class="feature__slick">
+            <div class="feature__card">
+              <h4>Bring your talent under the spotlight</h4>
+              <div class="feature__list">
+                <ul>
+                  <li>Showcase your headshots, resume, and social media in one professional profile.</li>
+                  <li>Upload images, links and demo reels to bring your portfolio to life and proudly present your
+                    craft.</li>
+                  <li>Get listed in our exclusive database, searched by producers, directors, and casting
+                    professionals.</li>
+                  <li>Every completed Project updates automatically adds another layer to your filmography's Journey
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="feature__card">
+              <h4>Find the role that fits like a missing piece</h4>
+              <div class="feature__list">
+                <ul>
+                  <li>Explore and Discover fresh casting calls and crew openings posted daily</li>
+                  <li>Filter by role, department, Sector, skills, genre, or location that fit your goals</li>
+                  <li>Stay in the loop with real time notifications, so you never miss the right opportunity</li>
+                  <li>Apply instant and direct, with auto updated portfolio.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature__card">
+              <h4>More than a platform, it’s a circle of creators</h4>
+              <div class="feature__list">
+                <ul>
+                  <li>Expand your career without borders, actors and crew alike can get visibility across global
+                  </li>
+                  <li>Join a thriving network, Share knowledge, ideas, and support within your filmmaker tribe.</li>
+                  <li>Discover in-development projects, connect and grow your industry contacts.</li>
+                  <li>Build networks that open doors to your next project role or crew career opportunity</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="feature__card">
+              <h4>Get paid without the hassle, Payment Made Simple</h4>
+              <div class="feature__list">
+                <ul>
+                  <li>Get paid directly straight to your bank account or UPI.</li>
+                  <li>No middlemen, No delays – just quick pay outs for your work.</li>
+                  <li>Manage invoices easily, for both freelance crew and acting gigs.</li>
+                </ul>
+              </div>
+            </div>
+
+
           </div>
           <div class="feature__left-arrow">
             <img src="./assets/img/icons/left-slider.svg" alt="">
@@ -753,132 +752,6 @@
             <img src="./assets/img/icons/right-slider.svg" alt="">
           </div>
         </div>
-
-
-        <!-- <div class="feature__tab">
-          <ul class="nav nav-pills" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-01-tab" data-bs-toggle="pill" data-bs-target="#pills-01"
-                type="button" role="tab" aria-controls="pills-01" aria-selected="true">Talent spotlight</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-02-tab" data-bs-toggle="pill" data-bs-target="#pills-02" type="button"
-                role="tab" aria-controls="pills-02" aria-selected="false">Role Finder </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-03-tab" data-bs-toggle="pill" data-bs-target="#pills-03" type="button"
-                role="tab" aria-controls="pills-03" aria-selected="false">Opportunity Alerts</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-04-tab" data-bs-toggle="pill" data-bs-target="#pills-04" type="button"
-                role="tab" aria-controls="pills-04" aria-selected="false">Creative Community</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-05-tab" data-bs-toggle="pill" data-bs-target="#pills-05" type="button"
-                role="tab" aria-controls="pills-05" aria-selected="false">Easy & Direct Payments</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-06-tab" data-bs-toggle="pill" data-bs-target="#pills-06" type="button"
-                role="tab" aria-controls="pills-06" aria-selected="false">Global Reach</button>
-            </li>
-
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-01" role="tabpanel" aria-labelledby="pills-01-tab"
-              tabindex="0">
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="feature__card">
-                    <h4>Bring your talent under the spotlight. </h4>
-                    <div class="feature__list">
-                      <ul>
-                        <li>Showcase your headshots, video clips, résumé, and social media in one professional profile.
-                        </li>
-                        <li>Add images and demo reels to bring your portfolio to life and proudly present your craft.
-                        </li>
-                        <li>Get listed in our exclusive database, searched by producers, directors, and casting
-                          professionals.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-02" role="tabpanel" aria-labelledby="pills-02-tab" tabindex="0">
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="feature__card">
-                    <h4>Land jobs that fit you</h4>
-                    <div class="feature__list">
-                      <ul>
-                        <li>Browse dozens of fresh projects posted daily across genres and formats.</li>
-                        <li>Stay updated in real time so you never miss the right opportunity.</li>
-                        <li>Apply instantly with a single click.</li>
-                        <li>Attach headshots, reels, and résumés directly for maximum impact. </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-03" role="tabpanel" aria-labelledby="pills-03-tab" tabindex="0">
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="feature__card">
-                    <h4>Casting calls that find you</h4>
-                    <p>
-                      Stay ahead with instant updates and custom-made alerts attuned to your profile and searches.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="tab-pane fade" id="pills-04" role="tabpanel" aria-labelledby="pills-04-tab" tabindex="0">
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="feature__card">
-                    <h4>3.4M+ voices, one network</h4>
-                    <div class="feature__list">
-                      <ul>
-                        <li>Join a thriving network of 3.4M+ professionals. </li>
-                        <li>Collaborate, exchange ideas, and become part of an ecosystem designed to help talent like
-                          you
-                          shine.</li>
-                        <li>Find agents, track in-development titles, and connect with mutual contacts who can open
-                          doors to
-                          your next big opportunity.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-05" role="tabpanel" aria-labelledby="pills-05-tab" tabindex="0">
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="feature__card">
-                    <h4>Fast, secure, and direct</h4>
-                    <p>
-                      Get paid quickly, securely, straight to your account or UPI. No delays, no intermediaries.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-06" role="tabpanel" aria-labelledby="pills-06-tab" tabindex="0">
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="feature__card">
-                    <h4>From local to global </h4>
-                    <p>Work with clients across 160+ countries and receive consolidated monthly invoices for clear and
-                      simple tracking of your income. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
     <section class="branding">
@@ -1090,7 +963,8 @@
   </div>
 
 
-
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
@@ -1098,58 +972,60 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
+
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.6.0/lottie-player.js"
     integrity="sha512-YeTbnlsM9ICIw6l3uoUwMrARAizE4lU3EbbFGfOEAQ1ylPrzfZaloz0vXxFq0dteNC9/6b0DDbWkWVjZpPe9SQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1.5,
-      spaceBetween: 50,
-      centeredSlides: true,
-      loop: true,
-      loopedSlides: 4,            // match your real slides
-      loopAdditionalSlides: 4,    // (optional, avoids warnings)
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".feature__right-arrow",
-        prevEl: ".feature__left-arrow",
-      },
-      // breakpoints: {
-      //   767: { // for screens ≤ 767px
-      //     spaceBetween: 20,
-      //   },
-      // }
-    });
+    $(document).ready(function () {
+      const $tabs = $(".feature__tab-list ul li");
+      const $slider = $(".feature__slick");
 
-    const tabs = document.querySelectorAll(".feature__tab-list li");
+      // Init slick
+      $slider.slick({
+        centerMode: true,
+        centerPadding: '220px',
+        slidesToShow: 1,
+        dots: true,
+        infinite: true,
 
-    // Click on tab -> move slider
-    tabs.forEach((tab, index) => {
-      tab.addEventListener("click", () => {
-        swiper.slideToLoop(index, 500); // loop safe navigation
-        updateActiveTab(index);
+        arrows: true
       });
-    });
-
-    // On slider change -> update active tab
-    swiper.on("slideChange", () => {
-      const realIndex = swiper.realIndex; // correct index for loop mode
-      updateActiveTab(realIndex);
-    });
-
-    function updateActiveTab(index) {
-      tabs.forEach((tab, i) => {
-        tab.classList.toggle("active", i === index);
+      // Custom next/prev
+      $(".feature__right-arrow").on("click", function () {
+        $slider.slick("slickNext");
       });
-    }
+
+      $(".feature__left-arrow").on("click", function () {
+        $slider.slick("slickPrev");
+      });
+
+      // Click tab → go to slide
+      $tabs.each(function (index) {
+        $(this).on("click", function () {
+          $slider.slick("slickGoTo", index); // navigate to slide
+          updateActiveTab(index);
+        });
+      });
+
+      // On slide change → update active tab
+      $slider.on("afterChange", function (event, slick, currentSlide) {
+        updateActiveTab(currentSlide);
+      });
+
+      function updateActiveTab(index) {
+        $tabs.removeClass("active").eq(index).addClass("active");
+      }
+    });
   </script>
+
 
   <script>
     window.addEventListener('load', function () {
