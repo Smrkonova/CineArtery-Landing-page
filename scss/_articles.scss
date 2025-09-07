@@ -452,7 +452,6 @@
         border: 1px solid #E5E7EB;
         padding: 1.6rem 2rem;
         border-radius: 1.6rem;
-        margin: 0 0 2rem;
     }
 
     &__info-list {
@@ -516,7 +515,6 @@
     }
 
     &__tag-lists {
-        margin: 2rem 0 0;
 
         h3 {
             display: -webkit-box;
@@ -566,6 +564,9 @@
         margin: 0 0 0 3rem;
         position: sticky;
         top: 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 
         @media #{$xs} {
             margin: 0;
@@ -619,7 +620,6 @@
     }
 
     &__social {
-        margin: 2rem 0 0;
 
         h3 {
             display: -webkit-box;
@@ -731,6 +731,33 @@
             gap: 1rem;
             padding: 0;
             margin: 0;
+
+            li {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    color: #6f6f6f;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &__cmt-flex-right {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+            background: #F6F6F6;
+            border-radius: 1rem;
 
             li {
                 list-style-type: none;
