@@ -772,6 +772,37 @@ img {
                 width: 100%;
             }
         }
+
+        video {
+            width: 35rem;
+            border-radius: 1.2rem;
+            height: 40rem;
+            object-fit: cover;
+
+            @media #{$xs} {
+                height: 16rem;
+            }
+
+            @media #{$md} {
+                width: 100%;
+            }
+        }
+    }
+
+    &__lottie {
+        // width: 35rem;
+        border-radius: 4rem;
+        height: 40rem;
+        object-fit: cover;
+        overflow: hidden;
+
+        @media #{$xs} {
+            height: 16rem;
+        }
+
+        @media #{$md} {
+            width: 100%;
+        }
     }
 
     &__flex {
@@ -1655,7 +1686,7 @@ img {
         border-radius: 1.6rem;
         min-height: 30rem;
         // text-align: center;
-        border: 1px solid #6F6F6F;
+        // border: 1px solid #6F6F6F;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         @media #{$xs} {
