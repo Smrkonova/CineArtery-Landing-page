@@ -517,7 +517,7 @@
   border: 1px solid #E5E7EB;
   backdrop-filter: blur(15px);
   background-color: #fff;
-  padding: 3rem 4rem;
+  padding: 3rem 10rem 3rem 4rem;
   border-radius: 2rem;
   height: 100%;
 }
@@ -591,7 +591,7 @@
   border: 1px solid #E5E7EB;
   backdrop-filter: blur(15px);
   background-color: #fff;
-  padding: 2rem 3rem;
+  padding: 2rem 8rem 2rem 3rem;
   border-radius: 2rem;
   height: 100%;
 }
@@ -913,7 +913,7 @@
   left: 2rem;
 }
 .blog__single-img {
-  height: 17rem;
+  height: 21rem;
   position: relative;
   margin: 0 0 2rem;
   border-radius: 1.6rem;
@@ -1174,6 +1174,71 @@
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
+}
+.blog__author-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog__author-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.blog__author-img img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.blog__author-img h4 {
+  font-size: 1.4rem;
+  color: #0E0E0F;
+  font-weight: 500;
+  margin: 0;
+}
+.blog__author-img h4 span {
+  color: #6f6f6f;
+  font-size: 1rem;
+  display: block;
+}
+.blog__cmt-flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.blog__cmt-flex ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.2rem;
+}
+.blog__cmt-flex ul li p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #6f6f6f;
+  font-weight: 500;
 }
 
 .card-corner {
