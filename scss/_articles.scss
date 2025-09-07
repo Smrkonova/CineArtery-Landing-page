@@ -80,13 +80,13 @@
         span {
             background: #E3DCF6;
             color: #0E0E0F;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 500;
-            padding: 0.8rem 1.2rem;
+            padding: 0.4rem 0.7rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 3.4rem;
+            height: 2rem;
             border-radius: 2.6rem;
         }
 
@@ -360,10 +360,11 @@
         }
 
         h3 {
-            font-size: 2rem;
+            font-size: 2.8rem;
             color: #0E0E0F;
-            font-family: 'MyCustomFont', sans-serif !important;
+            font-family: "Lora", serif !important;
             margin: 0 0 1.6rem;
+            font-weight: 700;
 
             @media #{$xs} {
                 font-size: 2.2rem;
@@ -404,13 +405,13 @@
     &__tag {
         background: #E3DCF6;
         color: #0E0E0F;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
-        padding: 0.8rem 1.2rem;
+        padding: 0.4rem 0.7rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 3.4rem;
+        height: 2rem;
         border-radius: 2.6rem;
         position: absolute;
         bottom: 2rem;
@@ -418,7 +419,7 @@
     }
 
     &__single-img {
-        height: 20rem;
+        height: 17rem;
         position: relative;
         margin: 0 0 2rem;
         border-radius: 1.6rem;

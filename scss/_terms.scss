@@ -53,7 +53,7 @@
                 flex-direction: column;
 
                 a {
-                    font-size: 1.4rem;
+                    font-size: 1.6rem;
                     font-weight: 700;
                     color: #0E0E0F;
                     display: block;
@@ -72,7 +72,7 @@
                 }
 
                 p {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     font-weight: 500;
                     color: #6f6f6f;
                     display: block;
@@ -126,6 +126,8 @@
                     font-weight: 700;
                     margin: 0 0 2.4rem;
                     font-size: 2.8rem;
+                    font-family: "Lora", serif !important;
+
 
                     @media #{$xs} {
                         font-size: 2rem;
