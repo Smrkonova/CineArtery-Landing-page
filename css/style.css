@@ -475,7 +475,7 @@
 }
 
 .blog {
-  padding: 20rem 0 10rem;
+  padding: 17rem 0 10rem;
 }
 @media (max-width: 767px) {
   .blog {
@@ -705,9 +705,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1rem;
   color: #0E0E0F;
   font-size: 2.4rem;
@@ -784,7 +784,7 @@
   }
 }
 .blog__back {
-  margin: 0 0 4rem;
+  margin: 0 0 2rem;
 }
 .blog__back a {
   display: -webkit-box;
@@ -1009,9 +1009,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1rem;
   color: #0E0E0F;
   font-size: 2.4rem;
@@ -1111,9 +1111,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1rem;
   color: #0E0E0F;
   font-size: 2.4rem;

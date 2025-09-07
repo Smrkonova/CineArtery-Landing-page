@@ -1,5 +1,5 @@
 .blog {
-    padding: 20rem 0 10rem;
+    padding: 17rem 0 10rem;
 
     @media #{$xs} {
         padding: 12rem 0 4rem;
@@ -227,7 +227,7 @@
 
         h3 {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 1rem;
             color: #0E0E0F;
             font-size: 2.4rem;
@@ -297,7 +297,7 @@
     }
 
     &__back {
-        margin: 0 0 4rem;
+        margin: 0 0 2rem;
 
         a {
             display: flex;
@@ -520,9 +520,7 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 1rem;
             color: #0E0E0F;
             font-size: 2.4rem;
@@ -625,9 +623,7 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 1rem;
             color: #0E0E0F;
             font-size: 2.4rem;
