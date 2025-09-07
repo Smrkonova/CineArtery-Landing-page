@@ -19,20 +19,33 @@ fetch('/./shared/header.html')
         });
 
         // ---- Scroll Hide/Show Header ----
+        // const header = document.querySelector(".header");
+        // let lastScroll = 0;
+
+        // window.addEventListener("scroll", function () {
+        //     let currentScroll = window.scrollY;
+
+        //     if (currentScroll > lastScroll && currentScroll > 50) {
+        //         header.classList.add("scrolled");
+        //     } else if (currentScroll < lastScroll) {
+        //         header.classList.remove("scrolled");
+        //     }
+
+        //     lastScroll = currentScroll;
+        // });
+        // ---- Scroll Hide/Show Header ----
         const header = document.querySelector(".header");
-        let lastScroll = 0;
 
         window.addEventListener("scroll", function () {
             let currentScroll = window.scrollY;
 
-            if (currentScroll > lastScroll && currentScroll > 50) {
-                header.classList.add("scrolled");
-            } else if (currentScroll < lastScroll) {
-                header.classList.remove("scrolled");
+            if (currentScroll > 50) {
+                header.classList.add("scrolled"); // hide
+            } else {
+                header.classList.remove("scrolled"); // show only at very top
             }
-
-            lastScroll = currentScroll;
         });
+
     });
 
 // Load footer

@@ -503,9 +503,9 @@ img {
         img {
             &:nth-child(1) {
                 position: absolute;
-                top: 0;
-                left: 30%;
-                width: 20rem;
+                top: 3%;
+                left: 20%;
+                width: 25rem;
                 border-radius: 1.6rem;
 
                 @media #{$xs} {
@@ -573,7 +573,7 @@ img {
                 position: absolute;
                 right: 20%;
                 bottom: 10%;
-                width: 20rem;
+                width: 25rem;
                 border-radius: 1.6rem;
 
                 @media #{$xs} {
@@ -600,7 +600,7 @@ img {
 }
 
 .service {
-    padding: 0 0 6rem;
+    padding: 0 0 12rem;
     background-color: #fff;
 
     &__title {
@@ -887,7 +887,10 @@ img {
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-60%);
+        // transform: translateY(-60%);
+        width: 30rem;
+        border-radius: 6rem;
+        overflow: hidden;
 
         @media #{$xm} {
             display: none;
@@ -908,7 +911,9 @@ img {
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-40%);
+        // transform: translateY(-10%);
+        width: 30rem;
+
 
         @media #{$xm} {
             display: none;

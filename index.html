@@ -476,14 +476,16 @@
             </div>
           </div>
           <div class="future__left">
-            <!-- <div class="future__imgd">
-              <lottie-player src="./assets/json/2.json" background="transparent" speed="1" loop autoplay>
-              </lottie-player>
-            </div> -->
-            <img src="./assets/img/future/1.png" alt="">
+
+            <!-- <lottie-player src="./assets/json/producer.json" background="transparent" speed="1" loop autoplay>
+            </lottie-player> -->
+
+            <!-- <img src="./assets/img/future/1.png" alt=""> -->
           </div>
           <div class="future__right">
-            <img src="./assets/img/future/1.png" alt="">
+            <!-- <lottie-player src="./assets/json/artist.json" background="transparent" speed="1" loop autoplay>
+            </lottie-player> -->
+            <!-- <img src="./assets/img/future/1.png" alt=""> -->
           </div>
 
         </div>
@@ -1293,7 +1295,7 @@
       scrollTrigger: {
         trigger: banner,
         start: "top top",
-        end: "+=3000", // extended to allow outward + scale animations
+        end: "+=1500", // extended to allow outward + scale animations
         pin: true,
         scrub: true
       }
@@ -1362,7 +1364,7 @@
         scrollTrigger: {
           trigger: ".about",
           start: "top 30%",
-          end: "bottom 90%",
+          end: "bottom 110%",
           scrub: 1.6
         }
       }
@@ -1382,7 +1384,7 @@
         scrollTrigger: {
           trigger: ".about",
           start: "top 10%",
-          end: "bottom 90%",
+          end: "bottom 110%",
           scrub: 1.6 // smoothness factor
         }
       }
@@ -1469,8 +1471,8 @@
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
-    gsap.set(".future__left", { yPercent: 10, xPercent: 0 });
-    gsap.set(".future__right", { yPercent: 10, xPercent: 0 });
+    gsap.set(".future__left", { yPercent: -70, xPercent: 0 });
+    gsap.set(".future__right", { yPercent: -30, xPercent: 0 });
 
     gsap.timeline({
       scrollTrigger: {
@@ -1618,59 +1620,26 @@
       setInterval(rotateTitle, 3000);
     });
   </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
 
-  <!-- <div class="feature__slider">
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="feature__card">
-                        <h4>Brand Identities</h4>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="feature__card">
-                        <h4>Brand Identities</h4>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="feature__card">
-                        <h4>Brand Identities</h4>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="feature__card">
-                        <h4>Brand Identities</h4>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="feature__card">
-                        <h4>Brand Identities</h4>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                        <p>Our team will assist in developing a consistent brand voice, ensuring that all messages align
-                          with the brand's tone, values, objectives and goals.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div> -->
+    gsap.fromTo(".work__banner",
+      { scale: 0.3, opacity: 0 },  // start
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".work",   // section to watch
+          start: "top 80%",   // when section enters
+          toggleActions: "play none none none"
+        }
+      }
+    );
+  </script>
+
+
 
 </body>
 
