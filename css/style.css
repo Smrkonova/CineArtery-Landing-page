@@ -3413,6 +3413,8 @@ img {
   right: 0;
   top: 50%;
   width: 30rem;
+  border-radius: 6rem;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .future__right {

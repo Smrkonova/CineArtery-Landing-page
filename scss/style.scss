@@ -945,6 +945,8 @@ img {
         top: 50%;
         // transform: translateY(-10%);
         width: 30rem;
+        border-radius: 6rem;
+        overflow: hidden;
 
 
         @media #{$xm} {
