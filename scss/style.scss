@@ -766,14 +766,19 @@ img {
         img {
             width: 35rem;
             border-radius: 1.2rem;
-            height: 40rem;
+            height: 46rem;
             object-fit: cover;
 
             @media #{$xs} {
                 height: 16rem;
+                width: 100%;
             }
 
             @media #{$md} {
+                width: 100%;
+            }
+
+            @media #{$lg} {
                 width: 100%;
             }
         }
