@@ -1213,6 +1213,13 @@
   color: #0E0E0F;
   font-weight: 500;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 1rem;
 }
 .blog__author-img h4 span {
   color: #6f6f6f;
@@ -2884,6 +2891,11 @@ img {
   margin: 0 0 1.6rem;
   font-family: "MyCustomFont", sans-serif !important;
 }
+@media (max-width: 767px) {
+  .about__content h3 {
+    font-size: 3.4rem;
+  }
+}
 .about__js-1 {
   position: absolute;
   right: 0;
@@ -3231,16 +3243,22 @@ img {
 .service__img video {
   width: 35rem;
   border-radius: 1.2rem;
-  height: 40rem;
+  height: 46rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 767px) {
   .service__img video {
     height: 16rem;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service__img video {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .service__img video {
     width: 100%;
   }
@@ -4374,6 +4392,12 @@ img {
   z-index: 2;
   pointer-events: none;
   /* allows clicks through */
+}
+@media (max-width: 767px) {
+  .feature__slick::before,
+  .feature__slick::after {
+    width: 1rem;
+  }
 }
 
 .feature__slick::before {

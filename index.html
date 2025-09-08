@@ -1119,7 +1119,30 @@
         dots: true,
         infinite: true,
 
-        arrows: true
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 767, // mobile
+            settings: {
+              centerPadding: '0px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 991, // mobile
+            settings: {
+              centerPadding: '0px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 1200, // mobile
+            settings: {
+              centerPadding: '100px',
+              slidesToShow: 1
+            }
+          }
+        ]
       });
       // Custom next/prev
       $(".feature__right-arrow").on("click", function () {
@@ -1475,12 +1498,7 @@
         yPercent: -50,
         ease: "power2.out"
       }, 0)
-      // Step 3: final scale of container
-      .to(".future__row", {
-        scale: 0,
-        transformOrigin: "center center", // ensures smooth scaling
-        ease: "power2.inOut"
-      }, ">")
+
 
       // Step 2: merge at center
       .to(".future__left", {
@@ -1492,7 +1510,13 @@
         yPercent: -50,
         xPercent: -168,  // pushes left to center
         ease: "power2.out"
-      }, "<");
+      }, "<")
+      // Step 3: final scale of container
+      .to(".future__row", {
+        scale: 0,
+        transformOrigin: "center center", // ensures smooth scaling
+        ease: "power2.inOut"
+      }, ">");
 
   </script>
 
@@ -1506,7 +1530,7 @@
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".branding",
-          start: window.innerWidth <= 767 ? "top -30%" : "top -10%",
+          start: window.innerWidth <= 767 ? "top -10%" : "top -10%",
           end: "+=" + (items.length * 800), // adjust scroll distance
           scrub: true,
           pin: true,
