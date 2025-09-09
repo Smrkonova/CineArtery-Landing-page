@@ -653,7 +653,7 @@
     <section class="feature">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-10">
+          <div class="col-md-12">
             <div class="feature__title">
               <p>One platform, Infinity dreams.</p>
               <h2>Explore <span>Endless</span> Opportunities for Cast & Crew</h2>
@@ -1498,7 +1498,12 @@
         yPercent: -50,
         ease: "power2.out"
       }, 0)
-
+      // Step 3: final scale of container
+      .to(".future__row", {
+        scale: 0,
+        transformOrigin: "center center", // ensures smooth scaling
+        ease: "power2.inOut"
+      }, ">")
 
       // Step 2: merge at center
       .to(".future__left", {
@@ -1510,13 +1515,8 @@
         yPercent: -50,
         xPercent: -168,  // pushes left to center
         ease: "power2.out"
-      }, "<")
-      // Step 3: final scale of container
-      .to(".future__row", {
-        scale: 0,
-        transformOrigin: "center center", // ensures smooth scaling
-        ease: "power2.inOut"
-      }, ">");
+      }, "<");
+
 
   </script>
 

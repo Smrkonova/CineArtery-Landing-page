@@ -251,6 +251,10 @@
             max-width: 70%;
         }
 
+        @media #{$lp} {
+            max-width: 70%;
+        }
+
         @media #{$xs} {
             max-width: 100% !important;
         }
