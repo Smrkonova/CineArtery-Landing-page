@@ -2756,7 +2756,7 @@ img {
 @media (max-width: 767px) {
   .banner__list {
     gap: 1rem;
-    margin: 0;
+    margin: 8rem 0 0;
   }
 }
 .banner__img img {
@@ -4197,11 +4197,6 @@ img {
           backface-visibility: hidden;
   border-radius: 1.2rem;
 }
-@media (max-width: 767px) {
-  .review__front, .review__back {
-    height: unset;
-  }
-}
 .review__front {
   position: relative;
   border-radius: 1.2rem;
@@ -4226,11 +4221,6 @@ img {
   height: 100%;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-}
-@media (max-width: 767px) {
-  .review__back {
-    height: unset;
-  }
 }
 .review__back p {
   color: #181927;
@@ -4289,12 +4279,19 @@ img {
     font-size: 1.4rem;
   }
 }
+.review__img {
+  height: 100%;
+}
 .review__img img {
   max-width: 28rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.2rem;
 }
 @media (max-width: 767px) {
   .review__img img {
-    max-width: 20rem;
+    max-width: 25rem;
   }
 }
 
@@ -4470,6 +4467,13 @@ img {
   gap: 1rem;
   margin: 2rem 0 5rem;
   overflow-x: auto;
+}
+@media (max-width: 767px) {
+  .feature__tab-list ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .feature__tab-list ul li {
   list-style-type: none;

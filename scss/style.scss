@@ -265,7 +265,7 @@ img {
 
         @media #{$xs} {
             gap: 1rem;
-            margin: 0;
+            margin: 8rem 0 0;
         }
     }
 
@@ -1576,10 +1576,6 @@ img {
         height: 100%;
         backface-visibility: hidden;
         border-radius: 1.2rem;
-
-        @media #{$xs} {
-            height: unset;
-        }
     }
 
     /* Keep your existing front styles */
@@ -1598,10 +1594,6 @@ img {
         padding: 2.4rem;
         height: 100%;
         transform: rotateY(180deg);
-
-        @media #{$xs} {
-            height: unset;
-        }
 
         p {
             color: #181927;
@@ -1666,11 +1658,16 @@ img {
     }
 
     &__img {
+        height: 100%;
+
         img {
             max-width: 28rem;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.2rem;
 
             @media #{$xs} {
-                max-width: 20rem;
+                max-width: 25rem;
             }
         }
     }
@@ -1850,6 +1847,10 @@ img {
             gap: 1rem;
             margin: 2rem 0 5rem;
             overflow-x: auto;
+
+            @media #{$xs} {
+                justify-content: flex-start;
+            }
 
             li {
                 list-style-type: none;
