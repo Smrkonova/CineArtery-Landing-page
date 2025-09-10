@@ -524,6 +524,7 @@
 @media (max-width: 767px) {
   .blog__top-content {
     padding: 2rem;
+    margin: 2rem 0 0;
   }
 }
 .blog__top-content h3 {
@@ -598,6 +599,7 @@
 @media (max-width: 767px) {
   .blog__content {
     padding: 2rem;
+    margin: 2rem 0 0;
   }
 }
 .blog__content h3 {
@@ -780,7 +782,7 @@
 }
 @media (max-width: 767px) {
   .blog__grid {
-    margin: 0 0 2rem;
+    margin: 0 0 5rem;
   }
 }
 .blog__back {
@@ -1192,6 +1194,18 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .blog__author-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .blog__author-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1433,6 +1447,21 @@
     font-size: 2.4rem;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .we__head h2 {
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .we__head h2 {
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we__head h2 {
+    font-size: 3.4rem;
+  }
+}
 .we__head p {
   font-size: 2.4rem;
   font-weight: 600;
@@ -1477,10 +1506,19 @@
 .we__row {
   padding: 6rem 0;
 }
+.we__right {
+  padding: 0 0 0 4rem;
+}
 @media (max-width: 767px) {
   .we__right {
     margin: 2rem 0;
     text-align: center;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .we__right {
+    padding: 0;
   }
 }
 .we__right h3 {
@@ -1495,7 +1533,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .we__right h3 {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1505,13 +1543,14 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .we__right h3 {
-    font-size: 6.4rem;
+    font-size: 6rem;
   }
 }
 .we__right h3 span {
   font-weight: 600;
   border: 4.48px solid #000000;
   border-radius: 3.4rem;
+  padding: 0 1rem;
 }
 @media (max-width: 767px) {
   .we__right h3 span {
@@ -1619,7 +1658,7 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .we__left h5 {
-    font-size: 4rem;
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 767px) {
@@ -3284,6 +3323,8 @@ img {
   .service__img img {
     height: 16rem;
     width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3314,6 +3355,8 @@ img {
   .service__img video {
     height: 16rem;
     width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4154,6 +4197,11 @@ img {
           backface-visibility: hidden;
   border-radius: 1.2rem;
 }
+@media (max-width: 767px) {
+  .review__front, .review__back {
+    height: unset;
+  }
+}
 .review__front {
   position: relative;
   border-radius: 1.2rem;
@@ -4213,8 +4261,8 @@ img {
 }
 .review__name span {
   color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 400;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -4421,8 +4469,7 @@ img {
           justify-content: center;
   gap: 1rem;
   margin: 2rem 0 5rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow-x: auto;
 }
 .feature__tab-list ul li {
   list-style-type: none;
@@ -4433,6 +4480,7 @@ img {
   background-color: #fff;
   color: #181927 !important;
   cursor: pointer;
+  white-space: nowrap;
 }
 @media (max-width: 767px) {
   .feature__tab-list ul li {

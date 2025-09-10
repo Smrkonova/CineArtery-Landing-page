@@ -52,9 +52,9 @@
         <div class="workflow__content">
           <span>Think filmmaking is chaotic? Not anymore.
           </span>
-          <h2>CineArtery brings everything, <br> and everyone you need for your next <br>blockbuster into one
+          <h2>CineArtery brings everything, and everyone you need for your next blockbuster into one
             streamlined
-            platform. <br> </h2>
+            platform. </h2>
           <div class="banner__down-arrow">
             <span>Scroll</span>
             <img src="./assets/img/icons/down-img.png" alt="">
@@ -1255,9 +1255,9 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const titles = [
-        'Creative <span>Talent.</span> <br> Right <span>Budget.</span>',
+        'Creative <span>Talent.</span>  Right <span>Budget.</span>',
         'Clutter-free Scripting and <span>Scheduling.</span>',
-        'A film ready to meet <br> <span>its audience.</span>'
+        'A film ready to meet <span>its audience.</span>'
       ];
 
       const titleElement = document.querySelector('.rotating-title');
@@ -1484,7 +1484,8 @@
       scrollTrigger: {
         trigger: ".future",
         start: "top top",
-        end: "+=2000",   // adjust for smoother steps
+        end: window.innerWidth <= 767 ? "+=800" : "+=2000",
+        // end: "+=2000",   
         pin: true,
         scrub: true,
       }

@@ -53,6 +53,18 @@
       @media #{$xs} {
         font-size: 2.4rem;
       }
+
+      @media #{$lp} {
+        font-size: 4.2rem;
+      }
+
+      @media #{$lg} {
+        font-size: 4.2rem;
+      }
+
+      @media #{$md} {
+        font-size: 3.4rem;
+      }
     }
 
     p {
@@ -106,9 +118,16 @@
   }
 
   &__right {
+    padding: 0 0 0 4rem;
+
     @media #{$xs} {
       margin: 2rem 0;
       text-align: center;
+      padding: 0;
+    }
+
+    @media #{$md} {
+      padding: 0;
     }
 
     h3 {
@@ -124,7 +143,7 @@
       }
 
       @media #{$md} {
-        font-size: 4rem;
+        font-size: 3.6rem;
       }
 
       @media #{$lg} {
@@ -134,13 +153,14 @@
 
 
       @media #{$lp} {
-        font-size: 6.4rem;
+        font-size: 6rem;
       }
 
       span {
         font-weight: 600;
         border: 4.48px solid #000000;
         border-radius: 3.4rem;
+        padding: 0 1rem;
 
         @media #{$xs} {
           border: 1px solid #000;
@@ -248,7 +268,7 @@
       }
 
       @media #{$lp} {
-        font-size: 4rem;
+        font-size: 3.4rem;
       }
     }
   }
@@ -333,6 +353,7 @@
     }
 
   }
+
 }
 
 /* forward scroll */
