@@ -1847,6 +1847,10 @@ img {
             gap: 1rem;
             margin: 2rem 0 5rem;
             overflow-x: auto;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
 
             @media #{$xs} {
                 justify-content: flex-start;
@@ -2242,4 +2246,9 @@ hr {
 
 .reply-box .send-btn:hover {
     background: #333;
+}
+
+.feature__tab-list ul::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
 }

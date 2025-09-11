@@ -4386,7 +4386,7 @@ img {
 @media (max-width: 767px) {
   .feature__card {
     padding: 2rem;
-    min-height: 56rem;
+    min-height: 43rem !important;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4470,6 +4470,10 @@ img {
   gap: 1rem;
   margin: 2rem 0 5rem;
   overflow-x: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
 }
 @media (max-width: 767px) {
   .feature__tab-list ul {
@@ -4882,4 +4886,9 @@ hr {
 
 .reply-box .send-btn:hover {
   background: #333;
+}
+
+.feature__tab-list ul::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
 }/*# sourceMappingURL=style.css.map */
