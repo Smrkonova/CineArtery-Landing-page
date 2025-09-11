@@ -1765,7 +1765,7 @@ img {
 
         @media #{$xs} {
             padding: 2rem;
-            min-height: 56rem;
+            min-height: 43rem !important;
         }
 
         @media #{$lg} {
