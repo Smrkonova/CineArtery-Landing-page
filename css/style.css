@@ -1634,10 +1634,10 @@
 }
 .we__left h5 {
   color: #181927;
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-weight: 400;
   margin: 0 0 2rem;
-  max-width: 60%;
+  max-width: 54%;
 }
 @media (max-width: 767px) {
   .we__left h5 {
@@ -1649,16 +1649,19 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .we__left h5 {
     font-size: 2.4rem;
+    max-width: 65%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .we__left h5 {
-    font-size: 3.4rem;
+    font-size: 3rem;
+    max-width: 60%;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .we__left h5 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
+    max-width: 57%;
   }
 }
 @media (max-width: 767px) {

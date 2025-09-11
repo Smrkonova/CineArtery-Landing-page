@@ -404,39 +404,6 @@
   <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
   <script src="./assets/js/main.js"></script>
 
-  <script>
-    window.addEventListener('load', function () {
-      // Disable scroll while loader is active
-      document.body.style.overflow = 'hidden';
-
-      const loadContent = document.querySelector('.load-content');
-      const loadPara = document.querySelector('.load-para');
-
-      // Step 1: Show load-content
-      loadContent.classList.add('show');
-
-      // Step 2: Wait, then hide load-content
-      setTimeout(function () {
-        loadContent.classList.remove('show');
-
-        // Step 3: After it's hidden, show load-para
-        setTimeout(function () {
-          loadPara.classList.add('show');
-        }, 800); // matches transition duration
-      }, 5000); // how long load-content stays visible
-
-      // Step 4: Hide loader completely after 8.7s
-      setTimeout(function () {
-        var loader = document.getElementById('loader');
-        loader.style.opacity = '0';
-        setTimeout(function () {
-          loader.style.display = 'none';
-          document.getElementById('content').style.display = 'block';
-          document.body.style.overflow = ''; // Re-enable scroll
-        }, 500);
-      }, 8000);
-    });
-  </script>
 
 
 

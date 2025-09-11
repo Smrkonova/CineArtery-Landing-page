@@ -248,10 +248,10 @@
   &__left {
     h5 {
       color: #181927;
-      font-size: 4rem;
+      font-size: 3.4rem;
       font-weight: 400;
       margin: 0 0 2rem;
-      max-width: 60%;
+      max-width: 54%;
 
       @media #{$xs} {
         font-size: 1.8rem;
@@ -261,14 +261,19 @@
 
       @media #{$md} {
         font-size: 2.4rem;
+        max-width: 65%;
+
       }
 
       @media #{$lg} {
-        font-size: 3.4rem;
+        font-size: 3rem;
+        max-width: 60%;
       }
 
       @media #{$lp} {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
+        max-width: 57%;
+
       }
     }
   }
