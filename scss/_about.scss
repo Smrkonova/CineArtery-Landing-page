@@ -132,14 +132,14 @@
 
     h3 {
       color: #181927;
-      font-size: 8rem;
+      font-size: 7.4rem;
       // font-family: 'MyCustomFont', sans-serif !important;
       text-transform: uppercase;
 
 
 
       @media #{$xs} {
-        font-size: 2rem;
+        font-size: 4rem;
       }
 
       @media #{$md} {
@@ -254,7 +254,7 @@
       max-width: 60%;
 
       @media #{$xs} {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
         max-width: 100%;
       }
